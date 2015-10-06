@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data jsxid="jsxroot">
+	<record jsxid="ALA"	jsxtext="Alameda"/>
+	<record jsxid="ALP"	jsxtext="Alpine"/>
+	<record jsxid="AMD"	jsxtext="Amador"/>
+	<record jsxid="BTE"	jsxtext="Butte"/>
+	<record jsxid="CLV"	jsxtext="Calaveras"/>
+	<record jsxid="COL"	jsxtext="Colusa"/>
+	<record jsxid="CNT"	jsxtext="Contra Costa"/>
+	<record jsxid="DEL"	jsxtext="Del Norte"/>
+	<record jsxid="ELD"	jsxtext="El Dorado"/>
+	<record jsxid="FRS"	jsxtext="Fresno"/>
+	<record jsxid="GLN"	jsxtext="Glenn"/>
+	<record jsxid="HUM"	jsxtext="Humboldt"/>
+	<record jsxid="IMP"	jsxtext="Imperial"/>
+	<record jsxid="INY"	jsxtext="Inyo"/>
+	<record jsxid="KRN"	jsxtext="Kern"/>
+	<record jsxid="KNG"	jsxtext="Kings"/>
+	<record jsxid="LAK"	jsxtext="Lake"/>
+	<record jsxid="LSN"	jsxtext="Lassen"/>
+	<record jsxid="LAX"	jsxtext="Los Angeles"/>
+	<record jsxid="MDA"	jsxtext="Madera"/>
+	<record jsxid="MRN"	jsxtext="Marin"/>
+	<record jsxid="MRP"	jsxtext="Mariposa"/>
+	<record jsxid="MEN"	jsxtext="Mendocino"/>
+	<record jsxid="MCD"	jsxtext="Merced"/>
+	<record jsxid="MOD"	jsxtext="Modoc"/>
+	<record jsxid="MNO"	jsxtext="Mono"/>
+	<record jsxid="MTR"	jsxtext="Monterey"/>
+	<record jsxid="NAP"	jsxtext="Napa"/>
+	<record jsxid="NEV"	jsxtext="Nevada"/>
+	<record jsxid="ORG"	jsxtext="Orange"/>
+	<record jsxid="PLA"	jsxtext="Placer"/>
+	<record jsxid="PLU"	jsxtext="Plumas"/>
+	<record jsxid="RIV"	jsxtext="Riverside"/>
+	<record jsxid="SAC"	jsxtext="Sacramento"/>
+	<record jsxid="SBT"	jsxtext="San Benito"/>
+	<record jsxid="SBD"	jsxtext="San Bernardino"/>
+	<record jsxid="SDO"	jsxtext="San Diego"/>
+	<record jsxid="SFO"	jsxtext="San Francisco"/>
+	<record jsxid="SJQ"	jsxtext="San Joaquin"/>
+	<record jsxid="SLO"	jsxtext="San Luis Obispo"/>
+	<record jsxid="SMO"	jsxtext="San Mateo"/>
+	<record jsxid="SBA"	jsxtext="Santa Barbara"/>
+	<record jsxid="SCA"	jsxtext="Santa Clara"/>
+	<record jsxid="SCZ"	jsxtext="Santa Cruz"/>
+	<record jsxid="SHA"	jsxtext="Shasta"/>
+	<record jsxid="SIE"	jsxtext="Sierra"/>
+	<record jsxid="SIS"	jsxtext="Siskiyou"/>
+	<record jsxid="SOL"	jsxtext="Solano"/>
+	<record jsxid="SON"	jsxtext="Sonoma"/>
+	<record jsxid="STL"	jsxtext="Stanislaus"/>
+	<record jsxid="SUT"	jsxtext="Sutter"/>
+	<record jsxid="THM"	jsxtext="Tehama"/>
+	<record jsxid="TRI"	jsxtext="Trinity"/>
+	<record jsxid="TUL"	jsxtext="Tulare"/>
+	<record jsxid="TUO"	jsxtext="Tuolumne"/>
+	<record jsxid="VEN"	jsxtext="Ventura"/>
+	<record jsxid="YOL"	jsxtext="Yolo"/>
+	<record jsxid="YUB"	jsxtext="Yuba"/>
+	<record jsxid="AOC"	jsxtext="ALL"/>
+</data>
+

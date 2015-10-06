@@ -1,0 +1,93 @@
+<serialization jsxversion="3.5" xmlns="urn:tibco.com/v3.0">
+  <name></name>
+  <icon></icon>
+  <description></description>
+  <onBeforeDeserialize></onBeforeDeserialize>
+  <onAfterDeserialize><![CDATA[JBSIS.eForms.initServerConf();]]></onAfterDeserialize>
+  <object type="jsx3.gui.Block">
+    <variants jsxrelativeposition="0" jsxloadtype="1" jsxleft="0" jsxtop="0"></variants>
+    <strings jsxname="blkMain" jsxwidth="100%" jsxheight="100%" jsxdisplay="" jsxvisibility="" jsxclassname="MAIN_PANE"></strings>
+    <object type="jsx3.gui.Block">
+      <variants></variants>
+      <strings jsxname="blk_main" jsxwidth="100%" jsxheight="100%"></strings>
+      <object type="jsx3.gui.Block">
+        <variants jsxtop="90" jsxwidth="450" jsxheight="120" jsxoverflow="1" jsxrelativeposition="0"></variants>
+        <strings jsxname="blk_reportType" jsxleft="30%"></strings>
+        <object type="jsx3.gui.Block">
+          <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="50" jsxtop="60" jsxfontsize="12"></variants>
+          <strings jsxname="lbl_reportType" jsxtext="Report Type" jsxdisplay="" jsxfontname="Arial" jsxstyleoverride="" jsxclassname="MAIN_TAB_LABELS"></strings>
+        </object>
+        <object type="jsx3.gui.Select">
+          <variants jsxwidth="350" jsxheight="18" jsxxmlasync="1" jsxrelativeposition="0" jsxleft="50" jsxtop="90" jsxfontsize="12"></variants>
+          <strings jsxname="selReportType" jsxmargin="0 4 0 0" jsxdisplay="" jsxcolor="" jsxxmlurl="xml/dropdowns/report.xml"></strings>
+        </object>
+      </object>
+      <object type="jsx3.gui.Block">
+        <variants jsxtop="210" jsxwidth="450" jsxheight="80" jsxoverflow="1" jsxrelativeposition="0"></variants>
+        <strings jsxname="blk_period" jsxleft="30%" jsxdisplay=""></strings>
+        <object type="jsx3.gui.Select">
+          <variants jsxwidth="150" jsxheight="18" jsxrelativeposition="0" jsxleft="50" jsxtop="40" jsxfontsize="12" jsxxmlasync="1"></variants>
+          <strings jsxname="sel_month" jsxxmlurl="xml/dropdowns/months.xml" jsxmargin="0 4 0 0" jsxdisplay="" jsxfontname="Arial"></strings>
+        </object>
+        <object type="jsx3.gui.Select">
+          <variants jsxwidth="150" jsxheight="18" jsxrelativeposition="0" jsxleft="250" jsxtop="40" jsxfontsize="12" jsxxmlasync="1"></variants>
+          <strings jsxname="sel_year" jsxmargin="0 4 0 0" jsxdisplay="" jsxfontname="Arial" jsxxmlid="recYears"></strings>
+        </object>
+        <object type="jsx3.gui.Block">
+          <variants jsxrelativeposition="0" jsxoverflow="3" jsxfontsize="12" jsxleft="50" jsxtop="10"></variants>
+          <strings jsxname="lbl_period" jsxtext="Report Period" jsxdisplay="" jsxfontname="Arial" jsxstyleoverride="" jsxclassname="MAIN_TAB_LABELS"></strings>
+        </object>
+      </object>
+      <object type="jsx3.gui.Block">
+        <variants jsxtop="290" jsxwidth="250" jsxheight="60" jsxoverflow="1" jsxrelativeposition="0"></variants>
+        <strings jsxname="blk_action" jsxleft="30%"></strings>
+        <object type="jsx3.gui.Block">
+          <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="50" jsxfontsize="12"></variants>
+          <strings jsxname="lbl_action" jsxtext="Action" jsxdisplay="" jsxfontname="Arial" jsxstyleoverride="" jsxclassname="MAIN_TAB_LABELS"></strings>
+        </object>
+        <object type="jsx3.gui.Select">
+          <variants jsxwidth="150" jsxheight="18" jsxrelativeposition="0" jsxleft="50" jsxtop="30" jsxfontsize="12" jsxxmlasync="1"></variants>
+          <strings jsxname="sel_action" jsxmargin="0 4 0 0" jsxdisplay="" jsxfontname="Arial" jsxxmlurl="xml/dropdowns/action.xml"></strings>
+          <events jsxselect="JBSIS.eForms.Nav.showTip(this);"></events>
+        </object>
+      </object>
+      <object type="jsx3.gui.Block">
+        <variants jsxtop="290" jsxwidth="250" jsxheight="60" jsxrelativeposition="0" jsxloadtype="4"></variants>
+        <strings jsxname="blk_court" jsxleft="30%" jsxvisibility="hidden"></strings>
+        <object type="jsx3.gui.Block">
+          <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="50" jsxfontsize="12"></variants>
+          <strings jsxname="lbl_Court" jsxtext="Court" jsxdisplay="" jsxfontname="Arial" jsxclassname="MAIN_TAB_LABELS"></strings>
+        </object>
+        <object type="jsx3.gui.Select">
+          <variants jsxwidth="150" jsxheight="18" jsxxmlasync="1" jsxrelativeposition="0" jsxleft="50" jsxtop="30" jsxfontsize="12"></variants>
+          <strings jsxname="selCourt" jsxxmlurl="xml/dropdowns/court.xml" jsxmargin="0 4 0 0" jsxdisplay="" jsxcolor=""></strings>
+        </object>
+      </object>
+      <object type="jsx3.gui.Block">
+        <variants jsxtop="360" jsxwidth="300" jsxheight="30" jsxoverflow="1" jsxrelativeposition="0" jsxzindex="100"></variants>
+        <strings jsxname="blk_footer" jsxleft="30%"></strings>
+        <object type="jsx3.gui.Button">
+          <variants jsxindex="0" jsxheight="20" jsxrelativeposition="0" jsxleft="50" jsxzindex="100" jsxwidth="50" jsxfontsize="12"></variants>
+          <strings jsxname="btn_submit" jsxtext="Submit" jsxmargin="0 4 0 0" jsxdisplay="" jsxfontname="Arial" jsxcolor="" jsxstyleoverride="" jsxclassname="MAIN_TAB_LABELS"></strings>
+          <dynamics jsxbgcolor="@Dialog BG"></dynamics>
+          <events jsxexecute="JBSIS.eForms.callServices();"></events>
+        </object>
+        <object type="jsx3.gui.Button">
+          <variants jsxindex="0" jsxheight="20" jsxrelativeposition="0" jsxleft="150" jsxzindex="100" jsxwidth="50" jsxfontsize="12"></variants>
+          <strings jsxname="btn_reset" jsxtext="Reset" jsxmargin="0 4 0 0" jsxdisplay="" jsxfontname="Arial" jsxclassname="MAIN_TAB_LABELS"></strings>
+          <dynamics jsxbgcolor="@Dialog BG"></dynamics>
+          <events jsxexecute="JBSIS.eForms.Nav.resetMainForm();"></events>
+        </object>
+      </object>
+      <object type="jsx3.gui.Block">
+        <variants jsxrelativeposition="0" jsxtop="489" jsxfontsize="15" jsxoverflow="2"></variants>
+        <strings jsxname="txtTip" jsxwidth="100%" jsxdisplay="" jsxtextalign="left" jsxcolor="" jsxleft="30%" jsxtext=""></strings>
+      </object>
+      <object type="jsx3.gui.Block">
+        <variants jsxtop="20" jsxfontsize="22" jsxrelativeposition="0"></variants>
+        <strings jsxname="txtJBSISHeader" jsxtext="JBSIS E-Forms Portal Application" jsxbgcolor="" jsxcolor="" jsxleft="30%" jsxdisplay=""></strings>
+        <dynamics jsxpadding="@8Pixel"></dynamics>
+      </object>
+    </object>
+  </object>
+</serialization>

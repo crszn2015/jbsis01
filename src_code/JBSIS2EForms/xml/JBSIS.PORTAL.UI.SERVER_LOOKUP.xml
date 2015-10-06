@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<ServerLookUp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<!--Set the appropriate application environment-->
+<!--The application will be configured to servers for the environment set below-->
+<Environment>STAGE</Environment>
+
+<!--Configure various environments-->
+<ServerConf>
+<!--Specificy environment name-->
+<ENV>DEV</ENV>
+<!--Specificy if connection is secure-->
+<SecureConnection>false</SecureConnection>
+<!--Specificy server where your application is hosted-->
+<AppServerName>isb2.cjn.courts.ca.gov</AppServerName>
+<!--Specificy listening port for your application-->
+<AppPort>18080</AppPort>
+<!--Specificy portal extensions to endpoint URLs if any-->
+<PortalExt>/isb/portal/frs/Pages/</PortalExt>
+<!--Specificy Custom Import Servlet extension-->
+<CustomServlet>
+	<!--Specificy Custom Import Servlet extension-->
+	<CSURL>/tib_cps/servlet/proxyServlet</CSURL>
+	<!--Specificy server hosting BW services-->
+	<BWServer>isb4</BWServer>
+	<!--Specificy port hosted BW services listen to-->
+	<BWPort>12600</BWPort>
+</CustomServlet>
+</ServerConf>
+<ServerConf>
+<ENV>TEST</ENV>
+<SecureConnection>false</SecureConnection>
+<AppServerName>isb2.cjn.courts.ca.gov</AppServerName>
+<AppPort>18080</AppPort>
+<PortalExt>/pps/tibco/frs/Pages/</PortalExt>
+<CustomServlet>
+	<CSURL>/tib_cps/servlet/proxyServlet</CSURL>
+	<BWServer>isb4.cjn.courts.ca.gov</BWServer>
+	<BWPort>12600</BWPort>
+</CustomServlet>
+</ServerConf>
+<ServerConf>
+<ENV>STAGE</ENV>
+<SecureConnection>true</SecureConnection>
+<AppServerName>isb-stg.srv.courts-tc.ca.gov</AppServerName>
+<AppPort>443</AppPort>
+<PortalExt>/isb/portal/jbsis/Pages/</PortalExt>
+<CustomServlet>
+	<CSURL>/tib_cps/servlet/proxyServlet</CSURL>
+	<BWServer>isbbw-stg.srv.courts-tc.ca.gov</BWServer>
+	<BWPort>12600</BWPort>
+</CustomServlet></ServerConf>
+<ServerConf>
+<ENV>PROD</ENV>
+<SecureConnection>true</SecureConnection>
+<AppServerName>isb.srv.courts-tc.ca.gov</AppServerName>
+<AppPort>443</AppPort>
+<PortalExt>/isb/portal/jbsis/Pages/</PortalExt>
+<CustomServlet>
+	<CSURL>/tib_cps/servlet/proxyServlet</CSURL>
+	<BWServer>isbbw.srv.courts-tc.ca.gov</BWServer>
+	<BWPort>12600</BWPort>
+</CustomServlet>
+</ServerConf>
+</ServerLookUp>

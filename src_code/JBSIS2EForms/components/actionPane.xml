@@ -1,0 +1,38 @@
+<serialization jsxversion="3.5" xmlns="urn:tibco.com/v3.0">
+  <name><![CDATA[Block - 100%]]></name>
+  <icon><![CDATA[images/prototypes/block.gif]]></icon>
+  <description><![CDATA[Simple block, relatively positioned with overflow=scroll.]]></description>
+  <onBeforeDeserialize></onBeforeDeserialize>
+  <onAfterDeserialize></onAfterDeserialize>
+  <object type="jsx3.gui.Block">
+    <variants jsxoverflow="2" jsxloadtype="4"></variants>
+    <strings jsxname="blkActionButtons" jsxwidth="100%" jsxrelativeposition="1" jsxvisibility="hidden" jsxclassname="MAIN_PANE" jsxheight="4%"></strings>
+    <object type="jsx3.gui.Button">
+      <variants jsxwidth="80" jsxindex="0" jsxheight="20" jsxrelativeposition="1"></variants>
+      <strings jsxname="btnBack" jsxtext="Back" jsxmargin="4 2 2 200" jsxclassname="ACTION_BUTTONS" jsxtextalign="center" jsxdisplay=""></strings>
+      <dynamics jsxbgcolor="@Dialog BG"></dynamics>
+      <events jsxexecute="JBSIS.eForms.Nav.showTab(boolChangeState);"></events>
+    </object>
+    <object type="jsx3.gui.Button">
+      <variants jsxwidth="80" jsxindex="0" jsxheight="20" jsxrelativeposition="1"></variants>
+      <strings jsxname="btnClear" jsxtext="Clear" jsxmargin="4 2 2 30" jsxtextalign="center" jsxclassname="ACTION_BUTTONS" jsxdisplay=""></strings>
+      <dynamics jsxbgcolor="@Dialog BG"></dynamics>
+    </object>
+    <object type="jsx3.gui.Button">
+      <variants jsxwidth="80" jsxindex="0" jsxheight="20" jsxrelativeposition="1"></variants>
+      <strings jsxname="btnImport" jsxtext="Import" jsxmargin="4 2 2 30" jsxtextalign="center" jsxclassname="ACTION_BUTTONS" jsxdisplay=""></strings>
+      <dynamics jsxbgcolor="@Dialog BG"></dynamics>
+      <events jsxexecute="startImport();"></events>
+    </object>
+    <object type="jsx3.gui.Button">
+      <variants jsxwidth="80" jsxindex="0" jsxheight="20" jsxrelativeposition="1"></variants>
+      <strings jsxname="btnSave" jsxtext="Save" jsxmargin="4 2 2 80" jsxtextalign="center" jsxclassname="ACTION_BUTTONS" jsxdisplay=""></strings>
+      <dynamics jsxbgcolor="@Dialog BG"></dynamics>
+    </object>
+    <object type="jsx3.gui.Button">
+      <variants jsxwidth="80" jsxindex="0" jsxheight="20" jsxrelativeposition="1"></variants>
+      <strings jsxname="btnSubmit" jsxtext="Submit" jsxmargin="4 2 2 30" jsxtextalign="center" jsxclassname="ACTION_BUTTONS" jsxdisplay=""></strings>
+      <dynamics jsxbgcolor="@Dialog BG"></dynamics>
+    </object>
+  </object>
+</serialization>

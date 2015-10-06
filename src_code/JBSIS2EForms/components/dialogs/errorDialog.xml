@@ -1,0 +1,44 @@
+<serialization jsxversion="3.5" xmlns="urn:tibco.com/v3.0">
+  <name><![CDATA[Dialog]]></name>
+  <icon><![CDATA[images/prototypes/dialog.gif]]></icon>
+  <description><![CDATA[Dialog box.  (Set Modal property for a modal dialog).]]></description>
+  <onBeforeDeserialize></onBeforeDeserialize>
+  <onAfterDeserialize></onAfterDeserialize>
+  <object type="jsx3.gui.Dialog">
+    <variants jsxzindex="5000" jsxwindowstate="1" jsxmodal="1" jsxzmultiplier="90" jsxresize="0" jsxoverflow="2" jsxloadtype="4"></variants>
+    <strings jsxname="dlg_Error" jsxwidth="375" jsxheight="200"></strings>
+    <dynamics jsxbgcolor="@Solid Medium" jsxtop="@Dialog T"></dynamics>
+    <events jsxbeforemove="" jsxaftermove=""></events>
+    <object type="jsx3.gui.WindowBar">
+      <variants></variants>
+      <strings jsxname="lbl_ErrorTitle" jsxtext="Error Title" jsxtextalign="center" jsxfontweight="bold"></strings>
+    </object>
+    <object type="jsx3.gui.Block">
+      <variants jsxleft="0" jsxtop="0" jsxoverflow="2" jsxrelativeposition="0" jsxloadtype="4"></variants>
+      <strings jsxname="blk_ErrorContent" jsxwidth="100%" jsxheight="100%"></strings>
+      <events jsxclick=""></events>
+      <object type="jsx3.gui.Button">
+        <variants jsxindex="0" jsxwidth="50" jsxrelativeposition="0" jsxleft="300" jsxtop="130"></variants>
+        <strings jsxname="btn_OK" jsxtext="OK" jsxmargin="0 4 0 0" jsxtextalign="center" jsxdisplay="" jsxfontweight="bold" jsxfontname="" jsxbgcolor="#095C9B" jsxcolor="#F7F3F3" jsxheight=""></strings>
+        <dynamics jsxfontsize="@Script FS"></dynamics>
+        <events jsxexecute="var local = jsx3.GO('lbl_hiddenFieldObjName').getText();&#xA;if(local != '')&#xA;{&#xA;jsx3.GO(local).focus();&#xA;jsx3.GO(local).setValue('',1);&#xA;}&#xA;this.getAncestorOfType(jsx3.gui.Dialog).doClose();"></events>
+      </object>
+      <object type="jsx3.gui.Block">
+        <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="80" jsxtop="20" jsxfontsize="11" jsxwidth="270" jsxheight="100"></variants>
+        <strings jsxname="lbl_errorMsg" jsxtext="Error Message" jsxdisplay="" jsxtextalign="left"></strings>
+      </object>
+      <object type="jsx3.gui.Block">
+        <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="290" jsxtop="200"></variants>
+        <strings jsxname="lbl_hiddenFieldObjName" jsxtext="" jsxdisplay="none"></strings>
+      </object>
+      <object type="jsx3.gui.Image">
+        <variants jsxoverflow="3" jsxrelativeposition="0" jsxleft="10" jsxtop="20"></variants>
+        <strings jsxname="image" jsxsrc="images/warning.gif" jsxdisplay=""></strings>
+      </object>
+      <object type="jsx3.gui.Block">
+        <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="10" jsxtop="130"></variants>
+        <strings jsxname="lblCode" jsxdisplay="" jsxfontweight="bold"></strings>
+      </object>
+    </object>
+  </object>
+</serialization>

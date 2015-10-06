@@ -1,0 +1,190 @@
+<serialization jsxversion="3.5" xmlns="urn:tibco.com/v3.0">
+  <name></name>
+  <icon></icon>
+  <description></description>
+  <onBeforeDeserialize></onBeforeDeserialize>
+  <onAfterDeserialize><![CDATA[JBSIS.eForms.initServerConf();]]></onAfterDeserialize>
+  <object type="jsx3.gui.Block">
+    <variants jsxoverflow="1" jsxrelativeposition="0" jsxleft="0" jsxtop="0"></variants>
+    <strings jsxname="blk_reportstatuslog" jsxwidth="100%" jsxheight="100%" jsxdisplay="" jsxclassname="HISTORY_PANE"></strings>
+    <object type="jsx3.gui.LayoutGrid">
+      <variants jsxrelativeposition="0" jsxleft="0" jsxtop="0" jsxoverflow="2"></variants>
+      <strings jsxname="layout (--)" jsxrows="130,*" jsxwidth="100%" jsxheight="100%"></strings>
+      <object type="jsx3.gui.Block">
+        <variants jsxoverflow="2"></variants>
+        <strings jsxname="blk_header" jsxwidth="100%" jsxheight="100%"></strings>
+        <dynamics jsxborder="@Outset"></dynamics>
+        <object type="jsx3.gui.LayoutGrid">
+          <variants jsxrelativeposition="0" jsxleft="0" jsxtop="0" jsxoverflow="2"></variants>
+          <strings jsxname="layout (--)" jsxrows="30,*,25,25" jsxwidth="100%" jsxheight="100%" jsxbgcolor=""></strings>
+          <object type="jsx3.gui.Block">
+            <variants jsxoverflow="2"></variants>
+            <strings jsxname="blk_headertext" jsxwidth="100%" jsxheight="100%"></strings>
+            <dynamics jsxborder="@Outset"></dynamics>
+            <object type="jsx3.gui.Block">
+              <variants jsxfontsize="18" jsxrelativeposition="0" jsxtop="0"></variants>
+              <strings jsxname="ReportHeaderText" jsxwidth="50%" jsxtext="JBSIS Report Status" jsxcolor="" jsxleft="30%" jsxdisplay=""></strings>
+            </object>
+          </object>
+          <object type="jsx3.gui.Block">
+            <variants jsxoverflow="1"></variants>
+            <strings jsxname="blk_search" jsxwidth="100%" jsxheight="100%"></strings>
+            <dynamics jsxborder="@Outset"></dynamics>
+            <object type="jsx3.gui.LayoutGrid">
+              <variants jsxrelativeposition="0" jsxleft="0" jsxtop="0" jsxoverflow="2"></variants>
+              <strings jsxname="layout ( | )" jsxcols="23%,1%,1%,24%,1%,10%, 15%" jsxwidth="100%" jsxheight="100%" jsxbgcolor=""></strings>
+              <object type="jsx3.gui.Block">
+                <variants jsxrelativeposition="1" jsxoverflow="3" jsxwidth="150" jsxheight="12"></variants>
+                <strings jsxname="blk_reporttype" jsxtext="" jsxdisplay=""></strings>
+                <object type="jsx3.gui.Block">
+                  <variants jsxrelativeposition="1" jsxoverflow="3"></variants>
+                  <strings jsxname="label" jsxtext="Report Type" jsxdisplay=""></strings>
+                </object>
+                <object type="jsx3.gui.Select">
+                  <variants jsxwidth="150" jsxheight="20" jsxxmlasync="1" jsxrelativeposition="0" jsxleft="0" jsxtop="15"></variants>
+                  <strings jsxname="psel_reporttype" jsxxmlurl="xml/dropdowns/report.xml" jsxmargin="0 4 0 0" jsxxml="" jsxdisplay="" jsxvalue=""></strings>
+                </object>
+              </object>
+              <object type="jsx3.gui.Block">
+                <variants jsxrelativeposition="1" jsxoverflow="3" jsxwidth="150" jsxheight="12"></variants>
+                <strings jsxname="blk_selmonth" jsxdisplay="none" jsxvisibility="hidden"></strings>
+                <object type="jsx3.gui.Block">
+                  <variants jsxrelativeposition="1" jsxoverflow="3"></variants>
+                  <strings jsxname="label" jsxtext="Report Month" jsxdisplay=""></strings>
+                </object>
+                <object type="jsx3.gui.Select">
+                  <variants jsxxmlasync="1" jsxrelativeposition="0" jsxleft="0" jsxtop="15"></variants>
+                  <strings jsxname="sel_reportmonth" jsxxmlurl="xml/dropdowns/months.xml" jsxmargin="0 4 0 0" jsxxml="" jsxdisplay="" jsxvalue=""></strings>
+                </object>
+              </object>
+              <object type="jsx3.gui.Block">
+                <variants jsxrelativeposition="1" jsxoverflow="3" jsxwidth="150" jsxheight="12"></variants>
+                <strings jsxname="blk_selyear" jsxdisplay="none" jsxvisibility="hidden"></strings>
+                <object type="jsx3.gui.Block">
+                  <variants jsxrelativeposition="1" jsxoverflow="3" jsxleft="0" jsxtop="0"></variants>
+                  <strings jsxname="label" jsxtext="Report Year" jsxdisplay=""></strings>
+                </object>
+                <object type="jsx3.gui.Select">
+                  <variants jsxwidth="150" jsxheight="18" jsxxmlasync="1" jsxrelativeposition="0" jsxtop="15" jsxleft="0"></variants>
+                  <strings jsxname="sel_reportyear" jsxmargin="0 4 0 0" jsxxmlid="recYears" jsxdisplay="" jsxvalue=""></strings>
+                </object>
+              </object>
+              <object type="jsx3.gui.Block">
+                <variants jsxoverflow="3" jsxrelativeposition="1" jsxwidth="150" jsxheight="12"></variants>
+                <strings jsxname="blk_selcourt" jsxdisplay=""></strings>
+                <object type="jsx3.gui.Block">
+                  <variants jsxrelativeposition="1" jsxoverflow="3"></variants>
+                  <strings jsxname="label" jsxtext="Court"></strings>
+                </object>
+                <object type="jsx3.gui.Select">
+                  <variants jsxwidth="150" jsxheight="18" jsxxmlasync="1" jsxrelativeposition="0" jsxtop="15" jsxleft="0"></variants>
+                  <strings jsxname="psel_court" jsxxmlurl="xml/dropdowns/court.xml" jsxmargin="0 4 0 0" jsxdisplay="" jsxvalue=""></strings>
+                </object>
+              </object>
+              <object type="jsx3.gui.Block">
+                <variants jsxoverflow="3" jsxrelativeposition="1" jsxwidth="150" jsxheight="12"></variants>
+                <strings jsxname="blk_selAction" jsxdisplay="none" jsxleft="" jsxtop="" jsxvisibility="hidden"></strings>
+                <object type="jsx3.gui.Block">
+                  <variants jsxrelativeposition="1" jsxoverflow="3"></variants>
+                  <strings jsxname="label" jsxtext="Action"></strings>
+                </object>
+                <object type="jsx3.gui.Select">
+                  <variants jsxwidth="150" jsxheight="18" jsxxmlasync="1" jsxrelativeposition="0" jsxtop="15" jsxleft="0"></variants>
+                  <strings jsxname="sel_courtcode" jsxxmlurl="xml/dropdowns/action.xml" jsxmargin="0 4 0 0" jsxdisplay="" jsxvalue=""></strings>
+                </object>
+              </object>
+              <object type="jsx3.gui.Block">
+                <variants jsxoverflow="3" jsxrelativeposition="1" jsxwidth="150" jsxheight="12"></variants>
+                <strings jsxname="blk_selStatus" jsxdisplay="" jsxleft="" jsxtop=""></strings>
+                <object type="jsx3.gui.Block">
+                  <variants jsxrelativeposition="1" jsxoverflow="3"></variants>
+                  <strings jsxname="label" jsxtext="Status"></strings>
+                </object>
+                <object type="jsx3.gui.Select">
+                  <variants jsxwidth="150" jsxheight="18" jsxxmlasync="1" jsxrelativeposition="0" jsxtop="15" jsxleft="0"></variants>
+                  <strings jsxname="psel_status" jsxxmlurl="xml/dropdowns/status.xml" jsxmargin="0 4 0 0" jsxdisplay="" jsxvalue="PENDING" jsxdefaulttext="PENDING"></strings>
+                </object>
+              </object>
+            </object>
+          </object>
+          <object type="jsx3.gui.Block">
+            <variants jsxoverflow="3"></variants>
+            <strings jsxname="blk_action" jsxwidth="100%" jsxheight="100%"></strings>
+            <dynamics jsxborder="@Outset"></dynamics>
+            <object type="jsx3.gui.Button">
+              <variants jsxindex="0" jsxheight="18"></variants>
+              <strings jsxname="query_button" jsxtext="Query Report Status" jsxmargin="6 4 0 0" jsxcolor="" jsxtop="20%"></strings>
+              <dynamics jsxbgcolor="@Dialog BG"></dynamics>
+              <events jsxexecute="reporthistorylog.service.callQueryPendingStatus();"></events>
+            </object>
+            <object type="jsx3.gui.Button">
+              <variants jsxindex="0" jsxheight="18" jsxrelativeposition="1" jsxtop="6"></variants>
+              <strings jsxname="reset_button" jsxtext="Reset&gt;&gt;" jsxmargin="6 4 0 0" jsxcolor="" jsxdisplay="" jsxleft="25%"></strings>
+              <dynamics jsxbgcolor="@Dialog BG"></dynamics>
+              <events jsxexecute="reporthistorylog.service.ResetStatusForm();"></events>
+            </object>
+          </object>
+          <object type="jsx3.gui.Block">
+            <variants jsxoverflow="3"></variants>
+            <strings jsxname="blk_count" jsxwidth="100%" jsxheight="100%" jsxtop="" jsxvisibility="" jsxdisplay=""></strings>
+            <dynamics jsxborder="@Outset"></dynamics>
+            <object type="jsx3.gui.Block">
+              <variants jsxrelativeposition="1" jsxoverflow="3"></variants>
+              <strings jsxname="label" jsxtext="Total Records :" jsxdisplay=""></strings>
+            </object>
+            <object type="jsx3.gui.Block">
+              <variants jsxrelativeposition="1" jsxoverflow="3"></variants>
+              <strings jsxname="pendingRecordSizeLabel" jsxtext="" jsxdisplay=""></strings>
+            </object>
+          </object>
+        </object>
+      </object>
+      <object type="jsx3.gui.Block">
+        <variants jsxoverflow="1"></variants>
+        <strings jsxname="blk_status" jsxwidth="100%" jsxheight="100%" jsxvisibility=""></strings>
+        <dynamics jsxborder="@Outset"></dynamics>
+        <object type="jsx3.gui.Matrix">
+          <variants jsxpagingmodel="3" jsxselectionmodel="0" jsxjsxxmlasync="1" jsxloadtype="1"></variants>
+          <strings jsxname="pendingstatus_matrix" jsxbodyborder="1px solid #dfdfef" jsxheaderborder="1px solid #dfdfef" jsxbgcolor="#efefff" jsxxml="" jsxsortdirection="ascending" jsxxmlid="pendingstatus"></strings>
+          <events jsxbeforeedit="jsx3.log('EVENT: (jsxbeforeedit). Record: ' + strRECORDID);" jsxafteredit="jsx3.log('EVENT: (jsxafteredit). Record: ' + strRECORDID + '. New Value: ' + strNEWVALUE);"></events>
+          <xslparameters jsx_rowbg1="#ffffff" jsx_rowbg2="#efefff"></xslparameters>
+          <object type="jsx3.gui.Matrix.Column">
+            <variants jsxwidth="73"></variants>
+            <strings jsxname="Court" jsxtext="Court" jsxpadding="2" jsxcellpadding="3" jsxpath="Court"></strings>
+            <dynamics jsxborder="@Outset" jsxbg="@Bevel TopDown" jsxbgcolor="@Solid Disabled"></dynamics>
+          </object>
+          <object type="jsx3.gui.Matrix.Column">
+            <variants jsxwidth="71"></variants>
+            <strings jsxname="TimeStamp" jsxtext="TimeStamp" jsxpadding="2" jsxcellpadding="3" jsxpath="TimeStamp"></strings>
+            <dynamics jsxborder="@Outset" jsxbg="@Bevel TopDown" jsxbgcolor="@Solid Disabled"></dynamics>
+          </object>
+          <object type="jsx3.gui.Matrix.Column">
+            <variants jsxwidth="90"></variants>
+            <strings jsxname="Report" jsxtext="Report" jsxpadding="2" jsxcellpadding="3" jsxpath="Report"></strings>
+            <dynamics jsxborder="@Outset" jsxbg="@Bevel TopDown" jsxbgcolor="@Solid Disabled"></dynamics>
+          </object>
+          <object type="jsx3.gui.Matrix.Column">
+            <variants jsxwidth="97"></variants>
+            <strings jsxname="Month" jsxtext="Month" jsxpadding="2" jsxcellpadding="3" jsxpath="Month"></strings>
+            <dynamics jsxborder="@Outset" jsxbg="@Bevel TopDown" jsxbgcolor="@Solid Disabled"></dynamics>
+          </object>
+          <object type="jsx3.gui.Matrix.Column">
+            <variants jsxwidth="78"></variants>
+            <strings jsxname="Year" jsxtext="Year" jsxpadding="2" jsxcellpadding="3" jsxpath="Year"></strings>
+            <dynamics jsxborder="@Outset" jsxbg="@Bevel TopDown" jsxbgcolor="@Solid Disabled"></dynamics>
+          </object>
+          <object type="jsx3.gui.Matrix.Column">
+            <variants jsxwidth="92"></variants>
+            <strings jsxname="Action" jsxtext="Action" jsxpadding="2" jsxcellpadding="3" jsxpath="Action"></strings>
+            <dynamics jsxborder="@Outset" jsxbg="@Bevel TopDown" jsxbgcolor="@Solid Disabled"></dynamics>
+          </object>
+          <object type="jsx3.gui.Matrix.Column">
+            <variants jsxwidth="115"></variants>
+            <strings jsxname="Status" jsxtext="Status" jsxpadding="2" jsxcellpadding="3" jsxpath="Status"></strings>
+            <dynamics jsxborder="@Outset" jsxbg="@Bevel TopDown" jsxbgcolor="@Solid Disabled"></dynamics>
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+</serialization>

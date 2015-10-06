@@ -1,0 +1,359 @@
+<?xml version="1.0"?>
+<JBSIS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="JBSIS.PORTAL.UI.ERROR_LOOKUP.xsd">
+	<ERROR>
+		<DisplayInfo>
+			<severity>ERROR</severity>
+			<code>JBSIS001BW801</code>
+			<text>The selected report does not exist and cannot be retrieved</text>
+			<windowTitle>Retrieve Failed</windowTitle>
+		</DisplayInfo>
+		<DisplayInfo>
+			<severity>ERROR</severity>
+			<code>JBSIS001BW816</code>
+			<text>The selected report already exists and has been submitted.  Please choose the  Amend option to proceed.</text>
+			<windowTitle>Invalid Action</windowTitle>
+		</DisplayInfo>
+		<DisplayInfo>
+			<severity>ERROR</severity>
+			<code>JBSIS001BW817</code>
+			<text>An exception occurred while importing the file, Bad Data Format Error.</text>
+			<windowTitle>Bad Data Format</windowTitle>
+		</DisplayInfo>
+		<DisplayInfo>
+			<severity>ERROR</severity>
+			<code>JBSIS001BW813</code>
+			<text>Amend cannot be performed on the selected report  as the  does not exist.</text>
+			<windowTitle>Invalid Action</windowTitle>
+		</DisplayInfo>
+		<DisplayInfo>
+			<severity>ERROR</severity>
+			<code>JBSIS001BW812</code>
+			<text>Update cannot be performed on the selected report as the report does not exist.</text>
+			<windowTitle>Invalid Action</windowTitle>
+		</DisplayInfo>
+		<DisplayInfo>
+			<severity>ERROR</severity>
+			<code>JBSIS001BW814</code>
+			<text>The selected report cannot be viewed as it does not exist.</text>
+			<windowTitle>Invalid Action</windowTitle>
+		</DisplayInfo>
+		<DisplayInfo>
+			<severity>ERROR</severity>
+			<code>JBSIS001BW828</code>
+			<text>Court ID could not be retrieved.&lt;br&gt;  Please contact the System Administrator.</text>
+			<windowTitle>Unregistered Court</windowTitle>
+		</DisplayInfo>
+		<DisplayInfo>
+			<severity>ERROR</severity>
+			<code>JBSIS001BW822</code>
+			<text>A Duplicate FieldName error occurred while processing the JDBC statement.</text>
+			<windowTitle>Application Erro</windowTitle>
+		</DisplayInfo>
+		<DisplayInfo>
+			<severity>ERROR</severity>
+			<code>JBSIS001BW818</code>
+			<text>Error occurred while transferring  the file to JBSIS.</text>
+			<windowTitle>Submit Failed</windowTitle>
+		</DisplayInfo>
+		<DisplayInfo>
+			<severity>ERROR</severity>
+			<code>JBSIS001BW810</code>
+			<text>A Report already exists for the selected period.</text>
+			<windowTitle>Invalid Action</windowTitle>
+		</DisplayInfo>
+		<DisplayInfo>
+			<severity>ERROR</severity>
+			<code>JBSIS001BW802</code>
+			<text>A File I/O error occurred while processing creating/copying/updating a file.</text>
+			<windowTitle>Application Error</windowTitle>
+		</DisplayInfo>
+		<DisplayInfo>
+			<severity>ERROR</severity>
+			<code>JBSIS001BW809</code>
+			<text>A File Illegal Copy exception has occurred while copying the file.</text>
+			<windowTitle>Application Error</windowTitle>
+		</DisplayInfo>
+		
+		<DisplayInfo>
+			<severity>ERROR</severity>
+			<code>JBSIS001BW835</code>
+			<text>The selected report already exists and has not been Submitted, Please choose Update to proceed.</text>
+			<windowTitle>Invalid Action</windowTitle>
+		</DisplayInfo>
+		<DisplayInfo>
+			<severity>ERROR</severity>
+			<code>JBSIS001BW836</code>
+			<text>The selected report has already been Submitted, Please choose Amend to proceed.</text>
+			<windowTitle>Invalid Action</windowTitle>
+		</DisplayInfo>
+		<DisplayInfo>
+			<severity>ERROR</severity>
+			<code>JBSIS001BW829</code>
+			<text>An error occurred while importing the file, Please check the data and try again.</text>
+			<windowTitle>Import Failed</windowTitle>
+		</DisplayInfo>
+		<DisplayInfo>
+			<severity>ERROR</severity>
+			<code>JBSIS001BW815</code>
+			<text>This selected report is already created and saved.  Please choose the Update option to Update / View </text>
+			<windowTitle>Invalid Action</windowTitle>
+		</DisplayInfo>
+		<DisplayInfo>
+			<severity>ERROR</severity>
+			<code>JBSIS001BW820</code>
+			<text>The SQL Query is Invalid, Please enter/configure a valid Query.</text>
+			<windowTitle>Application Error</windowTitle>
+		</DisplayInfo>
+		<DisplayInfo>
+			<severity>ERROR</severity>
+			<code>JBSIS001BW823</code>
+			<text>An Invalid Time Zone exception occurred.</text>
+			<windowTitle>Application Error</windowTitle>
+		</DisplayInfo>
+		<DisplayInfo>
+			<severity>ERROR</severity>
+			<code>JBSIS001BW830</code>
+			<text>An error occurred while Parsing / Mapping the data.  Please check the data and send only Numeric values.</text>
+			<windowTitle>Bad Data!</windowTitle>
+		</DisplayInfo>
+		<DisplayInfo>
+			<severity>ERROR</severity>
+			<code>JBSIS001BW831</code>
+			<text>An Error occurred while importing the file.  Please check the file format and try again.</text>
+			<windowTitle>Import Failed</windowTitle>
+		</DisplayInfo>
+		<DisplayInfo>
+			<severity>ERROR</severity>
+			<code>JBSIS001BW824</code>
+			<text>The SQL query is not appropriate. Please configure valid SQL.</text>
+			<windowTitle>Application Error</windowTitle>
+		</DisplayInfo>
+		<DisplayInfo>
+			<severity>ERROR</severity>
+			<code>JBSIS001BW821</code>
+			<text>JDBC Connection not configured or not found.</text>
+			<windowTitle>Application Error</windowTitle>
+		</DisplayInfo>
+		<DisplayInfo>
+			<severity>ERROR</severity>
+			<code>JBSIS001BW819</code>
+			<text>JDBC Driver could not be loaded, Please configure the correct driver.</text>
+			<windowTitle>Application Error</windowTitle>
+		</DisplayInfo>
+
+		<DisplayInfo>
+			<severity>ERROR</severity>
+			<code>JBSIS001BW827</code>
+			<text>A Fatal JDBC Error has occurred. Please contact the System Administrator.</text>
+			<windowTitle>Application Error</windowTitle>
+		</DisplayInfo>
+		<DisplayInfo>
+			<severity>ERROR</severity>
+			<code>JBSIS001BW825</code>
+			<text>The JDBC Connection has timeout. please try again.</text>
+			<windowTitle>Application Error</windowTitle>
+		</DisplayInfo>
+		<DisplayInfo>
+			<severity>ERROR</severity>
+			<code>JBSIS001BW726</code>
+			<text>JDBC Login has timeout. Please try again.</text>
+			<windowTitle>Application Error</windowTitle>
+		</DisplayInfo>
+		<DisplayInfo>
+			<severity>ERROR</severity>
+			<code>JBSIS001BW805</code>
+			<text>XML Missing Byte Count error was caught in the process.</text>
+			<windowTitle>Application Error</windowTitle>
+		</DisplayInfo>
+		<DisplayInfo>
+			<severity>ERROR</severity>
+			<code>JBSIS001BW837</code>
+			<text>The report for previous month has not been submitted.  Please submit it and try again.</text>
+			<windowTitle>Invalid Action</windowTitle>
+		</DisplayInfo>
+		<DisplayInfo>
+			<severity>ERROR</severity>
+			<code>JBSIS001BW807</code>
+			<text>An error occurred while processing the SOAP Request message.</text>
+			<windowTitle>Application Error</windowTitle>
+		</DisplayInfo>
+		<DisplayInfo>
+			<severity>ERROR</severity>
+			<code>JBSIS001BW808</code>
+			<text>A Server occurred while sending the SOAP Response.</text>
+			<windowTitle>Application Error</windowTitle>
+		</DisplayInfo>
+		<DisplayInfo>
+			<severity>ERROR</severity>
+			<code>JBSIS001BW800</code>
+			<text>System Error occurred.</text>
+			<windowTitle>Application Error</windowTitle>
+		</DisplayInfo>		
+		<DisplayInfo>
+			<severity>ERROR</severity>
+			<code>JBSIS001BW806</code>
+			<text>An error occurred while validating the XML.</text>
+			<windowTitle>XML Error</windowTitle>
+		</DisplayInfo>		
+		<DisplayInfo>
+			<severity>ERROR</severity>
+			<code>JBSIS001BW811</code>
+			<text>An error occurred while rendering the XML.</text>
+			<windowTitle>XML Error</windowTitle>
+		</DisplayInfo>		
+		<DisplayInfo>
+			<severity>ERROR</severity>
+			<code>JBSIS001BW803</code>
+			<text>An error occurred while parsing the XML.</text>
+			<windowTitle>XML Error</windowTitle>
+		</DisplayInfo>		
+		<DisplayInfo>
+			<severity>ERROR</severity>
+			<code>JBSIS001BW804</code>
+			<text>An Unsupported Encoding error Occurred while processing the XML.</text>
+			<windowTitle>XML Error</windowTitle>
+		</DisplayInfo>	
+				<DisplayInfo>
+			<severity>ERROR</severity>
+			<code>JBSIS001BW840</code>
+			<text>The selected report cannot be Resubmitted as it has not been Rejected</text>
+			<windowTitle>Invalid Action</windowTitle>
+		</DisplayInfo>	
+				<DisplayInfo>
+			<severity>ERROR</severity>
+			<code>JBSIS001BW841</code>
+			<text>An acknowledgement is still Pending from JBSIS Warehouse for the selected report</text>
+			<windowTitle>Invalid Action</windowTitle>
+		</DisplayInfo>	
+				<DisplayInfo>
+			<severity>ERROR</severity>
+			<code>JBSIS001BW842</code>
+			<text>The selected report has been Rejected. Please choose Resubmit to make changes</text>
+			<windowTitle>Invalid Action</windowTitle>
+		</DisplayInfo>	
+
+		<DisplayInfo>
+			<severity>ERROR</severity>
+			<code>JBSIS001GI801</code>
+			<text>Unable to read or parse Server configuration XML. Please check the Server configuration XML </text>
+			<windowTitle>XML Load failed</windowTitle>
+		</DisplayInfo>
+		<DisplayInfo>
+			<severity>ERROR</severity>
+			<code>JBSIS001GI802</code>
+			<text>Request could not be sent. Please try again</text>
+			<windowTitle>HTTP Error</windowTitle>
+		</DisplayInfo>
+		<DisplayInfo>
+			<severity>ERROR</severity>
+			<code>JBSIS001GI803</code>
+			<text>Please enter a valid whole number at:</text>
+			<windowTitle>Invalid Number</windowTitle>
+		</DisplayInfo>
+		<DisplayInfo>
+			<severity>ERROR</severity>
+			<code>JBSIS001GI804</code>
+			<text>Invalid Portal user. The application will now auto exit.</text>
+			<windowTitle>Invalid User</windowTitle>
+		</DisplayInfo>		
+		<DisplayInfo>
+			<severity>ERROR</severity>
+			<code>JBSIS001GI805</code>
+			<text>Unable to find configuration for the specified environment</text>
+			<windowTitle>Server Configuration Failed</windowTitle>
+		</DisplayInfo>		
+		<DisplayInfo>
+			<severity>ERROR</severity>
+			<code>JBSIS001GI806</code>
+			<text>Due to browser security constraints, the form will not be posted. Deploy this application on an HTTP/S server to fully test.&lt;br&gt;&lt;br&gt;Note: This error occurs, because this web page, is trying to POST to a server that is outside its security domain.</text>
+			<windowTitle>Access Denied</windowTitle>
+		</DisplayInfo>
+		<DisplayInfo>
+			<severity>ERROR</severity>
+			<code>JBSIS001GI807</code>
+			<text></text>
+			<windowTitle>Fatal Error</windowTitle>
+		</DisplayInfo>		
+		<DisplayInfo>
+			<severity>ERROR</severity>
+			<code>JBSIS001GI808</code>
+			<text>Service call timed out. Please try again.</text>
+			<windowTitle>Request Failed</windowTitle>
+		</DisplayInfo>	
+
+	</ERROR>
+	<WARN> </WARN>
+	<INFO>
+		<DisplayInfo>
+			<severity>INFO</severity>
+			<code>JBSIS001GI901</code>
+			<text>Please complete the form before submiting the request</text>
+			<windowTitle>Incomplete Form</windowTitle>
+		</DisplayInfo>
+		<DisplayInfo>
+			<severity>INFO</severity>
+			<code>JBSIS001GI902</code>
+			<text>Please select a Comma Seperated Value(CSV) file to import data</text>
+			<windowTitle>Invalid file type</windowTitle>
+		</DisplayInfo>
+		<DisplayInfo>
+			<severity>INFO</severity>
+			<code>JBSIS001GI903</code>
+			<text>No records were found for the requested query</text>
+			<windowTitle>No Records Found!</windowTitle>
+		</DisplayInfo>
+        <DisplayInfo>
+            <severity>INFO</severity>
+            <code>JBSIS001GI904</code>
+            <text>You are in read only mode. Select View option to view reports</text>
+            <windowTitle>Read Only</windowTitle>
+        </DisplayInfo>
+
+		
+	</INFO>
+	<MESSAGE>
+		<DisplayInfo>
+			<severity>MSG</severity>
+			<code>JBSIS001GI951</code>
+			<text>Unsaved changes to the form will be lost. Continue........</text>
+			<windowTitle>Unsaved Changes</windowTitle>
+		</DisplayInfo>
+		<DisplayInfo>
+			<severity>MSG</severity>
+			<code>JBSIS001GI952</code>
+			<text>Your session has Expired. Please OK to relogin</text>
+			<windowTitle>Session Expired</windowTitle>
+		</DisplayInfo>
+		<DisplayInfo>
+			<severity>MSG</severity>
+			<code>JBSIS001GI953</code>
+			<text>Import will cause unsaved changes to be lost. Continue........</text>
+			<windowTitle>Unsaved Changes</windowTitle>
+		</DisplayInfo>
+		<DisplayInfo>
+			<severity>MSG</severity>
+			<code>JBSIS001BW954</code>
+			<text>&lt;br&gt;&lt;br&gt;Too many records, narrow your search.&lt;br&gt; Do you wish to continue?</text>
+			<windowTitle>Narrow your search</windowTitle>
+		</DisplayInfo>
+		<DisplayInfo>
+			<severity>MSG</severity>
+			<code>JBSIS001BW938</code>
+			<text>This report has been successfully tranfered to JBSIS system for further processing.  Please wait for the final approval notification from JBSIS.&lt;br&gt;&lt;br&gt;  Do you wish to work on another report?</text>
+			<windowTitle>Sucessful Submit</windowTitle>
+		</DisplayInfo>
+		<DisplayInfo>
+			<severity>MSG</severity>
+			<code>JBSIS001BW939</code>
+			<text>This report has been successfully saved.&lt;br&gt;&lt;br&gt;  Do you wish to work on another report?</text>
+			<windowTitle>Sucessful Save</windowTitle>
+		</DisplayInfo>
+		
+		<DisplayInfo>
+			<severity>MSG</severity>
+			<code>JBSIS001BW961</code>
+			<text>SUCCESS</text>
+			<windowTitle>SUCCESS</windowTitle>
+		</DisplayInfo>
+	</MESSAGE>
+</JBSIS>

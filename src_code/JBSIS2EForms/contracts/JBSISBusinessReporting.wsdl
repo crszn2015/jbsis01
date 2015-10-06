@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Created by TIBCO WSDL-->
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://xmlns.example.com/1213897624703" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns0="http://isb.srv.courts-tc.ca.gov/isb/portal/Schema/global/JBSIS/JBSISBusinessReporting/Schema.xsd" targetNamespace="http://xmlns.example.com/1213897624703">
+    <wsdl:types>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://isb.srv.courts-tc.ca.gov/isb/portal/Schema/global/JBSIS/JBSISBusinessReporting/Schema.xsd" targetNamespace="http://isb.srv.courts-tc.ca.gov/isb/portal/Schema/global/JBSIS/JBSISBusinessReporting/Schema.xsd" elementFormDefault="qualified" attributeFormDefault="unqualified">
+            <xs:complexType name="CourtCodeType">
+                <xs:simpleContent>
+                    <xs:extension base="xs:string"/>
+                </xs:simpleContent>
+            </xs:complexType>
+            <xs:complexType name="DateTimestampType">
+                <xs:simpleContent>
+                    <xs:extension base="xs:dateTime"/>
+                </xs:simpleContent>
+            </xs:complexType>
+            <xs:complexType name="DetailsType">
+                <xs:simpleContent>
+                    <xs:extension base="xs:string"/>
+                </xs:simpleContent>
+            </xs:complexType>
+            <xs:complexType name="DocumentIDType">
+                <xs:simpleContent>
+                    <xs:extension base="xs:string"/>
+                </xs:simpleContent>
+            </xs:complexType>
+            <xs:complexType name="GenericAuditPluginMsgType">
+                <xs:sequence>
+                    <xs:element name="Operation" type="xs:string"/>
+                    <xs:element name="TableUniqueKey" type="xs:string"/>
+                    <xs:element name="ColumnID" type="xs:string"/>
+                    <xs:element name="ColumnID_Value" type="xs:string"/>
+                    <xs:element name="ModifiedDate" type="xs:string"/>
+                    <xs:element name="ModifiedBy" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="JBSISBusinessReportingQueryType">
+                <xs:sequence>
+                    <xs:element name="CourtCode" type="ns0:CourtCodeType" minOccurs="0"/>
+                    <xs:element name="ReportType" type="ns0:ReportTypeType" minOccurs="0"/>
+                    <xs:element name="ReportMonth" type="ns0:ReportMonthType" minOccurs="0"/>
+                    <xs:element name="ReportYear" type="ns0:ReportYearType" minOccurs="0"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="JBSISReportHistoryLogType">
+                <xs:sequence>
+                    <xs:element name="TransactionID" type="ns0:TransactionIDType"/>
+                    <xs:element name="DocumentID" type="ns0:DocumentIDType"/>
+                    <xs:element name="DateTimestamp" type="ns0:DateTimestampType"/>
+                    <xs:element name="CourtCode" type="ns0:CourtCodeType"/>
+                    <xs:element name="ReportType" type="ns0:ReportTypeType"/>
+                    <xs:element name="ReportMonth" type="ns0:ReportMonthType"/>
+                    <xs:element name="ReportYear" type="ns0:ReportYearType"/>
+                    <xs:element name="ReportXML" type="ns0:ReportXMLType"/>
+                    <xs:element name="UserAction" type="ns0:UserActionType"/>
+                    <xs:element name="UserID" type="ns0:UserIDType"/>
+                    <xs:element name="Status" type="ns0:StatusType"/>
+                    <xs:element name="Details" type="ns0:DetailsType"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="JBSISReportHistoryResultsetType">
+                <xs:sequence>
+                    <xs:element name="JBSISReportHistoryLogs" type="ns0:JBSISReportHistoryLogType" minOccurs="0" maxOccurs="unbounded"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="ReportMonthType">
+                <xs:simpleContent>
+                    <xs:extension base="xs:string"/>
+                </xs:simpleContent>
+            </xs:complexType>
+            <xs:complexType name="ReportTypeType">
+                <xs:simpleContent>
+                    <xs:extension base="xs:string"/>
+                </xs:simpleContent>
+            </xs:complexType>
+            <xs:complexType name="ReportXMLType">
+                <xs:simpleContent>
+                    <xs:extension base="xs:anySimpleType"/>
+                </xs:simpleContent>
+            </xs:complexType>
+            <xs:complexType name="ReportYearType">
+                <xs:simpleContent>
+                    <xs:extension base="xs:string"/>
+                </xs:simpleContent>
+            </xs:complexType>
+            <xs:complexType name="StatusType">
+                <xs:simpleContent>
+                    <xs:extension base="xs:string"/>
+                </xs:simpleContent>
+            </xs:complexType>
+            <xs:complexType name="TransactionIDType">
+                <xs:simpleContent>
+                    <xs:extension base="xs:string"/>
+                </xs:simpleContent>
+            </xs:complexType>
+            <xs:complexType name="UserActionType">
+                <xs:simpleContent>
+                    <xs:extension base="xs:string"/>
+                </xs:simpleContent>
+            </xs:complexType>
+            <xs:complexType name="UserIDType">
+                <xs:simpleContent>
+                    <xs:extension base="xs:string"/>
+                </xs:simpleContent>
+            </xs:complexType>
+            <xs:element name="JBSISReportHistoryQuery" type="ns0:JBSISBusinessReportingQueryType"/>
+            <xs:element name="JBSISReportHistoryResultset" type="ns0:JBSISReportHistoryResultsetType"/>
+        </xs:schema>
+    </wsdl:types>
+    <wsdl:message name="JBSISBusinessReportingInput">
+        <wsdl:part name="Input" element="ns0:JBSISReportHistoryQuery"/>
+    </wsdl:message>
+    <wsdl:message name="JBSISBusinessReportingOutput">
+        <wsdl:part name="Output" element="ns0:JBSISReportHistoryResultset"/>
+    </wsdl:message>
+    <wsdl:portType name="JBSISBusinessReportingPort">
+        <wsdl:operation name="RetrieveReportHistoryLog">
+            <wsdl:input message="tns:JBSISBusinessReportingInput"/>
+            <wsdl:output message="tns:JBSISBusinessReportingOutput"/>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="JBSISBusinessReportingPortEndpoint1Binding" type="tns:JBSISBusinessReportingPort">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="RetrieveReportHistoryLog">
+            <soap:operation style="document" soapAction="/JBSISBusinessReportingWSDL-service1.serviceagent/JBSISBusinessReportingPortEndpoint1/RetrieveReportHistoryLog"/>
+            <wsdl:input>
+                <soap:body use="literal" parts="Input"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal" parts="Output"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="JBSISBusinessReportingService">
+        <wsdl:port name="JBSISBusinessReportingPortEndpoint1" binding="tns:JBSISBusinessReportingPortEndpoint1Binding">
+            <soap:address location="http://localhost:80/JBSISBusinessReportingWSDL-service1.serviceagent/JBSISBusinessReportingPortEndpoint1"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>

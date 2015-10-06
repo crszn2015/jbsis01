@@ -1,0 +1,20 @@
+<serialization jsxversion="3.5" xmlns="urn:tibco.com/v3.0">
+  <name><![CDATA[Layout - Side/Side]]></name>
+  <icon><![CDATA[images/prototypes/layout-side.gif]]></icon>
+  <description><![CDATA[2 side-by-side panes in an adaptive layout grid.]]></description>
+  <onBeforeDeserialize></onBeforeDeserialize>
+  <onAfterDeserialize></onAfterDeserialize>
+  <object type="jsx3.gui.LayoutGrid">
+    <variants jsxrepeat="2" jsxsizearray="['200','*']" jsxrelativeposition="0" jsxleft="0" jsxtop="0" jsxoverflow="2" jsxbestguess="1" jsxorientation="1"></variants>
+    <strings jsxname="layout ( | )" jsxwidth="100%" jsxheight="100%" jsxcols="15%,85%" jsxdisplay="" jsxbgcolor=""></strings>
+    <object type="jsx3.gui.Block">
+      <variants jsxrelativeposition="0" jsxleft="0" jsxtop="0"></variants>
+      <strings jsxname="paneMenu" jsxdisplay="" jsxwidth="100%" jsxheight="100%"></strings>
+      <include src="components/leftMenu.xml" async="false"></include>
+    </object>
+    <object type="jsx3.gui.Block">
+      <variants jsxrelativeposition="0" jsxleft="0" jsxtop="0"></variants>
+      <strings jsxname="paneMain" jsxwidth="100%" jsxdisplay="" jsxheight="100%"></strings>
+    </object>
+  </object>
+</serialization>

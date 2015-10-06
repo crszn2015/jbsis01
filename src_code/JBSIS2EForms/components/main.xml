@@ -1,0 +1,1026 @@
+<serialization jsxversion="3.2" xmlns="urn:tibco.com/v3.0">
+  <name><![CDATA[Layout - Side/Side]]></name>
+  <icon><![CDATA[images/prototypes/layout-side.gif]]></icon>
+  <description><![CDATA[2 side-by-side panes in an adaptive layout grid.]]></description>
+  <onBeforeDeserialize></onBeforeDeserialize>
+  <onAfterDeserialize></onAfterDeserialize>
+  <object type="jsx3.gui.LayoutGrid">
+    <variants jsxrepeat="2" jsxsizearray="['150','*']" jsxrelativeposition="0" jsxleft="0" jsxtop="0" jsxoverflow="2" jsxbestguess="1" jsxorientation="1"></variants>
+    <strings jsxname="layout ( | )" jsxwidth="100%" jsxheight="100%"></strings>
+    <object type="jsx3.gui.Block">
+      <variants jsxoverflow="2"></variants>
+      <strings jsxname="paneMenu" jsxwidth="100%" jsxheight="100%"></strings>
+      <dynamics jsxborder="@Outset"></dynamics>
+      <object type="jsx3.gui.Button">
+        <variants jsxindex="0" jsxheight="18" jsxrelativeposition="0" jsxleft="0" jsxtop="0"></variants>
+        <strings jsxname="button" jsxtext="ABOUT THIS SITE" jsxmargin="0 4 0 0" jsxdisplay=""></strings>
+        <events jsxexecute="eg.service.toAboutThisPage();"></events>
+      </object>
+      <object type="jsx3.gui.Button">
+        <variants jsxindex="0" jsxheight="18" jsxrelativeposition="0" jsxleft="0" jsxtop="20"></variants>
+        <strings jsxname="button" jsxtext="EFORMS" jsxmargin="0 4 0 0" jsxdisplay=""></strings>
+        <events jsxexecute="eg.service.toEForms();"></events>
+      </object>
+      <object type="jsx3.gui.Button">
+        <variants jsxindex="0" jsxheight="18" jsxrelativeposition="0" jsxleft="0" jsxtop="40"></variants>
+        <strings jsxname="button" jsxtext="[button text]" jsxmargin="0 4 0 0" jsxdisplay=""></strings>
+        <events jsxexecute="alert('hello');"></events>
+      </object>
+    </object>
+    <object type="jsx3.gui.Block">
+      <variants jsxoverflow="1"></variants>
+      <strings jsxname="paneMain" jsxwidth="100%" jsxheight="100%"></strings>
+      <dynamics jsxborder="@Outset"></dynamics>
+      <object type="jsx3.gui.TabbedPane">
+        <variants selectedIndex="2" jsxselectedindex="0"></variants>
+        <strings jsxname="tabbedpane" jsxtextalign="0"></strings>
+        <object type="jsx3.gui.Tab">
+          <variants jsxzindex="3" jsxheight="20"></variants>
+          <strings jsxname="maintab" jsxtext="&lt;B&gt;Main&lt;/B&gt;" jsxbgcolor="#d8d8e5"></strings>
+          <object type="jsx3.gui.Block">
+            <variants jsxoverflow="2" jsxrelativeposition="0" jsxleft="0" jsxtop="0"></variants>
+            <strings jsxname="pane" jsxwidth="100%" jsxheight="100%" jsxdisplay="" jsxvisibility=""></strings>
+            <dynamics jsxbgcolor="@Solid Medium"></dynamics>
+            <object type="jsx3.gui.Block">
+              <variants jsxheight="180" jsxoverflow="2" jsxrelativeposition="1" jsxleft="0" jsxtop="0"></variants>
+              <strings jsxname="pane" jsxwidth="100%" jsxdisplay=""></strings>
+              <dynamics jsxborder="@Outset"></dynamics>
+              <object type="jsx3.gui.Block">
+                <variants jsxleft="0" jsxtop="0" jsxwidth="760" jsxheight="350" jsxoverflow="1" jsxrelativeposition="0"></variants>
+                <strings jsxname="block"></strings>
+                <dynamics jsxbgcolor="@Solid Medium"></dynamics>
+                <object type="jsx3.gui.Block">
+                  <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="240" jsxtop="0"></variants>
+                  <strings jsxname="appHeader" jsxtext="&lt;H2&gt;JBSIS EForms Application&lt;/H2&gt;" jsxdisplay=""></strings>
+                </object>
+                <object type="jsx3.gui.Block">
+                  <variants jsxrelativeposition="0" jsxleft="0" jsxtop="30" jsxheight="40"></variants>
+                  <strings jsxname="text" jsxwidth="100%" jsxtext="Welcome to the e-Forms Application.&lt;br/&gt;&#xA;Please enter the information below and select the form that you wish to review" jsxdisplay="" jsxtextalign="left"></strings>
+                </object>
+                <object type="jsx3.gui.Block">
+                  <variants jsxleft="0" jsxtop="60" jsxwidth="760" jsxheight="130" jsxoverflow="1" jsxrelativeposition="0"></variants>
+                  <strings jsxname="block"></strings>
+                  <dynamics jsxbgcolor="@Solid Medium"></dynamics>
+                  <object type="jsx3.gui.Select">
+                    <variants jsxwidth="150" jsxheight="18" jsxrelativeposition="0" jsxleft="330" jsxtop="20"></variants>
+                    <strings jsxname="selectCourt" jsxxmlurl="xml/courts.xml" jsxmargin="0 4 0 0" jsxdisplay=""></strings>
+                  </object>
+                  <object type="jsx3.gui.Select">
+                    <variants jsxwidth="150" jsxheight="18" jsxrelativeposition="0" jsxleft="330" jsxtop="40"></variants>
+                    <strings jsxname="selectMonth" jsxxmlurl="xml/months.xml" jsxmargin="0 4 0 0" jsxdisplay=""></strings>
+                  </object>
+                  <object type="jsx3.gui.Select">
+                    <variants jsxwidth="150" jsxheight="18" jsxrelativeposition="0" jsxleft="330" jsxtop="60"></variants>
+                    <strings jsxname="selectYear" jsxxmlurl="xml/years.xml" jsxmargin="0 4 0 0" jsxdisplay=""></strings>
+                  </object>
+                  <object type="jsx3.gui.Select">
+                    <variants jsxwidth="150" jsxheight="18" jsxrelativeposition="0" jsxleft="330" jsxtop="80"></variants>
+                    <strings jsxname="selectAmendment" jsxxmlurl="xml/amendcode.xml" jsxmargin="0 4 0 0" jsxdisplay=""></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="210" jsxtop="20" jsxheight="20"></variants>
+                    <strings jsxname="labelSelCourt" jsxtext="&lt;H5&gt; Select Court &lt;/H5&gt;" jsxdisplay=""></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="210" jsxtop="40" jsxheight="20"></variants>
+                    <strings jsxname="labelSelMonth" jsxtext="&lt;H5&gt; Select Month&lt;/H5&gt;" jsxdisplay=""></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="210" jsxtop="60" jsxheight="20"></variants>
+                    <strings jsxname="labelSelYear" jsxtext="&lt;H5&gt; Select Year&lt;/H5&gt;" jsxdisplay=""></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="210" jsxtop="80" jsxheight="20"></variants>
+                    <strings jsxname="labelSelAmend" jsxtext="&lt;H5&gt;Amend Code&lt;/H5&gt;" jsxdisplay=""></strings>
+                  </object>
+                </object>
+              </object>
+            </object>
+          </object>
+        </object>
+        <object type="jsx3.gui.Tab">
+          <variants jsxzindex="3" jsxheight="18"></variants>
+          <strings jsxname="form1Dtab" jsxtext="&lt;b&gt;Form 1D&lt;/b&gt;" jsxbgcolor="#d8d8e5"></strings>
+          <object type="jsx3.gui.Block">
+            <variants jsxheight="700" jsxoverflow="2" jsxrelativeposition="0" jsxleft="0" jsxtop="0"></variants>
+            <strings jsxname="pane" jsxwidth="100%" jsxdisplay="none" jsxvisibility=""></strings>
+            <dynamics jsxbgcolor="@Solid Medium"></dynamics>
+            <object type="jsx3.gui.Block">
+              <variants jsxrelativeposition="1" jsxoverflow="3"></variants>
+              <strings jsxname="labelHeader" jsxtext="&lt;h3&gt;SUPERIOR COURT UNLIMITED JURISDICTION CRIMINAL AGING REPORT (FORM 1D)&#xA;&lt;/h3&gt;"></strings>
+            </object>
+            <object type="jsx3.gui.Block">
+              <variants jsxrelativeposition="1" jsxoverflow="3"></variants>
+              <strings jsxname="labelSubHeader" jsxtext="&lt;h5&gt;Trial Court Delay Reduction Act (Gov. Code, 68604; Cal. Standards Jud. Admin., 2.1)&lt;/h5&gt;"></strings>
+            </object>
+            <object type="jsx3.gui.Block">
+              <variants jsxleft="80" jsxtop="90" jsxwidth="560" jsxheight="100" jsxoverflow="1" jsxrelativeposition="0"></variants>
+              <strings jsxname="block" jsxborder="solid 1px black"></strings>
+              <dynamics jsxbgcolor="@Solid Medium"></dynamics>
+              <object type="jsx3.gui.Block">
+                <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="90" jsxtop="10"></variants>
+                <strings jsxname="labelMonth" jsxtext="&lt;h4&gt;Month&lt;/h4&gt;" jsxdisplay=""></strings>
+              </object>
+              <object type="jsx3.gui.TextBox">
+                <variants jsxheight="18" jsxrelativeposition="0" jsxleft="170" jsxtop="10"></variants>
+                <strings jsxname="textboxMonth" jsxmargin="0 4 0 0" jsxdisplay=""></strings>
+              </object>
+              <object type="jsx3.gui.Block">
+                <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="90" jsxtop="30"></variants>
+                <strings jsxname="labelYear" jsxtext="&lt;h4&gt;Year&lt;/h4&gt;" jsxdisplay=""></strings>
+              </object>
+              <object type="jsx3.gui.TextBox">
+                <variants jsxheight="18" jsxrelativeposition="0" jsxleft="170" jsxtop="30"></variants>
+                <strings jsxname="textboxYear" jsxmargin="0 4 0 0" jsxdisplay=""></strings>
+              </object>
+              <object type="jsx3.gui.Block">
+                <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="40" jsxtop="50"></variants>
+                <strings jsxname="labelAmend" jsxtext="&lt;h4&gt;Amend Code&lt;/h4&gt;" jsxdisplay=""></strings>
+              </object>
+              <object type="jsx3.gui.TextBox">
+                <variants jsxheight="18" jsxrelativeposition="0" jsxleft="170" jsxtop="50"></variants>
+                <strings jsxname="textboxAmend" jsxmargin="0 4 0 0" jsxdisplay=""></strings>
+              </object>
+            </object>
+            <object type="jsx3.gui.Block">
+              <variants jsxleft="0" jsxtop="200" jsxoverflow="3" jsxrelativeposition="0"></variants>
+              <strings jsxname="block" jsxborder="solid 1px;" jsxheight="100%" jsxwidth="100%"></strings>
+              <dynamics jsxbgcolor="@Solid Medium"></dynamics>
+              <object type="jsx3.gui.Block">
+                <variants jsxleft="0" jsxtop="0" jsxwidth="800" jsxheight="70" jsxoverflow="1" jsxrelativeposition="1"></variants>
+                <strings jsxname="block" jsxborder="solid 1px;" jsxdisplay=""></strings>
+                <dynamics jsxbgcolor="@Solid Medium"></dynamics>
+                <object type="jsx3.gui.Block">
+                  <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="10" jsxtop="20"></variants>
+                  <strings jsxname="labelFormHeader" jsxtext="&lt;h5&gt;SECTION I.  NUMBER OF CRIMINAL DEFENDANTS WHOSE CASE WAS DISPOSED DURING THE MONTH&lt;/h5&gt;" jsxdisplay=""></strings>
+                </object>
+              </object>
+              <object type="jsx3.gui.Block">
+                <variants jsxleft="0" jsxtop="70" jsxwidth="800" jsxoverflow="3" jsxrelativeposition="1"></variants>
+                <strings jsxname="block" jsxheight="100%" jsxdisplay=""></strings>
+                <dynamics jsxbgcolor="@Solid Medium"></dynamics>
+                <object type="jsx3.gui.Block">
+                  <variants jsxleft="0" jsxtop="0" jsxwidth="130" jsxheight="120" jsxoverflow="1" jsxrelativeposition="0"></variants>
+                  <strings jsxname="block" jsxborder="solid 1px black;"></strings>
+                  <dynamics jsxbgcolor="@Solid Medium"></dynamics>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="20" jsxtop="10"></variants>
+                    <strings jsxname="label" jsxtext="&lt;h3&gt; Case Age&lt;br/&gt; Category &lt;br/&gt;in Days&lt;h3&gt;" jsxdisplay=""></strings>
+                  </object>
+                </object>
+                <object type="jsx3.gui.Block">
+                  <variants jsxleft="130" jsxtop="0" jsxwidth="300" jsxheight="30" jsxoverflow="3" jsxrelativeposition="0"></variants>
+                  <strings jsxname="block" jsxborder="solid 1px black;" jsxtextalign="center"></strings>
+                  <dynamics jsxbgcolor="@Solid Medium"></dynamics>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="20" jsxtop="0" jsxheight="20"></variants>
+                    <strings jsxname="label" jsxtext="&lt;h4&gt;Age of Cases from:&lt;h4&gt;" jsxdisplay=""></strings>
+                  </object>
+                </object>
+                <object type="jsx3.gui.Block">
+                  <variants jsxleft="430" jsxtop="0" jsxwidth="320" jsxheight="30" jsxoverflow="3" jsxrelativeposition="0"></variants>
+                  <strings jsxname="block" jsxborder="solid 1px black;" jsxtextalign="center"></strings>
+                  <dynamics jsxbgcolor="@Solid Medium"></dynamics>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="20" jsxtop="0" jsxheight="20"></variants>
+                    <strings jsxname="label" jsxtext="&lt;h4&gt;Age of Exceptional Cases from:&lt;h4&gt;" jsxdisplay="" jsxtextalign="center"></strings>
+                  </object>
+                </object>
+                <object type="jsx3.gui.Block">
+                  <variants jsxleft="130" jsxtop="30" jsxwidth="90" jsxheight="90" jsxoverflow="3" jsxrelativeposition="0"></variants>
+                  <strings jsxname="block" jsxborder="solid 1px black;" jsxtextalign="center"></strings>
+                  <dynamics jsxbgcolor="@Solid Medium"></dynamics>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3" jsxleft="30" jsxtop="13" jsxheight="50"></variants>
+                    <strings jsxname="label" jsxtext="&lt;H5&gt;Arrest &lt;br/&gt;&lt;br/&gt;&#xA;(A)&lt;/H5&gt;" jsxdisplay="" jsxtextalign="center"></strings>
+                  </object>
+                </object>
+                <object type="jsx3.gui.Block">
+                  <variants jsxleft="220" jsxtop="50" jsxwidth="100" jsxheight="70" jsxoverflow="3" jsxrelativeposition="0"></variants>
+                  <strings jsxname="block" jsxborder="solid 1px black;" jsxtextalign="center"></strings>
+                  <dynamics jsxbgcolor="@Solid Medium"></dynamics>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="0" jsxtop="10" jsxheight="60"></variants>
+                    <strings jsxname="label" jsxtext="&lt;H5&gt;Arraignment&lt;br/&gt;on Complaint&lt;br/&gt;&#xA;(B)&lt;/H5&gt;" jsxdisplay=""></strings>
+                  </object>
+                </object>
+                <object type="jsx3.gui.Block">
+                  <variants jsxleft="320" jsxtop="50" jsxwidth="110" jsxheight="70" jsxoverflow="3" jsxrelativeposition="0"></variants>
+                  <strings jsxname="block" jsxborder="solid 1px black;" jsxtextalign="center"></strings>
+                  <dynamics jsxbgcolor="@Solid Medium"></dynamics>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="0" jsxtop="10" jsxheight="60"></variants>
+                    <strings jsxname="label" jsxtext="&lt;H5&gt;Arraignment&lt;br/&gt;on Information&lt;br/&gt;&#xA;(C)&lt;/H5&gt;" jsxdisplay=""></strings>
+                  </object>
+                </object>
+                <object type="jsx3.gui.Block">
+                  <variants jsxleft="430" jsxtop="30" jsxwidth="100" jsxheight="90" jsxoverflow="3" jsxrelativeposition="0"></variants>
+                  <strings jsxname="block" jsxborder="solid 1px black;" jsxtextalign="center"></strings>
+                  <dynamics jsxbgcolor="@Solid Medium"></dynamics>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="30" jsxtop="13" jsxheight="54"></variants>
+                    <strings jsxname="label" jsxtext="&lt;H5&gt;Arrest &lt;br/&gt;&lt;br/&gt;&#xA;(A)&lt;/H5&gt;" jsxdisplay=""></strings>
+                  </object>
+                </object>
+                <object type="jsx3.gui.Block">
+                  <variants jsxleft="530" jsxtop="50" jsxwidth="110" jsxheight="70" jsxoverflow="3" jsxrelativeposition="0"></variants>
+                  <strings jsxname="block" jsxborder="solid 1px black;" jsxtextalign="center"></strings>
+                  <dynamics jsxbgcolor="@Solid Medium"></dynamics>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="0" jsxtop="10" jsxheight="60"></variants>
+                    <strings jsxname="label" jsxtext="&lt;H5&gt;Arraignment&lt;br/&gt;on Complaint&lt;br/&gt;&#xA;(B)&lt;/H5&gt;" jsxdisplay=""></strings>
+                  </object>
+                </object>
+                <object type="jsx3.gui.Block">
+                  <variants jsxleft="640" jsxtop="50" jsxwidth="110" jsxheight="70" jsxoverflow="3" jsxrelativeposition="0"></variants>
+                  <strings jsxname="block" jsxborder="solid 1px black;" jsxtextalign="center"></strings>
+                  <dynamics jsxbgcolor="@Solid Medium"></dynamics>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="0" jsxtop="10" jsxheight="60"></variants>
+                    <strings jsxname="label" jsxtext="&lt;H5&gt;Arraignment&lt;br/&gt;on Information&lt;br/&gt;&#xA;(C)&lt;/H5&gt;" jsxdisplay=""></strings>
+                  </object>
+                </object>
+                <object type="jsx3.gui.Block">
+                  <variants jsxleft="220" jsxtop="30" jsxwidth="210" jsxheight="20" jsxoverflow="3" jsxrelativeposition="0"></variants>
+                  <strings jsxname="block" jsxborder="solid 1px black;" jsxtextalign="center"></strings>
+                  <dynamics jsxbgcolor="@Solid Medium"></dynamics>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="20" jsxtop="0" jsxheight="20"></variants>
+                    <strings jsxname="label" jsxtext="&lt;b&gt;&lt;font size=&quot;2&quot;&gt;First Appearance in&lt;/font&gt;&lt;b&gt;" jsxdisplay=""></strings>
+                  </object>
+                </object>
+                <object type="jsx3.gui.Block">
+                  <variants jsxleft="530" jsxtop="30" jsxwidth="220" jsxheight="20" jsxoverflow="3" jsxrelativeposition="0"></variants>
+                  <strings jsxname="block" jsxborder="solid 1px black;" jsxtextalign="center"></strings>
+                  <dynamics jsxbgcolor="@Solid Medium"></dynamics>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="20" jsxtop="0" jsxheight="20"></variants>
+                    <strings jsxname="label" jsxtext="&lt;b&gt;&lt;font size=&quot;2&quot;&gt;First Appearance in&lt;/font&gt;&lt;b&gt;" jsxdisplay=""></strings>
+                  </object>
+                </object>
+                <object type="jsx3.gui.Block">
+                  <variants jsxleft="0" jsxtop="120" jsxwidth="750" jsxheight="200" jsxoverflow="1" jsxrelativeposition="0"></variants>
+                  <strings jsxname="block" jsxdisplay=""></strings>
+                  <dynamics jsxbgcolor="@Solid Medium"></dynamics>
+                  <object type="jsx3.gui.Matrix">
+                    <variants jsxpagingmodel="1" jsxselectionmodel="0" jsxheaderheight="0"></variants>
+                    <strings jsxname="matrix1" jsxbodyborder="1px solid #dfdfef" jsxheaderborder="1px solid #dfdfef" jsxbgcolor="#efefff"></strings>
+                    <events jsxbeforeedit="jsx3.log('EVENT: (jsxbeforeedit). Record: ' + strRECORDID);" jsxafteredit="jsx3.log('EVENT: (jsxafteredit). Record: ' + strRECORDID + '. New Value: ' + strNEWVALUE);"></events>
+                    <xslparameters jsx_rowbg1="#ffffff" jsx_rowbg2="#efefff"></xslparameters>
+                    <object type="jsx3.gui.Matrix.Column">
+                      <variants jsxwidth="130" jsxwrap="1" jsxresize="1" jsxcellwrap="1" jsxheight="60"></variants>
+                      <strings jsxname="ColDays" jsxtext="&lt;B&gt;Case Age &lt;br/&gt; Category &lt;br/&gt; in Days &lt;/b&gt;" jsxpadding="2" jsxcellpadding="3" jsxpath="jsxtext" jsxcelltextalign="left"></strings>
+                      <dynamics jsxborder="@Outset" jsxbg="@Bevel TopDown" jsxbgcolor="@Solid Disabled"></dynamics>
+                    </object>
+                    <object type="jsx3.gui.Matrix.Column">
+                      <variants jsxwidth="90"></variants>
+                      <strings jsxname="textColumn" jsxtext="Text" jsxpadding="2" jsxcellpadding="3" jsxpath="jsxtext"></strings>
+                      <dynamics jsxborder="@Outset" jsxbg="@Bevel TopDown" jsxbgcolor="@Solid Disabled"></dynamics>
+                    </object>
+                    <object type="jsx3.gui.Matrix.Column">
+                      <variants></variants>
+                      <strings jsxname="textColumn" jsxwidth="100" jsxtext="Text" jsxpadding="2" jsxcellpadding="3" jsxpath="jsxtext"></strings>
+                      <dynamics jsxborder="@Outset" jsxbg="@Bevel TopDown" jsxbgcolor="@Solid Disabled"></dynamics>
+                      <object type="jsx3.gui.TextBox">
+                        <variants jsxrelativeposition="0" jsxleft="0" jsxtop="0"></variants>
+                        <strings jsxname="textMask" jsxdisplay="none"></strings>
+                        <events jsxkeydown="1;"></events>
+                      </object>
+                    </object>
+                    <object type="jsx3.gui.Matrix.Column">
+                      <variants jsxwidth="109"></variants>
+                      <strings jsxname="textColumn" jsxtext="Text" jsxpadding="2" jsxcellpadding="3" jsxpath="jsxtext"></strings>
+                      <dynamics jsxborder="@Outset" jsxbg="@Bevel TopDown" jsxbgcolor="@Solid Disabled"></dynamics>
+                      <object type="jsx3.gui.TextBox">
+                        <variants jsxrelativeposition="0" jsxleft="0" jsxtop="0"></variants>
+                        <strings jsxname="textMask" jsxdisplay="none"></strings>
+                        <events jsxkeydown="1;"></events>
+                      </object>
+                    </object>
+                    <object type="jsx3.gui.Matrix.Column">
+                      <variants jsxwidth="100"></variants>
+                      <strings jsxname="textColumn" jsxtext="Text" jsxpadding="2" jsxcellpadding="3" jsxpath="jsxtext"></strings>
+                      <dynamics jsxborder="@Outset" jsxbg="@Bevel TopDown" jsxbgcolor="@Solid Disabled"></dynamics>
+                    </object>
+                    <object type="jsx3.gui.Matrix.Column">
+                      <variants jsxwidth="112"></variants>
+                      <strings jsxname="textColumn" jsxtext="Text" jsxpadding="2" jsxcellpadding="3" jsxpath="jsxtext"></strings>
+                      <dynamics jsxborder="@Outset" jsxbg="@Bevel TopDown" jsxbgcolor="@Solid Disabled"></dynamics>
+                    </object>
+                    <object type="jsx3.gui.Matrix.Column">
+                      <variants jsxwidth="90"></variants>
+                      <strings jsxname="textColumn" jsxtext="Text" jsxpadding="2" jsxcellpadding="3" jsxpath="jsxtext"></strings>
+                      <dynamics jsxborder="@Outset" jsxbg="@Bevel TopDown" jsxbgcolor="@Solid Disabled"></dynamics>
+                    </object>
+                  </object>
+                </object>
+              </object>
+            </object>
+          </object>
+        </object>
+        <object type="jsx3.gui.Tab">
+          <variants jsxzindex="3" jsxheight="18"></variants>
+          <strings jsxname="form2ctab" jsxtext="&lt;b&gt;Form 2C&lt;/b&gt;" jsxbgcolor="#e8e8f5" jsxactivecolor="" jsxinactivecolor=""></strings>
+          <object type="jsx3.gui.Block">
+            <variants jsxheight="800" jsxwidth="800" jsxoverflow="1" jsxrelativeposition="0" jsxleft="0" jsxtop="0"></variants>
+            <strings jsxname="pane" jsxdisplay="none" jsxvisibility=""></strings>
+            <dynamics jsxbgcolor="@Solid Selection"></dynamics>
+            <object type="jsx3.gui.Block">
+              <variants jsxleft="0" jsxtop="0" jsxheight="150" jsxoverflow="1" jsxrelativeposition="0"></variants>
+              <strings jsxname="blkHeader" jsxwidth="100%" jsxtextalign="center"></strings>
+              <dynamics jsxbgcolor="@Transparent BG"></dynamics>
+              <object type="jsx3.gui.Block">
+                <variants jsxleft="0" jsxtop="50" jsxheight="100" jsxoverflow="1" jsxrelativeposition="0"></variants>
+                <strings jsxname="blkMain" jsxwidth="100%" jsxtextalign="center"></strings>
+                <dynamics jsxbgcolor="@Transparent BG"></dynamics>
+                <include src="components/header.xml" async="false"></include>
+              </object>
+              <object type="jsx3.gui.Block">
+                <variants jsxleft="0" jsxtop="0" jsxheight="30" jsxoverflow="1" jsxrelativeposition="0"></variants>
+                <strings jsxname="blkHeader1" jsxwidth="90%" jsxtextalign="center"></strings>
+                <dynamics jsxbgcolor="@Transparent BG"></dynamics>
+                <object type="jsx3.gui.Block">
+                  <variants jsxrelativeposition="1" jsxoverflow="3"></variants>
+                  <strings jsxname="lblHeader" jsxtext="JUDICIAL COUNCIL OF CALIFORNIA . ADMINISTRATIVE OFFICE OF THE COURTS" jsxtextalign="center"></strings>
+                </object>
+              </object>
+              <object type="jsx3.gui.Block">
+                <variants jsxleft="0" jsxtop="30" jsxheight="20" jsxoverflow="1" jsxrelativeposition="0"></variants>
+                <strings jsxname="blkSubHeader" jsxwidth="90%"></strings>
+                <dynamics jsxbgcolor="@Transparent BG"></dynamics>
+                <object type="jsx3.gui.Block">
+                  <variants jsxrelativeposition="1" jsxoverflow="3" jsxleft="170" jsxtop="20"></variants>
+                  <strings jsxname="lblSubHeader" jsxtext="SUPERIOR COURT LIMITED JURISDICTION AGING REPORT (FORM 2C)" jsxtextalign="center" jsxdisplay=""></strings>
+                </object>
+              </object>
+            </object>
+            <object type="jsx3.gui.Block">
+              <variants jsxleft="0" jsxtop="160" jsxheight="650" jsxoverflow="1" jsxrelativeposition="0"></variants>
+              <strings jsxname="blkGrid" jsxwidth="100%" jsxpadding="" jsxborder="solid 1px black;"></strings>
+              <dynamics jsxbgcolor="@Transparent BG"></dynamics>
+              <object type="jsx3.gui.Block">
+                <variants jsxleft="0" jsxtop="0" jsxoverflow="3" jsxrelativeposition="1"></variants>
+                <strings jsxname="blkGridLeft" jsxwidth="35%" jsxheight="100%" jsxborder="solid 1px black;" jsxdisplay=""></strings>
+                <dynamics jsxbgcolor="@Transparent BG"></dynamics>
+                <object type="jsx3.gui.Block">
+                  <variants jsxleft="0" jsxtop="0" jsxheight="50" jsxoverflow="1" jsxrelativeposition="0"></variants>
+                  <strings jsxname="blkL1" jsxwidth="95%"></strings>
+                  <dynamics jsxbgcolor="@Transparent BG"></dynamics>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="10" jsxtop="10"></variants>
+                    <strings jsxname="lblTrial" jsxtext="&lt;b&gt;TRIAL READINESS&lt;/B&gt;" jsxdisplay=""></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="10" jsxtop="30"></variants>
+                    <strings jsxname="lbl2" jsxtext="All cases, regardless of filing date" jsxdisplay=""></strings>
+                  </object>
+                </object>
+                <object type="jsx3.gui.Block">
+                  <variants jsxwidth="310" jsxleft="0" jsxtop="50" jsxheight="60" jsxoverflow="1" jsxrelativeposition="0"></variants>
+                  <strings jsxname="blkL2"></strings>
+                  <dynamics jsxbgcolor="@Transparent BG"></dynamics>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="10" jsxtop="10"></variants>
+                    <strings jsxname="lblFel" jsxtext="&lt;b&gt;FELONIES&lt;/B&gt;" jsxdisplay=""></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="10" jsxtop="20"></variants>
+                    <strings jsxname="lbl2" jsxtext="SET FOR PRELIMINARY &lt;BR/&gt;HEARING" jsxdisplay=""></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18" jsxrelativeposition="0" jsxleft="200" jsxtop="10"></variants>
+                    <strings jsxname="txtFelonies" jsxmargin="0 4 0 0" jsxdisplay="" jsxborder="solid 1px black;" jsxvalue="1"></strings>
+                  </object>
+                </object>
+                <object type="jsx3.gui.Block">
+                  <variants jsxleft="0" jsxtop="120" jsxwidth="300" jsxheight="210" jsxoverflow="1" jsxrelativeposition="0"></variants>
+                  <strings jsxname="blkL3"></strings>
+                  <dynamics jsxbgcolor="@Transparent BG"></dynamics>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="10" jsxtop="0"></variants>
+                    <strings jsxname="lblCases" jsxtext="&lt;b&gt;CASES SET FOR TRIAL&lt;/B&gt;" jsxdisplay=""></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxheight="190" jsxrelativeposition="0" jsxoverflow="1" jsxleft="0" jsxtop="20"></variants>
+                    <strings jsxname="blkCases" jsxwidth="100%" jsxdisplay=""></strings>
+                    <object type="jsx3.gui.Block">
+                      <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="10" jsxtop="30"></variants>
+                      <strings jsxname="lblMisd" jsxtext="MISDEMEANORS" jsxdisplay=""></strings>
+                    </object>
+                    <object type="jsx3.gui.Block">
+                      <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="10" jsxtop="50"></variants>
+                      <strings jsxname="lblGenCiv" jsxtext="GENERAL CIVIL" jsxdisplay=""></strings>
+                    </object>
+                    <object type="jsx3.gui.Block">
+                      <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="10" jsxtop="70"></variants>
+                      <strings jsxname="lblUn" jsxtext="UNLAWFUL DETAINERS" jsxdisplay=""></strings>
+                    </object>
+                    <object type="jsx3.gui.Block">
+                      <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="10" jsxtop="90"></variants>
+                      <strings jsxname="lblSmlClms" jsxtext="SMALL CLAIMS" jsxdisplay=""></strings>
+                    </object>
+                    <object type="jsx3.gui.Block">
+                      <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="10" jsxtop="110"></variants>
+                      <strings jsxname="lblInfr" jsxtext="INFRACTIONS" jsxdisplay=""></strings>
+                    </object>
+                    <object type="jsx3.gui.Block">
+                      <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="160" jsxtop="0"></variants>
+                      <strings jsxname="lblJury" jsxtext="JURY &lt;br/&gt; TRIAL" jsxdisplay=""></strings>
+                    </object>
+                    <object type="jsx3.gui.Block">
+                      <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="240" jsxtop="0"></variants>
+                      <strings jsxname="lblCrtTr" jsxtext="COURT &lt;br/&gt; TRIAL" jsxdisplay=""></strings>
+                    </object>
+                    <object type="jsx3.gui.TextBox">
+                      <variants jsxheight="18" jsxrelativeposition="0" jsxleft="150" jsxtop="30" jsxwidth="70"></variants>
+                      <strings jsxname="txtMisd" jsxmargin="0 4 0 0" jsxdisplay="" jsxborder="solid 1px black"></strings>
+                    </object>
+                    <object type="jsx3.gui.TextBox">
+                      <variants jsxheight="18" jsxrelativeposition="0" jsxleft="150" jsxtop="50" jsxwidth="70"></variants>
+                      <strings jsxname="txtGenCiv" jsxmargin="0 4 0 0" jsxdisplay="" jsxborder="solid 1px black"></strings>
+                    </object>
+                    <object type="jsx3.gui.TextBox">
+                      <variants jsxheight="18" jsxrelativeposition="0" jsxleft="150" jsxtop="70" jsxwidth="70"></variants>
+                      <strings jsxname="txtUnDet" jsxmargin="0 4 0 0" jsxdisplay="" jsxborder="solid 1px black"></strings>
+                    </object>
+                    <object type="jsx3.gui.TextBox">
+                      <variants jsxheight="18" jsxrelativeposition="0" jsxleft="230" jsxtop="30" jsxwidth="70"></variants>
+                      <strings jsxname="txtCrtMisd" jsxmargin="0 4 0 0" jsxdisplay="" jsxborder="solid 1px black"></strings>
+                    </object>
+                    <object type="jsx3.gui.TextBox">
+                      <variants jsxheight="18" jsxrelativeposition="0" jsxleft="230" jsxtop="50" jsxwidth="70"></variants>
+                      <strings jsxname="txtCrtGenCiv" jsxmargin="0 4 0 0" jsxdisplay="" jsxborder="solid 1px black"></strings>
+                    </object>
+                    <object type="jsx3.gui.TextBox">
+                      <variants jsxheight="18" jsxrelativeposition="0" jsxleft="230" jsxtop="70" jsxwidth="70"></variants>
+                      <strings jsxname="txtCrtUnDet" jsxmargin="0 4 0 0" jsxdisplay="" jsxborder="solid 1px black"></strings>
+                    </object>
+                    <object type="jsx3.gui.TextBox">
+                      <variants jsxheight="18" jsxrelativeposition="0" jsxleft="230" jsxtop="90" jsxwidth="70"></variants>
+                      <strings jsxname="txtCrtSmlClms" jsxmargin="0 4 0 0" jsxdisplay="" jsxborder="solid 1px black"></strings>
+                    </object>
+                    <object type="jsx3.gui.TextBox">
+                      <variants jsxheight="18" jsxrelativeposition="0" jsxleft="230" jsxtop="110" jsxwidth="70"></variants>
+                      <strings jsxname="txtCrtInfr" jsxmargin="0 4 0 0" jsxdisplay="" jsxborder="solid 1px black"></strings>
+                    </object>
+                  </object>
+                </object>
+                <object type="jsx3.gui.Block">
+                  <variants jsxleft="0" jsxtop="320" jsxwidth="300" jsxheight="240" jsxoverflow="1" jsxrelativeposition="0"></variants>
+                  <strings jsxname="blkL4"></strings>
+                  <dynamics jsxbgcolor="@Transparent BG"></dynamics>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="10" jsxtop="0"></variants>
+                    <strings jsxname="lblCases" jsxtext="&lt;B&gt;MEMO TO SET&lt;/B&gt;&#xA;&lt;br/&gt;(NO TRIAL SCHEDULED)" jsxdisplay=""></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxheight="140" jsxrelativeposition="0" jsxoverflow="1" jsxleft="0" jsxtop="40"></variants>
+                    <strings jsxname="blkCases" jsxwidth="100%" jsxdisplay=""></strings>
+                    <object type="jsx3.gui.Block">
+                      <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="10" jsxtop="70"></variants>
+                      <strings jsxname="lblGenCiv" jsxtext="GENERAL CIVIL" jsxdisplay=""></strings>
+                    </object>
+                    <object type="jsx3.gui.Block">
+                      <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="10" jsxtop="90"></variants>
+                      <strings jsxname="lblUn" jsxtext="UNLAWFUL DETAINERS" jsxdisplay=""></strings>
+                    </object>
+                    <object type="jsx3.gui.Block">
+                      <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="160" jsxtop="40"></variants>
+                      <strings jsxname="lblJury" jsxtext="JURY &lt;br/&gt; TRIAL" jsxdisplay=""></strings>
+                    </object>
+                    <object type="jsx3.gui.Block">
+                      <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="240" jsxtop="40"></variants>
+                      <strings jsxname="lblCrtTr" jsxtext="COURT &lt;br/&gt; TRIAL" jsxdisplay=""></strings>
+                    </object>
+                    <object type="jsx3.gui.TextBox">
+                      <variants jsxheight="18" jsxrelativeposition="0" jsxleft="150" jsxtop="70" jsxwidth="70"></variants>
+                      <strings jsxname="txtGenCiv" jsxmargin="0 4 0 0" jsxdisplay="" jsxborder="solid 1px black"></strings>
+                    </object>
+                    <object type="jsx3.gui.TextBox">
+                      <variants jsxheight="18" jsxrelativeposition="0" jsxleft="150" jsxtop="90" jsxwidth="70"></variants>
+                      <strings jsxname="txtUnDet" jsxmargin="0 4 0 0" jsxdisplay="" jsxborder="solid 1px black"></strings>
+                    </object>
+                    <object type="jsx3.gui.TextBox">
+                      <variants jsxheight="18" jsxrelativeposition="0" jsxleft="230" jsxtop="70" jsxwidth="70"></variants>
+                      <strings jsxname="txtCrtGenCiv" jsxmargin="0 4 0 0" jsxdisplay="" jsxborder="solid 1px black"></strings>
+                    </object>
+                    <object type="jsx3.gui.TextBox">
+                      <variants jsxheight="18" jsxrelativeposition="0" jsxleft="230" jsxtop="90" jsxwidth="70"></variants>
+                      <strings jsxname="txtCrtUnDet" jsxmargin="0 4 0 0" jsxdisplay="" jsxborder="solid 1px black"></strings>
+                    </object>
+                    <object type="jsx3.gui.Block">
+                      <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="180" jsxtop="20" jsxwidth="90"></variants>
+                      <strings jsxname="lblPot" jsxtext="POTENTIAL" jsxdisplay="" jsxtextalign="center"></strings>
+                    </object>
+                  </object>
+                </object>
+              </object>
+              <object type="jsx3.gui.Block">
+                <variants jsxleft="340" jsxtop="0" jsxoverflow="3" jsxrelativeposition="1"></variants>
+                <strings jsxname="blkGridRight" jsxwidth="65%" jsxheight="100%" jsxborder="solid 1px black;" jsxdisplay=""></strings>
+                <dynamics jsxbgcolor="@Transparent BG"></dynamics>
+                <object type="jsx3.gui.Block">
+                  <variants jsxleft="30" jsxtop="0" jsxheight="50" jsxoverflow="1" jsxrelativeposition="0"></variants>
+                  <strings jsxname="blkTop" jsxwidth="90%"></strings>
+                  <dynamics jsxbgcolor="@Transparent BG"></dynamics>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="10" jsxtop="10" jsxheight="20"></variants>
+                    <strings jsxname="lbl1" jsxtext="&lt;H5&gt;CASE PROCESSING TIME&lt;/H5&gt;" jsxdisplay=""></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="10" jsxtop="30" jsxheight="20"></variants>
+                    <strings jsxname="lbl2" jsxtext="Cases filed after January 1, 1991." jsxdisplay=""></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="0" jsxoverflow="3" jsxtop="10"></variants>
+                    <strings jsxname="lbl3" jsxtext="Disposed this reporting month." jsxdisplay="" jsxleft="70%" jsxheight="" jsxtextalign="right"></strings>
+                  </object>
+                </object>
+                <object type="jsx3.gui.Block">
+                  <variants jsxleft="30" jsxtop="50" jsxheight="40" jsxoverflow="3" jsxrelativeposition="0"></variants>
+                  <strings jsxname="blkFelonies" jsxwidth="90%" jsxborder="solid 1px black;"></strings>
+                  <dynamics jsxbgcolor="@Transparent BG"></dynamics>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3" jsxleft="0" jsxtop="0" jsxheight="20"></variants>
+                    <strings jsxname="lblFel" jsxtext="FELONIES" jsxdisplay="" jsxwidth="20%" jsxpadding="" jsxborder="solid 1px black;"></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3" jsxleft="100" jsxtop="0" jsxheight="20"></variants>
+                    <strings jsxname="lbl0to30" jsxtext="0 - 30 DAYS" jsxdisplay="" jsxpadding="" jsxborder="solid 1px black;" jsxwidth="15%" jsxtextalign="center"></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3" jsxleft="100" jsxtop="0" jsxheight="20"></variants>
+                    <strings jsxname="lbl31to45" jsxtext="31 - 45 DAYS" jsxdisplay="" jsxpadding="" jsxborder="solid 1px black;" jsxwidth="15%" jsxtextalign="center"></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3" jsxleft="100" jsxtop="0" jsxheight="20"></variants>
+                    <strings jsxname="lbl46to90" jsxtext="46 - 90 DAYS" jsxdisplay="" jsxpadding="" jsxborder="solid 1px black;" jsxwidth="15%" jsxtextalign="center"></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3" jsxleft="100" jsxtop="0" jsxheight="20"></variants>
+                    <strings jsxname="lbl90plus" jsxtext="91 + DAYS" jsxdisplay="" jsxpadding="" jsxborder="solid 1px black;" jsxwidth="15%" jsxtextalign="center"></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3" jsxleft="100" jsxtop="0" jsxheight="20"></variants>
+                    <strings jsxname="lblTotal" jsxtext="TOTAL" jsxdisplay="" jsxpadding="" jsxborder="solid 1px black;" jsxwidth="20%" jsxtextalign="center"></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3" jsxleft="0" jsxtop="0" jsxheight="20"></variants>
+                    <strings jsxname="lblFelBlank" jsxtext="" jsxdisplay="" jsxwidth="20%" jsxpadding="" jsxborder="solid 1px black;"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18" jsxrelativeposition="1" jsxleft="100" jsxtop="20"></variants>
+                    <strings jsxname="txt0to30" jsxmargin="" jsxdisplay="" jsxwidth="15%" jsxborder="solid 1px black;"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18" jsxrelativeposition="1" jsxleft="180" jsxtop="20"></variants>
+                    <strings jsxname="txt31to45" jsxmargin="" jsxdisplay="" jsxborder="solid 1px black;" jsxwidth="15%"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18" jsxrelativeposition="1" jsxleft="260" jsxtop="20"></variants>
+                    <strings jsxname="txt46to90" jsxmargin="" jsxdisplay="" jsxborder="solid 1px black;" jsxwidth="15%"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18" jsxrelativeposition="1" jsxleft="340" jsxtop="20"></variants>
+                    <strings jsxname="txt90plus" jsxmargin="" jsxdisplay="" jsxborder="solid 1px black;" jsxwidth="15%"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18" jsxrelativeposition="1" jsxleft="420" jsxtop="20"></variants>
+                    <strings jsxname="txtTotal" jsxmargin="" jsxdisplay="" jsxborder="solid 1px black;" jsxwidth="20%"></strings>
+                  </object>
+                </object>
+                <object type="jsx3.gui.Block">
+                  <variants jsxleft="30" jsxtop="110" jsxheight="40" jsxoverflow="3" jsxrelativeposition="0"></variants>
+                  <strings jsxname="blkMisd" jsxwidth="90%" jsxborder="solid 1px black;"></strings>
+                  <dynamics jsxbgcolor="@Transparent BG"></dynamics>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3" jsxleft="0" jsxtop="0" jsxheight="20"></variants>
+                    <strings jsxname="lblMisd" jsxtext="MISDEMEANORS" jsxdisplay="" jsxwidth="20%" jsxpadding="" jsxborder="solid 1px black;"></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3" jsxleft="100" jsxtop="0" jsxheight="20"></variants>
+                    <strings jsxname="lbl0to30" jsxtext="0 - 30 DAYS" jsxdisplay="" jsxpadding="" jsxborder="solid 1px black;" jsxwidth="15%" jsxtextalign="center"></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3" jsxleft="100" jsxtop="0" jsxheight="20"></variants>
+                    <strings jsxname="lbl31to45" jsxtext="31 - 90 DAYS" jsxdisplay="" jsxpadding="" jsxborder="solid 1px black;" jsxwidth="15%" jsxtextalign="center"></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3" jsxleft="100" jsxtop="0" jsxheight="20"></variants>
+                    <strings jsxname="lbl46to90" jsxtext="91 - 120 DAYS" jsxdisplay="" jsxpadding="" jsxborder="solid 1px black;" jsxwidth="15%" jsxtextalign="center"></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3" jsxleft="100" jsxtop="0" jsxheight="20"></variants>
+                    <strings jsxname="lbl90plus" jsxtext="121 + DAYS" jsxdisplay="" jsxpadding="" jsxborder="solid 1px black;" jsxwidth="15%" jsxtextalign="center"></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3" jsxleft="100" jsxtop="0" jsxheight="20"></variants>
+                    <strings jsxname="lblTotal" jsxtext="TOTAL" jsxdisplay="" jsxpadding="" jsxborder="solid 1px black;" jsxwidth="20%" jsxtextalign="center"></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3" jsxleft="0" jsxtop="0" jsxheight="20"></variants>
+                    <strings jsxname="lblFelBlank" jsxtext="" jsxdisplay="" jsxwidth="20%" jsxpadding="" jsxborder="solid 1px black;"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18" jsxrelativeposition="1" jsxleft="100" jsxtop="20"></variants>
+                    <strings jsxname="txt0to30" jsxmargin="" jsxdisplay="" jsxwidth="15%" jsxborder="solid 1px black;"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18" jsxrelativeposition="1" jsxleft="180" jsxtop="20"></variants>
+                    <strings jsxname="txt31to45" jsxmargin="" jsxdisplay="" jsxborder="solid 1px black;" jsxwidth="15%"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18" jsxrelativeposition="1" jsxleft="260" jsxtop="20"></variants>
+                    <strings jsxname="txt46to90" jsxmargin="" jsxdisplay="" jsxborder="solid 1px black;" jsxwidth="15%"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18" jsxrelativeposition="1" jsxleft="340" jsxtop="20"></variants>
+                    <strings jsxname="txt90plus" jsxmargin="" jsxdisplay="" jsxborder="solid 1px black;" jsxwidth="15%"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18" jsxrelativeposition="1" jsxleft="420" jsxtop="20"></variants>
+                    <strings jsxname="txtTotal" jsxmargin="" jsxdisplay="" jsxborder="solid 1px black;" jsxwidth="20%"></strings>
+                  </object>
+                </object>
+                <object type="jsx3.gui.Block">
+                  <variants jsxleft="30" jsxtop="170" jsxheight="40" jsxoverflow="3" jsxrelativeposition="0"></variants>
+                  <strings jsxname="blkGenCiv" jsxwidth="90%" jsxborder="solid 1px black;"></strings>
+                  <dynamics jsxbgcolor="@Transparent BG"></dynamics>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3" jsxleft="0" jsxtop="0" jsxheight="20"></variants>
+                    <strings jsxname="lblGenCiv" jsxtext="GENERAL CIVIL" jsxdisplay="" jsxwidth="20%" jsxpadding="" jsxborder="solid 1px black;"></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3" jsxleft="100" jsxtop="0" jsxheight="20"></variants>
+                    <strings jsxname="lbl0to30" jsxtext="0 - 12 MONTHS" jsxdisplay="" jsxpadding="" jsxborder="solid 1px black;" jsxwidth="15%" jsxtextalign="center"></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3" jsxleft="100" jsxtop="0" jsxheight="20"></variants>
+                    <strings jsxname="lbl31to45" jsxtext="12+ - 18 MONTHS" jsxdisplay="" jsxpadding="" jsxborder="solid 1px black;" jsxwidth="15%" jsxtextalign="center"></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3" jsxleft="100" jsxtop="0" jsxheight="20"></variants>
+                    <strings jsxname="lbl46to90" jsxtext="18+ - 24 MONTHS" jsxdisplay="" jsxpadding="" jsxborder="solid 1px black;" jsxwidth="15%" jsxtextalign="center"></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3" jsxleft="100" jsxtop="0" jsxheight="20"></variants>
+                    <strings jsxname="lbl90plus" jsxtext="24+ MONTHS" jsxdisplay="" jsxpadding="" jsxborder="solid 1px black;" jsxwidth="15%" jsxtextalign="center"></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3" jsxleft="100" jsxtop="0" jsxheight="20"></variants>
+                    <strings jsxname="lblTotal" jsxtext="TOTAL" jsxdisplay="" jsxpadding="" jsxborder="solid 1px black;" jsxwidth="20%" jsxtextalign="center"></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3" jsxleft="0" jsxtop="0" jsxheight="20"></variants>
+                    <strings jsxname="lblFelBlank" jsxtext="" jsxdisplay="" jsxwidth="20%" jsxpadding="" jsxborder="solid 1px black;"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18" jsxrelativeposition="1" jsxleft="100" jsxtop="20"></variants>
+                    <strings jsxname="txt0to30" jsxmargin="" jsxdisplay="" jsxwidth="15%" jsxborder="solid 1px black;"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18" jsxrelativeposition="1" jsxleft="180" jsxtop="20"></variants>
+                    <strings jsxname="txt31to45" jsxmargin="" jsxdisplay="" jsxborder="solid 1px black;" jsxwidth="15%"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18" jsxrelativeposition="1" jsxleft="260" jsxtop="20"></variants>
+                    <strings jsxname="txt46to90" jsxmargin="" jsxdisplay="" jsxborder="solid 1px black;" jsxwidth="15%"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18" jsxrelativeposition="1" jsxleft="340" jsxtop="20"></variants>
+                    <strings jsxname="txt90plus" jsxmargin="" jsxdisplay="" jsxborder="solid 1px black;" jsxwidth="15%"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18" jsxrelativeposition="1" jsxleft="420" jsxtop="20"></variants>
+                    <strings jsxname="txtTotal" jsxmargin="" jsxdisplay="" jsxborder="solid 1px black;" jsxwidth="20%"></strings>
+                  </object>
+                </object>
+                <object type="jsx3.gui.Block">
+                  <variants jsxleft="30" jsxtop="230" jsxheight="40" jsxoverflow="3" jsxrelativeposition="0"></variants>
+                  <strings jsxname="blkUnlaw" jsxwidth="90%" jsxborder="solid 1px black;"></strings>
+                  <dynamics jsxbgcolor="@Transparent BG"></dynamics>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3" jsxleft="0" jsxtop="0" jsxheight="20"></variants>
+                    <strings jsxname="lblGenCiv" jsxtext="UNLAWFUL" jsxdisplay="" jsxwidth="20%" jsxpadding="" jsxborder="solid 1px black;"></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3" jsxleft="100" jsxtop="0" jsxheight="20"></variants>
+                    <strings jsxname="lbl0to30" jsxtext="0 - 30 DAYS" jsxdisplay="" jsxpadding="" jsxborder="solid 1px black;" jsxwidth="15%" jsxtextalign="center"></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3" jsxleft="100" jsxtop="0" jsxheight="20"></variants>
+                    <strings jsxname="lbl31to45" jsxtext="31 - 45 DAYS" jsxdisplay="" jsxpadding="" jsxborder="solid 1px black;" jsxwidth="15%" jsxtextalign="center"></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3" jsxleft="100" jsxtop="0" jsxheight="20"></variants>
+                    <strings jsxname="lbl46to90" jsxtext="46+  DAYS" jsxdisplay="" jsxpadding="" jsxborder="solid 1px black;" jsxwidth="15%" jsxtextalign="center"></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3" jsxleft="100" jsxtop="0" jsxheight="20"></variants>
+                    <strings jsxname="lbl90plus" jsxtext="" jsxdisplay="" jsxpadding="" jsxborder="solid 1px black;" jsxwidth="15%" jsxtextalign="center"></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3" jsxleft="100" jsxtop="0" jsxheight="20"></variants>
+                    <strings jsxname="lblTotal" jsxtext="TOTAL" jsxdisplay="" jsxpadding="" jsxborder="solid 1px black;" jsxwidth="20%" jsxtextalign="center"></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3" jsxleft="0" jsxtop="0" jsxheight="20"></variants>
+                    <strings jsxname="lblFelBlank" jsxtext="DETAINERS" jsxdisplay="" jsxwidth="20%" jsxpadding="" jsxborder="solid 1px black;"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18" jsxrelativeposition="1" jsxleft="100" jsxtop="20"></variants>
+                    <strings jsxname="txt0to30" jsxmargin="" jsxdisplay="" jsxwidth="15%" jsxborder="solid 1px black;"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18" jsxrelativeposition="1" jsxleft="180" jsxtop="20"></variants>
+                    <strings jsxname="txt31to45" jsxmargin="" jsxdisplay="" jsxborder="solid 1px black;" jsxwidth="15%"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18" jsxrelativeposition="1" jsxleft="260" jsxtop="20"></variants>
+                    <strings jsxname="txt46to90" jsxmargin="" jsxdisplay="" jsxborder="solid 1px black;" jsxwidth="15%"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18" jsxrelativeposition="1" jsxleft="340" jsxtop="20" jsxenabled="0"></variants>
+                    <strings jsxname="txt90plus" jsxmargin="" jsxdisplay="" jsxborder="solid 1px black;" jsxwidth="15%"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18" jsxrelativeposition="1" jsxleft="420" jsxtop="20"></variants>
+                    <strings jsxname="txtTotal" jsxmargin="" jsxdisplay="" jsxborder="solid 1px black;" jsxwidth="20%"></strings>
+                  </object>
+                </object>
+                <object type="jsx3.gui.Block">
+                  <variants jsxleft="30" jsxtop="290" jsxheight="60" jsxoverflow="3" jsxrelativeposition="0"></variants>
+                  <strings jsxname="blkSmlClms" jsxwidth="90%" jsxborder="solid 1px black;"></strings>
+                  <dynamics jsxbgcolor="@Transparent BG"></dynamics>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3" jsxleft="0" jsxtop="0" jsxheight="20"></variants>
+                    <strings jsxname="lblGenCiv" jsxtext="SMALL CLAIMS" jsxdisplay="" jsxwidth="20%" jsxpadding="" jsxborder="solid 1px black;"></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3" jsxleft="100" jsxtop="0" jsxheight="20"></variants>
+                    <strings jsxname="lbl0to30" jsxtext="0 - 70 DAYS" jsxdisplay="" jsxpadding="" jsxborder="solid 1px black;" jsxwidth="15%" jsxtextalign="center"></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3" jsxleft="100" jsxtop="0" jsxheight="20"></variants>
+                    <strings jsxname="lbl31to45" jsxtext="71 - 90 DAYS" jsxdisplay="" jsxpadding="" jsxborder="solid 1px black;" jsxwidth="15%" jsxtextalign="center"></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3" jsxleft="100" jsxtop="0" jsxheight="20"></variants>
+                    <strings jsxname="lbl46to90" jsxtext="91+  DAYS" jsxdisplay="" jsxpadding="" jsxborder="solid 1px black;" jsxwidth="15%" jsxtextalign="center"></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3" jsxleft="100" jsxtop="0" jsxheight="20"></variants>
+                    <strings jsxname="lbl90plus" jsxtext="" jsxdisplay="" jsxpadding="" jsxborder="solid 1px black;" jsxwidth="15%" jsxtextalign="center"></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3" jsxleft="100" jsxtop="0" jsxheight="20"></variants>
+                    <strings jsxname="lblTotal" jsxtext="TOTAL" jsxdisplay="" jsxpadding="" jsxborder="solid 1px black;" jsxwidth="20%" jsxtextalign="center"></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3" jsxleft="0" jsxtop="0" jsxheight="20"></variants>
+                    <strings jsxname="lblFelBlank" jsxtext="in county" jsxdisplay="" jsxwidth="20%" jsxpadding="" jsxborder="solid 1px black;"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18" jsxrelativeposition="1" jsxleft="100" jsxtop="20"></variants>
+                    <strings jsxname="txt0to30" jsxmargin="" jsxdisplay="" jsxwidth="15%" jsxborder="solid 1px black;"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18" jsxrelativeposition="1" jsxleft="180" jsxtop="20"></variants>
+                    <strings jsxname="txt31to45" jsxmargin="" jsxdisplay="" jsxborder="solid 1px black;" jsxwidth="15%"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18" jsxrelativeposition="1" jsxleft="260" jsxtop="20"></variants>
+                    <strings jsxname="txt46to90" jsxmargin="" jsxdisplay="" jsxborder="solid 1px black;" jsxwidth="15%"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18" jsxrelativeposition="1" jsxleft="340" jsxtop="20" jsxenabled="0"></variants>
+                    <strings jsxname="txt90plus" jsxmargin="" jsxdisplay="" jsxborder="solid 1px black;" jsxwidth="15%"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18" jsxrelativeposition="1" jsxleft="420" jsxtop="20"></variants>
+                    <strings jsxname="txtTotal" jsxmargin="" jsxdisplay="" jsxborder="solid 1px black;" jsxwidth="20%"></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3" jsxleft="0" jsxtop="0" jsxheight="20"></variants>
+                    <strings jsxname="lblFelBlank" jsxtext="out county" jsxdisplay="" jsxwidth="20%" jsxpadding="" jsxborder="solid 1px black;"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18" jsxrelativeposition="1" jsxleft="100" jsxtop="20"></variants>
+                    <strings jsxname="txt0to30" jsxmargin="" jsxdisplay="" jsxwidth="15%" jsxborder="solid 1px black;"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18" jsxrelativeposition="1" jsxleft="180" jsxtop="20"></variants>
+                    <strings jsxname="txt31to45" jsxmargin="" jsxdisplay="" jsxborder="solid 1px black;" jsxwidth="15%"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18" jsxrelativeposition="1" jsxleft="260" jsxtop="20"></variants>
+                    <strings jsxname="txt46to90" jsxmargin="" jsxdisplay="" jsxborder="solid 1px black;" jsxwidth="15%"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18" jsxrelativeposition="1" jsxleft="340" jsxtop="20" jsxenabled="0"></variants>
+                    <strings jsxname="txt90plus" jsxmargin="" jsxdisplay="" jsxborder="solid 1px black;" jsxwidth="15%"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18" jsxrelativeposition="1" jsxleft="420" jsxtop="20"></variants>
+                    <strings jsxname="txtTotal" jsxmargin="" jsxdisplay="" jsxborder="solid 1px black;" jsxwidth="20%"></strings>
+                  </object>
+                </object>
+                <object type="jsx3.gui.Block">
+                  <variants jsxleft="30" jsxtop="370" jsxheight="40" jsxoverflow="1" jsxrelativeposition="0"></variants>
+                  <strings jsxname="blkCaseInv" jsxwidth="90%" jsxborder="solid 1px black;" jsxmargin=""></strings>
+                  <dynamics jsxbgcolor="@Transparent BG"></dynamics>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3"></variants>
+                    <strings jsxname="label" jsxtext="&lt;h5&gt;CASE INVENTORY&lt;/h5&gt;"></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="0" jsxtop="20"></variants>
+                    <strings jsxname="label" jsxtext="Cases filed after January 1, 1991." jsxdisplay=""></strings>
+                  </object>
+                </object>
+                <object type="jsx3.gui.Block">
+                  <variants jsxleft="30" jsxtop="410" jsxheight="160" jsxoverflow="3" jsxrelativeposition="0"></variants>
+                  <strings jsxname="blkCaseInvData" jsxwidth="90%" jsxmargin="" jsxborder="solid 1px black;"></strings>
+                  <dynamics jsxbgcolor="@Transparent BG"></dynamics>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3"></variants>
+                    <strings jsxname="label" jsxtext="" jsxwidth="16%"></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3"></variants>
+                    <strings jsxname="lblbEG" jsxtext="&lt;br/&gt;BEGINNING&lt;BR/&gt;&#xA;PENDING&lt;BR/&gt;&#xA;CASES" jsxwidth="12%" jsxtextalign="center" jsxborder="solid 1px black;"></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3"></variants>
+                    <strings jsxname="lblNewFil" jsxtext="&lt;br/&gt;&lt;br/&gt;&#xA;NEW&lt;br/&gt;&#xA;FILINGS" jsxwidth="12%" jsxtextalign="center" jsxborder="solid 1px black;"></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3"></variants>
+                    <strings jsxname="lblRes" jsxtext="&lt;br/&gt;RESTORED&lt;br/&gt;&#xA;TO ACTIVE&lt;br/&gt;&#xA;STATUS" jsxwidth="15%" jsxtextalign="center" jsxborder="solid 1px black;"></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3"></variants>
+                    <strings jsxname="lblRem" jsxtext="REMOVED&lt;br/&gt;&#xA;FROM &lt;br/&gt;&#xA;ACTIVE&lt;br/&gt;&#xA;STATUS" jsxwidth="15%" jsxtextalign="center" jsxborder="solid 1px black;"></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3"></variants>
+                    <strings jsxname="lblDis" jsxtext="&lt;br/&gt;&#xA;&lt;br/&gt;&#xA;DISPOSED&lt;br/&gt;&#xA;THIS MONTH" jsxwidth="15%" jsxtextalign="center" jsxborder="solid 1px black;"></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3"></variants>
+                    <strings jsxname="lblEnd" jsxtext="&lt;br/&gt;&#xA;ENDING&lt;br/&gt;&#xA;PENDING&lt;br/&gt;&#xA;CASES" jsxwidth="15%" jsxtextalign="center" jsxborder="solid 1px black;"></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3" jsxheight="18"></variants>
+                    <strings jsxname="lblFel" jsxtext="FELONIES" jsxborder="solid 1px black;" jsxwidth="16%"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18"></variants>
+                    <strings jsxname="txtFel1" jsxmargin="" jsxwidth="12%" jsxborder="solid 1px black;" jsxpadding="0 0 0 0"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18"></variants>
+                    <strings jsxname="txtFel2" jsxmargin="" jsxwidth="12%" jsxborder="solid 1px black;"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18"></variants>
+                    <strings jsxname="txtFel3" jsxmargin="" jsxwidth="15%" jsxborder="solid 1px black;"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18"></variants>
+                    <strings jsxname="txtFel4" jsxmargin="" jsxwidth="15%" jsxborder="solid 1px black;"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18"></variants>
+                    <strings jsxname="txtFel5" jsxmargin="" jsxwidth="15%" jsxborder="solid 1px black;"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18"></variants>
+                    <strings jsxname="txtFel6" jsxmargin="0 0 0 0" jsxwidth="15%" jsxborder="solid 1px black;" jsxpadding="0 0 0 0"></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3" jsxheight="18"></variants>
+                    <strings jsxname="lblFel" jsxtext="FELONIES" jsxborder="solid 1px black;" jsxwidth="16%"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18"></variants>
+                    <strings jsxname="txtFel1" jsxmargin="" jsxwidth="12%" jsxborder="solid 1px black;" jsxpadding="0 0 0 0"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18"></variants>
+                    <strings jsxname="txtFel2" jsxmargin="" jsxwidth="12%" jsxborder="solid 1px black;"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18"></variants>
+                    <strings jsxname="txtFel3" jsxmargin="" jsxwidth="15%" jsxborder="solid 1px black;"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18"></variants>
+                    <strings jsxname="txtFel4" jsxmargin="" jsxwidth="15%" jsxborder="solid 1px black;"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18"></variants>
+                    <strings jsxname="txtFel5" jsxmargin="" jsxwidth="15%" jsxborder="solid 1px black;"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18"></variants>
+                    <strings jsxname="txtFel6" jsxmargin="0 0 0 0" jsxwidth="15%" jsxborder="solid 1px black;" jsxpadding="0 0 0 0"></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3" jsxheight="18"></variants>
+                    <strings jsxname="lblGenCiv" jsxtext="GENERAL CIVIL" jsxborder="solid 1px black;" jsxwidth="16%"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18"></variants>
+                    <strings jsxname="txtGenCiv1" jsxmargin="" jsxwidth="12%" jsxborder="solid 1px black;" jsxpadding="0 0 0 0"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18"></variants>
+                    <strings jsxname="txtGenCiv2" jsxmargin="" jsxwidth="12%" jsxborder="solid 1px black;"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18"></variants>
+                    <strings jsxname="txtGenCiv3" jsxmargin="" jsxwidth="15%" jsxborder="solid 1px black;"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18"></variants>
+                    <strings jsxname="txtGenCiv4" jsxmargin="" jsxwidth="15%" jsxborder="solid 1px black;"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18"></variants>
+                    <strings jsxname="txtGenCiv5" jsxmargin="" jsxwidth="15%" jsxborder="solid 1px black;"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18"></variants>
+                    <strings jsxname="txtGenCiv6" jsxmargin="0 0 0 0" jsxwidth="15%" jsxborder="solid 1px black;" jsxpadding="0 0 0 0"></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3" jsxheight="18"></variants>
+                    <strings jsxname="lblUnDet" jsxtext="UNLAWFUL&lt;br/&gt;&#xA;DETAINERS" jsxborder="solid 1px black;" jsxwidth="16%"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="24"></variants>
+                    <strings jsxname="txtUnDet1" jsxmargin="" jsxwidth="12%" jsxborder="solid 1px black;" jsxpadding="0 0 0 0"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="24"></variants>
+                    <strings jsxname="txtUnDet2" jsxmargin="" jsxwidth="12%" jsxborder="solid 1px black;"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="24"></variants>
+                    <strings jsxname="txtUnDet3" jsxmargin="" jsxwidth="15%" jsxborder="solid 1px black;"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="24"></variants>
+                    <strings jsxname="txtUnDet4" jsxmargin="" jsxwidth="15%" jsxborder="solid 1px black;"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="24"></variants>
+                    <strings jsxname="txtUnDet5" jsxmargin="" jsxwidth="15%" jsxborder="solid 1px black;"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="24"></variants>
+                    <strings jsxname="txtUnDet6" jsxmargin="0 0 0 0" jsxwidth="15%" jsxborder="solid 1px black;" jsxpadding="0 0 0 0"></strings>
+                  </object>
+                  <object type="jsx3.gui.Block">
+                    <variants jsxrelativeposition="1" jsxoverflow="3" jsxheight="18"></variants>
+                    <strings jsxname="lblSmlClm" jsxtext="SMALL CLAIMS" jsxborder="solid 1px black;" jsxwidth="16%"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18"></variants>
+                    <strings jsxname="txtSmlClms1" jsxmargin="" jsxwidth="12%" jsxborder="solid 1px black;" jsxpadding="0 0 0 0"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18"></variants>
+                    <strings jsxname="txtSmlClms2" jsxmargin="" jsxwidth="12%" jsxborder="solid 1px black;"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18"></variants>
+                    <strings jsxname="txtSmlClms3" jsxmargin="" jsxwidth="15%" jsxborder="solid 1px black;"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18"></variants>
+                    <strings jsxname="txtSmlClms4" jsxmargin="" jsxwidth="15%" jsxborder="solid 1px black;"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18"></variants>
+                    <strings jsxname="txtSmlClms5" jsxmargin="" jsxwidth="15%" jsxborder="solid 1px black;"></strings>
+                  </object>
+                  <object type="jsx3.gui.TextBox">
+                    <variants jsxheight="18"></variants>
+                    <strings jsxname="txtSmlClms6" jsxmargin="0 0 0 0" jsxwidth="15%" jsxborder="solid 1px black;" jsxpadding="0 0 0 0"></strings>
+                  </object>
+                </object>
+              </object>
+            </object>
+            <object type="jsx3.gui.Button">
+              <variants jsxindex="0" jsxheight="18" jsxrelativeposition="0" jsxleft="50" jsxtop="90"></variants>
+              <strings jsxname="button" jsxtext="[button text]" jsxmargin="0 4 0 0" jsxdisplay=""></strings>
+              <events jsxexecute="eg.service.callgetForm2C();"></events>
+            </object>
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+</serialization>

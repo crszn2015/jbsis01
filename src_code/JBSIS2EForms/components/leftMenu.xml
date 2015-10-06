@@ -1,0 +1,90 @@
+<<<<<<< .mine
+<serialization jsxversion="3.9" xmlns="urn:tibco.com/v3.0">
+  <name><![CDATA[Block (100pct)]]></name>
+  <icon></icon>
+  <description><![CDATA[Simple block, relatively positioned with overflow=scroll.]]></description>
+  <onBeforeDeserialize></onBeforeDeserialize>
+  <onAfterDeserialize></onAfterDeserialize>
+  <object type="jsx3.gui.Block">
+    <variants jsxoverflow="2"></variants>
+    <strings jsxname="blkLeftPane" jsxwidth="100%" jsxheight="100%" jsxrelativeposition="1" jsxclassname="L_PANE" jsxborder="0px solid #222222;2px solid #585865;0px solid #222222;0px solid #222222"></strings>
+    <events jsxclick=""></events>
+    <object type="jsx3.gui.Block">
+      <variants></variants>
+      <strings jsxname="blkButtons" jsxwidth="100%" jsxheight="100%" jsxrelativeposition="1"></strings>
+      <object type="jsx3.gui.Button">
+        <variants jsxindex="0" jsxheight="25" jsxfontsize="12" jsxrelativeposition="0" jsxleft="0" jsxtop="0"></variants>
+        <strings jsxname="btnHome" jsxtext="&lt;div&gt;&lt;a href=&quot;#&quot; style=&quot;padding:3px;&quot;&gt;Home&lt;/a&gt;&lt;/div&gt;" jsxwidth="100%" jsxtextalign="left" jsxbgcolor="FFFFFF"></strings>
+        <events jsxexecute="JBSIS.eForms.Nav.changeBody(this);"></events>
+      </object>
+      <object type="jsx3.gui.Button">
+        <variants jsxindex="0" jsxheight="25" jsxrelativeposition="0" jsxleft="0" jsxtop="25" jsxfontsize="12"></variants>
+        <strings jsxname="btnReview" jsxtext="&lt;div&gt;&lt;a a href=&quot;#&quot;  style=&quot;padding:3px;&quot;&gt;Review Forms&lt;/a&gt;&lt;/div&gt;" jsxbg="" jsxwidth="100%" jsxdisabledcolor="" jsxtextalign="left" jsxbgcolor="FFFFFF"></strings>
+        <events jsxexecute="JBSIS.eForms.Nav.changeBody(this);"></events>
+      </object>
+      <object type="jsx3.gui.Button">
+        <variants jsxindex="0" jsxheight="25" jsxrelativeposition="0" jsxleft="0" jsxtop="50" jsxfontsize="12"></variants>
+        <strings jsxname="btnReportHistory" jsxtext="&lt;div&gt;&lt;a a href=&quot;#&quot;  style=&quot;padding:3px;&quot;&gt;Report History &lt;/a&gt;&lt;/div&gt;" jsxbg="" jsxwidth="100%" jsxdisabledcolor="" jsxtextalign="left" jsxbgcolor="FFFFFF"></strings>
+        <events jsxexecute="JBSIS.eForms.Nav.changeBody(this);"></events>
+      </object>
+      <object type="jsx3.gui.Button">
+        <variants jsxindex="0" jsxheight="25" jsxrelativeposition="0" jsxleft="0" jsxtop="75" jsxfontsize="12"></variants>
+        <strings jsxname="btnPendingQueryStatus" jsxtext="&lt;div&gt;&lt;a a href=&quot;#&quot;  style=&quot;padding:3px;&quot;&gt;Report Status&lt;/a&gt;&lt;/div&gt;" jsxbg="" jsxwidth="100%" jsxdisabledcolor="" jsxtextalign="left" jsxbgcolor="FFFFFF"></strings>
+        <events jsxexecute="JBSIS.eForms.Nav.changeBody(this);"></events>
+      </object>
+    </object>
+    <object type="jsx3.gui.Block">
+      <variants jsxfontsize="15" jsxrelativeposition="0"></variants>
+      <strings jsxname="txtStatusMsg" jsxwidth="100%" jsxfontweight="bold" jsxtop="20%" jsxdisplay="" jsxcolor="#FFFFFF" jsxleft="5%"></strings>
+    </object>
+    <object type="jsx3.gui.Block">
+      <variants jsxrelativeposition="0" jsxoverflow="3"></variants>
+      <strings jsxname="lblVersionLeft" jsxtext="Version 2.0 Build 1408" jsxtop="97%" jsxdisplay="" jsxpadding="0 0 0 8"></strings>
+    </object>
+  </object>
+=======
+<serialization jsxversion="3.5" xmlns="urn:tibco.com/v3.0">
+  <name><![CDATA[Block (100pct)]]></name>
+  <icon></icon>
+  <description><![CDATA[Simple block, relatively positioned with overflow=scroll.]]></description>
+  <onBeforeDeserialize></onBeforeDeserialize>
+  <onAfterDeserialize></onAfterDeserialize>
+  <object type="jsx3.gui.Block">
+    <variants jsxoverflow="2"></variants>
+    <strings jsxname="blkLeftPane" jsxwidth="100%" jsxheight="100%" jsxrelativeposition="1" jsxclassname="L_PANE" jsxborder="0px solid #222222;2px solid #585865;0px solid #222222;0px solid #222222"></strings>
+    <events jsxclick=""></events>
+    <object type="jsx3.gui.Block">
+      <variants></variants>
+      <strings jsxname="blkButtons" jsxwidth="100%" jsxheight="100%" jsxrelativeposition="1"></strings>
+      <object type="jsx3.gui.Button">
+        <variants jsxindex="0" jsxheight="25" jsxfontsize="12" jsxrelativeposition="0" jsxleft="0" jsxtop="0"></variants>
+        <strings jsxname="btnHome" jsxtext="&lt;div&gt;&lt;a href=&quot;#&quot; style=&quot;padding:3px;&quot;&gt;Home&lt;/a&gt;&lt;/div&gt;" jsxwidth="100%" jsxtextalign="left" jsxbgcolor="FFFFFF"></strings>
+        <events jsxexecute="JBSIS.eForms.Nav.changeBody(this);"></events>
+      </object>
+      <object type="jsx3.gui.Button">
+        <variants jsxindex="0" jsxheight="25" jsxrelativeposition="0" jsxleft="0" jsxtop="25" jsxfontsize="12"></variants>
+        <strings jsxname="btnReview" jsxtext="&lt;div&gt;&lt;a a href=&quot;#&quot;  style=&quot;padding:3px;&quot;&gt;Review Forms&lt;/a&gt;&lt;/div&gt;" jsxbg="" jsxwidth="100%" jsxdisabledcolor="" jsxtextalign="left" jsxbgcolor="FFFFFF"></strings>
+        <events jsxexecute="JBSIS.eForms.Nav.changeBody(this);"></events>
+      </object>
+      <object type="jsx3.gui.Button">
+        <variants jsxindex="0" jsxheight="25" jsxrelativeposition="0" jsxleft="0" jsxtop="50" jsxfontsize="12"></variants>
+        <strings jsxname="btnReportHistory" jsxtext="&lt;div&gt;&lt;a a href=&quot;#&quot;  style=&quot;padding:3px;&quot;&gt;Report History &lt;/a&gt;&lt;/div&gt;" jsxbg="" jsxwidth="100%" jsxdisabledcolor="" jsxtextalign="left" jsxbgcolor="FFFFFF"></strings>
+        <events jsxexecute="JBSIS.eForms.Nav.changeBody(this);"></events>
+      </object>
+      <object type="jsx3.gui.Button">
+        <variants jsxindex="0" jsxheight="25" jsxrelativeposition="0" jsxleft="0" jsxtop="75" jsxfontsize="12"></variants>
+        <strings jsxname="btnPendingQueryStatus" jsxtext="&lt;div&gt;&lt;a a href=&quot;#&quot;  style=&quot;padding:3px;&quot;&gt;Report Status&lt;/a&gt;&lt;/div&gt;" jsxbg="" jsxwidth="100%" jsxdisabledcolor="" jsxtextalign="left" jsxbgcolor="FFFFFF"></strings>
+        <events jsxexecute="JBSIS.eForms.Nav.changeBody(this);"></events>
+      </object>
+    </object>
+    <object type="jsx3.gui.Block">
+      <variants jsxfontsize="15" jsxrelativeposition="0"></variants>
+      <strings jsxname="txtStatusMsg" jsxwidth="100%" jsxfontweight="bold" jsxtop="20%" jsxdisplay="" jsxcolor="#FFFFFF" jsxleft="5%"></strings>
+    </object>
+    <object type="jsx3.gui.Block">
+      <variants jsxrelativeposition="0" jsxoverflow="3"></variants>
+      <strings jsxname="lblVersionLeft" jsxtext="Version 1.2 Build 1315" jsxtop="97%" jsxdisplay="" jsxpadding="0 0 0 8"></strings>
+    </object>
+  </object>
+>>>>>>> .r1408
+</serialization>

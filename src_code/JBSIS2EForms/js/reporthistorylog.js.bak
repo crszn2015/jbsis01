@@ -1,0 +1,402 @@
+jsx3.lang.Package.definePackage(
+        "reporthistorylog.service", //the full name of the package to create
+        function(service) {          //name the argument of this function
+
+            var reportNameSpace = "xmlns:ns0='http://isb.srv.courts-tc.ca.gov/isb/portal/Schema/global/JBSIS/BusinessReporting/1.0/Schema.xsd'";
+
+            /*********************Webservice call to invoke the operation "RetrieveReportHistoryLog" ******************************/
+            try {
+
+                service.callRetrieveReportHistoryLog = function() {
+
+                    //call this method to begin the service call (eg.service.callRetrieveReportHistoryLog();)
+
+                    JBSIS.eForms.showLoadDialog(true);
+
+                    var objService = JBSISEForms.loadResource("retrievehistorylog_xml");
+                    objService.setOperation("RetrieveReportHistoryLog");
+
+                    //subscribe
+                    objService.subscribe(jsx3.net.Service.ON_SUCCESS, service.onRetrieveReportHistoryLogSuccess);
+                    objService.subscribe(jsx3.net.Service.ON_ERROR, service.onRetrieveReportHistoryLogError);
+                    objService.subscribe(jsx3.net.Service.ON_INVALID, service.onRetrieveReportHistoryLogInvalid);
+                    objService.setEndpointURL(urlretrievehistorylog);
+                    //objService.compile();
+
+                    //call the service
+                    objService.doCall();
+                    appLogger.trace(objService.getOutboundDocument());
+
+                };
+            }
+            catch(e) {
+                alert(e.getMessage())
+            }
+
+            /*********************ON_SUCCESS handler******************************/
+            try {
+
+                service.onRetrieveReportHistoryLogSuccess = function(objEvent) {
+
+                    JBSIS.eForms.showLoadDialog(false);
+
+                    var responseXML = objEvent.target.getInboundDocument();
+                    appLogger.trace(responseXML);
+                    var statusNode = responseXML.selectSingleNode("//ns0:Status", statusNameSpace);
+                    var msgNode = responseXML.selectSingleNode("//ns0:Message", statusNameSpace);
+
+                    if (statusNode.getValue() != 0) {
+                        JBSIS.eForms.processException("JBSIS001GI903");
+                        //JBSIS.eForms.showInfoDialog("External Error Code", "Information", "Please try again");
+                        try {
+                            JBSISEForms.Cache.getDocument("historylog").removeChildren();
+                        } catch(e) {
+                            e = jsx3.lang.NativeError.wrap(e);
+                            appLogger.trace(e.getMessage());
+                        }
+                        ;
+
+                    }
+                    getServer().getJSXByName("historylog_matrix").repaintData();
+
+
+                    //objEvent.target.getServer().alert("Success","The service call was successful.");
+
+                };
+
+            }
+            catch(e) {
+                alert(e.getMessage())
+            }
+
+            /*********************ON_ERROR handler******************************/
+            try {
+
+                service.onRetrieveReportHistoryLogError = function(objEvent) {
+
+                    JBSIS.eForms.showLoadDialog(false);
+                    var myStatus = objEvent.target.getRequest().getStatus();
+                    var myStatusText = objEvent.target.getRequest().getStatusText();
+                    //showErrorDialog("ERROR!","Request could not be sent<br>Please try again",'');
+                    JBSIS.eForms.processException("JBSIS001GI802");
+
+                    //objEvent.target.getServer().alert("Error","The service call failed. The HTTP Status code is: " + myStatus);
+                };
+
+            }
+            catch(e) {
+                alert(e.getMessage())
+            }
+
+            /*********************ON_INVALID handler******************************/
+            try {
+
+                service.onRetrieveReportHistoryLogInvalid = function(objEvent) {
+                    JBSIS.eForms.showLoadDialog(false);
+                    objEvent.target.getServer().alert("Invalid", "The following message node just failed validation:\n\n" + objEvent.message);
+                };
+            }
+            catch(e) {
+                alert(e.getMessage())
+            }
+
+            /*********************Initialization function******************************/
+            try {
+
+                service.onInit = function() {
+
+                    JBSIS.eForms.createYearDD();
+                    service.ResetForm();
+
+
+                    var site_name = JBSIS.eForms.getURL();
+                    if (site_name != "AOC") {
+                        //COURT USER DO NOT SELECT THE COURT
+                        getServer().getJSXByName("blk_selcourt").setVisibility(jsx3.gui.Block.VISIBILITYHIDDEN, true);
+
+                        //check for the selected court or logged in court role
+                        appLogger.trace("The selected site is" + site_name);
+                        getServer().getJSXByName("sel_courtcode").setValue(site_name);
+
+                    } else {
+                        getServer().getJSXByName("blk_selcourt").setVisibility(jsx3.gui.Block.VISIBILITYVISIBLE, true);
+                    }
+
+
+                };
+            }
+            catch(e) {
+                alert(e.getMessage())
+            }
+
+            /*********************Event Handler for button click******************************/
+            try {
+
+                service.Execute = function() {
+
+
+                    //front end validations
+                    //if user selected all the search criteria, throw a warnging message, user can choose yes or no to continue
+
+                    var bShowDlg = (getServer().getJSXByName("sel_reporttype").getValue() == "") && (getServer().getJSXByName("sel_reportmonth").getValue() == "");
+
+                    if (bShowDlg) {
+                        JBSIS.eForms.processException("JBSIS001BW954", "reporthistorylog.service.InvokeWebServices('RetrieveReportHistoryLog')", "");
+
+                    } else {
+
+                        reporthistorylog.service.InvokeWebServices('RetrieveReportHistoryLog');
+                    }
+
+                    if (JBSIS.eForms.getURL() == "AOC") {
+                        //aoc user cannot select re
+
+                    } else {
+                        //court user must select report type
+                    }
+
+
+                }
+            } catch(e) {
+                alert(e.getMessage())
+            }
+
+            /*********************Event Handler to invoke the wsdl web services ******************************/
+            try {
+                service.InvokeWebServices = function(operation) {
+
+                    if (operation == "RetrieveReportHistoryLog") {
+                        service.callRetrieveReportHistoryLog();
+
+                    }
+                    else {
+                        return;
+
+                    }
+
+                }
+            }
+            catch(e) {
+                alert(e.getMessage())
+            }
+
+            /*********************Event Handler for reset button click******************************/
+            try {
+
+                service.ResetForm = function() {
+
+                    getServer().getJSXByName("sel_reporttype").setValue("");
+                    getServer().getJSXByName("sel_reportmonth").setValue("");
+                    getServer().getJSXByName("sel_reportyear").setValue("");
+
+                    var site_name = JBSIS.eForms.getURL();
+                    if (site_name != "AOC") {
+                        //COURT USER DO NOT SELECT THE COURT
+                        //getServer().getJSXByName("blk_selcourt").setVisibility(jsx3.gui.Block.VISIBILITYHIDDEN,true);
+
+                        //check for the selected court or logged in court role
+                        //appLogger.trace("The selected site is" + site_name);
+                        getServer().getJSXByName("sel_courtcode").setValue(site_name);
+
+                    }
+                    else {
+                        getServer().getJSXByName("sel_courtcode").setValue("");
+                    }
+
+
+                }
+            } catch(e) {
+                alert(e.getMessage())
+            }
+
+
+            /**********************Function to get the selected report type******************************/
+            try {
+                service.getReportType = function() {
+
+
+                    var repType = getServer().getJSXByName("sel_reporttype").getValue();
+                    return repType;
+
+                }
+            } catch(e) {
+                alert(e.getMessage())
+            }
+
+            /**********************Function to get the selected report month******************************/
+            try {
+                service.getReportMonth = function() {
+
+
+                    var repMonth = getServer().getJSXByName("sel_reportmonth").getValue();
+                    return repMonth;
+
+                }
+            } catch(e) {
+                alert(e.getMessage())
+            }
+
+            /**********************Function to get the selected report year******************************/
+            try {
+                service.getReportYear = function() {
+
+
+                    var repYear = getServer().getJSXByName("sel_reportyear").getValue();
+                    return repYear;
+
+                }
+            } catch(e) {
+                alert(e.getMessage())
+            }
+
+            /**********************Function to get the selected court code******************************/
+            try {
+                service.getCourtCode = function() {
+
+                    var selcourt = getServer().getJSXByName("sel_courtcode").getValue();
+                    return selcourt;
+
+                }
+            } catch(e) {
+                alert(e.getMessage())
+            }
+
+            /**********************Function to get the selected court code******************************/
+            try {
+                service.getSelectedAction = function() {
+
+                    return "HistoryLog";
+
+                }
+            } catch(e) {
+                alert(e.getMessage())
+            }
+
+            /************************** Query Pending Service  webservice call ***/
+
+            //call this method to begin the service call (eg.service.callQueryPendingStatus();)
+            service.callQueryPendingStatus = function() {
+
+                //alert("Invoking the pending query service 1");
+                var objService = JBSISEForms.loadResource("getPendingReportStatus_xml");
+                //alert("Invoking the pending query service 2" + objService);
+                objService.setOperation("QueryPendingStatus");
+
+                //alert("Invoking the pending query service 3");
+                //subscribe
+                objService.subscribe(jsx3.net.Service.ON_SUCCESS, service.onQueryPendingStatusSuccess);
+                objService.subscribe(jsx3.net.Service.ON_ERROR, service.onQueryPendingStatusError);
+                objService.subscribe(jsx3.net.Service.ON_INVALID, service.onQueryPendingStatusInvalid);
+                //alert("Invoking the pending query service 4");
+                //alert("URL" + urlPendingQueryService);
+                objService.setEndpointURL(urlPendingQueryService);
+
+                //PERFORMANCE ENHANCEMENT: uncomment the following line of code to use XSLT to convert the server response to CDF (refer to the API docs for jsx3.net.Service.compile for implementation details)
+                //objService.compile();
+
+                //call the service
+                objService.doCall();
+            };
+
+            service.onQueryPendingStatusSuccess = function(objEvent) {
+                //var responseXML = objEvent.target.getInboundDocument();
+                //JBSIS.eForms.showLoadDialog(false);
+
+                var responseXML = objEvent.target.getInboundDocument();
+
+
+                if (responseXML == null) {
+                    JBSIS.eForms.processException("JBSIS001GI903");
+                    //JBSIS.eForms.showInfoDialog("External Error Code", "Information", "Please try again");
+                    try {
+                        JBSISEForms.Cache.getDocument("pendingstatus").removeChildren();
+                    } catch(e) {
+                        e = jsx3.lang.NativeError.wrap(e);
+                        appLogger.trace(e.getMessage());
+                    }
+                    ;
+
+                }
+                getServer().getJSXByName("pendingstatus_matrix").repaintData();
+                try {
+                    var size = JBSISEForms.Cache.getDocument("pendingstatus").getChildNodes().size();
+                    //alert("Size:"+size);
+                    if (size == 0) {
+                        alert("No Records Found");
+                        getServer().getJSXByName("pendingRecordSizeLabel").setText(size);
+                    }else{
+                        // set size.
+                        getServer().getJSXByName("pendingRecordSizeLabel").setText(size);
+                    }
+                    getServer().getJSXByName("pendingRecordSizeLabel").repaint();
+                } catch(e) {
+                    e = jsx3.lang.NativeError.wrap(e);
+                    appLogger.trace(e.getMessage());
+                }
+                ;
+
+            };
+
+            service.onQueryPendingStatusError = function(objEvent) {
+                var myStatus = objEvent.target.getRequest().getStatus();
+                objEvent.target.getServer().alert("Error", "The service call failed. The HTTP Status code is: " + myStatus);
+            };
+
+            service.onQueryPendingStatusInvalid = function(objEvent) {
+                objEvent.target.getServer().alert("Invalid", "The following message node just failed validation:\n\n" + objEvent.message);
+            };
+
+            /**********************Function to get the pending selected court code******************************/
+            try {
+                service.getPendingCourtCode = function() {
+
+                    var selcourt = getServer().getJSXByName("psel_court").getValue();
+                    return selcourt;
+
+                }
+            } catch(e) {
+                alert(e.getMessage())
+            }
+
+            /**********************Function to get the pending selected court code******************************/
+            try {
+                service.getPendingReport = function() {
+
+                    var selcourt = getServer().getJSXByName("psel_reporttype").getValue();
+                    return selcourt;
+
+                }
+            } catch(e) {
+                alert(e.getMessage())
+            }
+
+            /**********************Function to get the pending selected court code******************************/
+            try {
+                service.getPendingStatus = function() {
+
+                    var selcourt = getServer().getJSXByName("psel_status").getValue();
+                    return selcourt;
+
+                }
+            } catch(e) {
+                alert(e.getMessage())
+            }
+
+
+            /*********************Event Handler for reset button click******************************/
+            try {
+
+                service.ResetStatusForm = function() {
+
+                    getServer().getJSXByName("psel_reporttype").setValue("");
+                    getServer().getJSXByName("psel_status").setValue("PENDING");
+                    getServer().getJSXByName("psel_court").setValue("ALA");
+
+                }
+            } catch(e) {
+                alert(e.getMessage())
+            }
+
+
+        }
+        );

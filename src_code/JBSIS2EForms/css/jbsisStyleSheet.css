@@ -1,0 +1,29 @@
+a:link {text-decoration:none;color:#0000FF;}
+a:visited {text-decoration:none;color:#FF0000;}
+a:active {text-decoration:none}
+a:hover {text-decoration:underline;}
+
+.L_PANE{
+   
+    background-color: #FFFFFF;
+   
+} 
+.MAIN_PANE{
+    background-color: #e8e8f5;
+}
+.ACTION_BUTTONS {
+    font-size: 12px;
+    font-family: Arial;
+    font-weight:bold;
+   }
+.HISTORY_PANE{
+background-color: #e8e8f5;
+}
+
+.MAIN_TAB_LABELS{
+    font-size: 12px;
+    font-family: Arial;
+    font-weight:bold;
+
+
+}

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Created by TIBCO WSDL-->
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://isb.srv.courts-tc.ca.gov/portal/isb/WSDL/global/JBSIS/BusinessReportingService/1.0/wsdl.wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns0="http://isb.srv.courts-tc.ca.gov/isb/portal/Schema/global/JBSIS/BusinessReporting/1.0/Schema.xsd" xmlns:ns1="http://isb.srv.courts-tc.ca.gov/portal/isb/Schema/global/JBSIS/Status/1.0/xsd" targetNamespace="http://isb.srv.courts-tc.ca.gov/portal/isb/WSDL/global/JBSIS/BusinessReportingService/1.0/wsdl.wsdl">
+    <wsdl:types>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://isb.srv.courts-tc.ca.gov/isb/portal/Schema/global/JBSIS/BusinessReporting/1.0/Schema.xsd" targetNamespace="http://isb.srv.courts-tc.ca.gov/isb/portal/Schema/global/JBSIS/BusinessReporting/1.0/Schema.xsd" elementFormDefault="qualified" attributeFormDefault="unqualified">
+            <xs:complexType name="CourtCodeType">
+                <xs:simpleContent>
+                    <xs:extension base="xs:string"/>
+                </xs:simpleContent>
+            </xs:complexType>
+            <xs:complexType name="DateTimestampType">
+                <xs:simpleContent>
+                    <xs:extension base="xs:dateTime"/>
+                </xs:simpleContent>
+            </xs:complexType>
+            <xs:complexType name="DetailsType">
+                <xs:simpleContent>
+                    <xs:extension base="xs:string"/>
+                </xs:simpleContent>
+            </xs:complexType>
+            <xs:complexType name="DocumentIDType">
+                <xs:simpleContent>
+                    <xs:extension base="xs:string"/>
+                </xs:simpleContent>
+            </xs:complexType>
+            <xs:complexType name="GenericAuditPluginMsgType">
+                <xs:sequence>
+                    <xs:element name="Operation" type="xs:string"/>
+                    <xs:element name="TableUniqueKey" type="xs:string"/>
+                    <xs:element name="ColumnID" type="xs:string"/>
+                    <xs:element name="ColumnID_Value" type="xs:string"/>
+                    <xs:element name="ModifiedDate" type="xs:string"/>
+                    <xs:element name="ModifiedBy" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="ReportHistoryLogType">
+                <xs:sequence>
+                    <xs:element name="TransactionID" type="ns0:TransactionIDType"/>
+                    <xs:element name="DocumentID" type="ns0:DocumentIDType"/>
+                    <xs:element name="DateTimestamp" type="ns0:DateTimestampType"/>
+                    <xs:element name="CourtCode" type="ns0:CourtCodeType"/>
+                    <xs:element name="ReportType" type="ns0:ReportTypeType"/>
+                    <xs:element name="ReportMonth" type="ns0:ReportMonthType"/>
+                    <xs:element name="ReportYear" type="ns0:ReportYearType"/>
+                    <xs:element name="ReportXML" type="ns0:ReportXMLType" minOccurs="0"/>
+                    <xs:element name="UserAction" type="ns0:UserActionType"/>
+                    <xs:element name="UserID" type="ns0:UserIDType"/>
+                    <xs:element name="Status" type="ns0:StatusType"/>
+                    <xs:element name="Details" type="ns0:DetailsType"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="ReportHistoryQueryType">
+                <xs:sequence>
+                    <xs:element name="UserName" type="xs:string" minOccurs="0"/>
+                    <xs:element name="Request_Date" type="xs:string"/>
+                    <xs:element name="Request_Time" type="xs:string"/>
+                    <xs:element name="CourtCode" type="ns0:CourtCodeType" minOccurs="0"/>
+                    <xs:element name="ReportType" type="ns0:ReportTypeType" minOccurs="0"/>
+                    <xs:element name="ReportMonth" type="ns0:ReportMonthType" minOccurs="0"/>
+                    <xs:element name="ReportYear" type="ns0:ReportYearType" minOccurs="0"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="ReportHistoryResultsetType">
+                <xs:sequence>
+                    <xs:element name="ReportHistoryLogs" type="ns0:ReportHistoryLogType" minOccurs="0" maxOccurs="unbounded"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="ReportMonthType">
+                <xs:simpleContent>
+                    <xs:extension base="xs:string"/>
+                </xs:simpleContent>
+            </xs:complexType>
+            <xs:complexType name="ReportTypeType">
+                <xs:simpleContent>
+                    <xs:extension base="xs:string"/>
+                </xs:simpleContent>
+            </xs:complexType>
+            <xs:complexType name="ReportXMLType">
+                <xs:simpleContent>
+                    <xs:extension base="xs:anySimpleType"/>
+                </xs:simpleContent>
+            </xs:complexType>
+            <xs:complexType name="ReportYearType">
+                <xs:simpleContent>
+                    <xs:extension base="xs:string"/>
+                </xs:simpleContent>
+            </xs:complexType>
+            <xs:complexType name="StatusType">
+                <xs:simpleContent>
+                    <xs:extension base="xs:string"/>
+                </xs:simpleContent>
+            </xs:complexType>
+            <xs:complexType name="TransactionIDType">
+                <xs:simpleContent>
+                    <xs:extension base="xs:string"/>
+                </xs:simpleContent>
+            </xs:complexType>
+            <xs:complexType name="UserActionType">
+                <xs:simpleContent>
+                    <xs:extension base="xs:string"/>
+                </xs:simpleContent>
+            </xs:complexType>
+            <xs:complexType name="UserIDType">
+                <xs:simpleContent>
+                    <xs:extension base="xs:string"/>
+                </xs:simpleContent>
+            </xs:complexType>
+            <xs:element name="ReportHistoryQuery" type="ns0:ReportHistoryQueryType"/>
+            <xs:element name="ReportHistoryResultset" type="ns0:ReportHistoryResultsetType"/>
+        </xs:schema>
+        <xsd:schema xmlns="http://isb.srv.courts-tc.ca.gov/portal/isb/Schema/global/JBSIS/Status/1.0/xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://isb.srv.courts-tc.ca.gov/portal/isb/Schema/global/JBSIS/Status/1.0/xsd" elementFormDefault="qualified" attributeFormDefault="unqualified">
+            <xsd:element name="RequestStatus">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="Status" type="xsd:string"/>
+                        <xsd:element name="Message" type="xsd:string"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:schema>
+    </wsdl:types>
+    <wsdl:message name="BusinessReportingInput">
+        <wsdl:part name="Input" element="ns0:ReportHistoryQuery"/>
+    </wsdl:message>
+    <wsdl:message name="BusinessReportingOutput">
+        <wsdl:part name="Output" element="ns0:ReportHistoryResultset"/>
+        <wsdl:part name="Status" element="ns1:RequestStatus"/>
+    </wsdl:message>
+    <wsdl:portType name="BusinessReportingPort">
+        <wsdl:operation name="RetrieveReportHistoryLog">
+            <wsdl:input message="tns:BusinessReportingInput"/>
+            <wsdl:output message="tns:BusinessReportingOutput"/>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="BusinessReportingPortHTTPEndpointBinding" type="tns:BusinessReportingPort">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="RetrieveReportHistoryLog">
+            <soap:operation style="document" soapAction="/SharedResources/SOAP/BusinessReportingService.serviceagent/BusinessReportingPortHTTPEndpoint/RetrieveReportHistoryLog"/>
+            <wsdl:input>
+                <soap:body use="literal" parts="Input"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal" parts="Output Status"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="BusinessReportingService">
+        <wsdl:port name="BusinessReportingPortHTTPEndpoint" binding="tns:BusinessReportingPortHTTPEndpointBinding">
+            <soap:address location="http://localhost:10201/SharedResources/SOAP/BusinessReportingService.serviceagent/BusinessReportingPortHTTPEndpoint"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>

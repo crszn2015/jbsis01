@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Created by TIBCO WSDL-->
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://isb.srv.courts-tc.ca.gov/portal/isb/Schema/global/JBSIS/SubmitFileData/1.0/wsdl/Submit11aDataImpl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns0="http://isb.srv.courts-tc.ca.gov/portal/isb/Schema/global/JBSIS/UserInfo/1.0/xsd" xmlns:ns1="http://isb.srv.courts-tc.ca.gov/portal/isb/Schema/global/JBSIS/JBSIS11aV2_INT/1.0/xsd" xmlns:ns2="http://isb.srv.courts-tc.ca.gov/portal/isb/Schema/global/JBSIS/Status/1.0/xsd" name="Untitled" targetNamespace="http://isb.srv.courts-tc.ca.gov/portal/isb/Schema/global/JBSIS/SubmitFileData/1.0/wsdl/Submit11aDataImpl">
+    <wsdl:types>
+        <xsd:schema xmlns="http://isb.srv.courts-tc.ca.gov/portal/isb/Schema/global/JBSIS/Status/1.0/xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://isb.srv.courts-tc.ca.gov/portal/isb/Schema/global/JBSIS/Status/1.0/xsd" elementFormDefault="qualified" attributeFormDefault="unqualified">
+            <xsd:element name="RequestStatus">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="Status" type="xsd:string"/>
+                        <xsd:element name="Message" type="xsd:string"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:schema>
+        <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://isb.srv.courts-tc.ca.gov/portal/isb/Schema/global/JBSIS/JBSIS11aV2_INT/1.0/xsd" targetNamespace="http://isb.srv.courts-tc.ca.gov/portal/isb/Schema/global/JBSIS/JBSIS11aV2_INT/1.0/xsd" elementFormDefault="unqualified" attributeFormDefault="unqualified">
+            <xsd:element name="CASE_TYPE_CODE">
+                <xsd:complexType mixed="true">
+                    <xsd:sequence>
+                        <xsd:element name="BEGIN_PENDING" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="FILINGS_1" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="FILINGS_2" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="REOPENED" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="RESTORED_CRT_CNTRL" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="FELONY_RED_MISD" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="EXISTING_CASE" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="REMOVED_CRT_CNTRL" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="END_PENDING" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="DISPOSITIONS_TOTAL_1" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="DISPOSITIONS_TOTAL_2" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="DISP_BEFORE_HEARING_TOTAL" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="BHRG_TRANSFER_TOTAL_MANUAL_1" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="BHRG_TRANSFER_TOTAL_MANUAL_2" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="BHRG_CHANGE_VENUE" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="BHRG_INTRACOUNTY_TRANSF" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="BHRG_CONSOLIDATED" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="BHRG_DISM_TOTAL_1" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="BHRG_DISM_TOTAL_2" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="BHRG_DISM_OTHER_1" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="BHRG_DISM_OTHER_2" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="BHRG_BAIL_FORFEITURE_1" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="BHRG_BAIL_FORFEITURE_2" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="DISP_AFTER_HEARING_TOTAL" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="AHRG_CHANGE_VENUE" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="AHRG_INTRACOUNTY_TRANSF" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="AHRG_CONSOLIDATED" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="AHRG_DISM_TOTAL_1" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="AHRG_DISM_TOTAL_2" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="AHRG_DISM_AFTER_DIV" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="AHRG_DISM_AFTER_DRG_CRT" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="AHRG_DISM_OTHER" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="AHRG_BAIL_FORFEITURE" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="AHRG_SENT_PLEA_NOLO_1" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="AHRG_SENT_PLEA_NOLO_2" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="DISP_AFTER_TRIAL_DECLAR_TOTAL" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="ATD_DISM" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="ATD_ACQUITTAL" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="ATD_CONVICTION" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="DISP_AFTER_COURT_TRIAL_TOTAL" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="ACT_DISM_ACQ_TOTAL_MANUAL_27_1" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="ACT_DISM_ACQ_TOTAL_MANUAL_27_2" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="ACT_DISM_ACQ_TOTAL_MANUAL_35_1" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="ACT_DISM_ACQ_TOTAL_MANUAL_35_2" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="ACT_DISM" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="ACT_ACQUITTAL" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="CONVICTION_TOTAL_MANUAL_28_1" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="CONVICTION_TOTAL_MANUAL_28_2" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="CONVICTION_TOTAL_MANUAL_29_1" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="CONVICTION_TOTAL_MANUAL_29_2" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="CONVICTION_TOTAL_MANUAL_36_1" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="CONVICTION_TOTAL_MANUAL_36_2" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="ACT_SENT_PLEA_NOLO" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="ACT_SENT_CRT_FIND_GUILTY" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="DISP_AFTER_JURY_TRIAL_TOTAL" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="AJRY_DISM_ACQ_TOTAL_MANUAL_31_1" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="AJRY_DISM_ACQ_TOTAL_MANUAL_31_2" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="AJRY_DISM_ACQ_TOTAL_MANUAL_38_1" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="AJRY_DISM_ACQ_TOTAL_MANUAL_38_2" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="AJRY_DISM" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="AJRY_ACQUITTAL" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="AJRY_CONVICTION_TOTAL_MANUAL_32_1" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="AJRY_CONVICTION_TOTAL_MANUAL_32_2" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="AJRY_CONVICTION_TOTAL_MANUAL_39_1" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="AJRY_CONVICTION_TOTAL_MANUAL_39_2" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="AJRY_SENT_PLEA_NOLO" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="AJRY_SENT_JRY_VERDICT_GUILTY" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="DISP_BHRG_PARK_APPEAL" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="DISP_AHRG_PARK_APPEAL" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="DISP_AGE_0_30_DAYS" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="DISP_AGE_31_90_DAYS" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="DISP_AGE_91_120_DAYS" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="DISP_AGE_GE_121_DAYS" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="DISP_AGE_TOTAL" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="PEND_AGE_0_30_DAYS" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="PEND_AGE_31_90_DAYS" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="PEND_AGE_91_120_DAYS" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="PEND_AGE_GE_121_DAYS" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="PREDISP_HRG_TOTAL" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="ARRAIGNMENT_HRG" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="DIVERSION_HRG" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="PC1538_5_MOTION_1" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="PC1538_5_MOTION_2" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="DRG_CRT_STAT_HRG" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="BAIL_RVW_HRG" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="SENT_HRG" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="OTHER_PREDISP_HRG_1" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="OTHER_PREDISP_HRG_2" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="MISTRIAL_HUNG_JRY" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="OTHER_MISTRIALS" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="RETRIALS" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="TRIALS_DE_NOVO" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="POSTDISP_HRG_TOTAL_1" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="POSTDISP_HRG_TOTAL_2" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="VIOL_PROB_HRG_1" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="VIOL_PROB_HRG_2" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="PROB_SUPRV_HRG" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="RESENT_MOD_HRG" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="FAILURE_COMPLY_HRG" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="POSTDISP_DRT_CRT_STAT_HRG" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="POSTDISP_OTHER_HRG" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="PRETRIAL_CONF" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="STTLMT_CONF_1" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="STTLMT_CONF_2" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="TOTAL_HEARING_MANUAL" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="DEF_DIVERTED_MANUAL_1" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="DEF_DIVERTED_MANUAL_2" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="CONTINUANCES_TOTAL" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="CRT_MOTION" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="PTY_MOTION" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="PROOF_CORR_SUBMITTED_PEND" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="TVS_REFERRAL_PEND" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="PRO_PER_DEFEND_PEND" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="REP_BY_COUNSEL_PEND" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="DV_FLING_PEND" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="JUV_OFFENDER_PEND" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="DUI_WITH_PRIORS_PEND" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="INTERPRETER_REQ_PEND" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="PROOF_CORR_SUBMITTED_DISP" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="TVS_REFERRAL_DISP" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="PRO_PER_DEFEND_DISP" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="REP_BY_COUNSEL_DISP" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="DV_FLING_DISP" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="JUV_OFFENDER_DISP" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="DUI_WITH_PRIORS_DISP" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="INTERP_REQ_DISP" type="xsd:string" minOccurs="0"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="JBSIS11aV2-INT">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="Control_sum_11a" type="xsd:string"/>
+                        <xsd:element name="COURT" type="xsd:string"/>
+                        <xsd:element name="DATA_AS_OF_DATE" type="xsd:string"/>
+                        <xsd:element name="AMEND_CODE" type="xsd:string"/>
+                        <xsd:element name="MAJOR_DOCUMENT_NUMBER" type="xsd:string"/>
+                        <xsd:element name="MINOR_DOCUMENT_NUMBER" type="xsd:string"/>
+                        <xsd:element ref="ns1:CASE_TYPE_CODE" maxOccurs="unbounded"/>
+                        <xsd:element name="RUN_DATE" type="xsd:string"/>
+                        <xsd:element name="RUN_TIME" type="xsd:string"/>
+                        <xsd:element name="EXTRACT_TYPE_CODE" type="xsd:string"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:schema>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://isb.srv.courts-tc.ca.gov/portal/isb/Schema/global/JBSIS/UserInfo/UserInfo/1.0/xsd" targetNamespace="http://isb.srv.courts-tc.ca.gov/portal/isb/Schema/global/JBSIS/UserInfo/1.0/xsd" elementFormDefault="qualified" attributeFormDefault="unqualified">
+            <xs:element name="UserInfo">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Court_Code" type="xs:string"/>
+                        <xs:element name="UserName" type="xs:string" minOccurs="0"/>
+                        <xs:element name="Request_Date" type="xs:string"/>
+                        <xs:element name="Request_Time" type="xs:string"/>
+                        <xs:element name="Selection">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="Selected_Report" type="xs:string"/>
+                                    <xs:element name="Selected_Month" type="xs:string"/>
+                                    <xs:element name="Selected_Year" type="xs:string"/>
+                                    <xs:element name="Selected_Action" type="xs:string"/>
+                                    <xs:element name="User_Action" type="xs:string" minOccurs="0"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="FileName" type="xs:string" minOccurs="0"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:schema>
+    </wsdl:types>
+    <wsdl:service name="SubmitFileData11a">
+        <wsdl:port name="Receive_sp_Incoming_sp_Data_sp_Request" binding="tns:Receive_sp_Incoming_sp_Data_sp_RequestBinding">
+            <soap:address location="http://localhost:10201/Processes/Integration_Interfaces/11a/SubmitFileData11a"/>
+        </wsdl:port>
+    </wsdl:service>
+    <wsdl:portType name="SubmitData">
+        <wsdl:operation name="Submit11aData">
+            <wsdl:input message="tns:SubmitFileData11aRequest"/>
+            <wsdl:output message="tns:SubmitFileDataResponse"/>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="Receive_sp_Incoming_sp_Data_sp_RequestBinding" type="tns:SubmitData">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="Submit11aData">
+            <soap:operation style="document" soapAction="/Processes/Integration_Interfaces/11a/SubmitFileData11a"/>
+            <wsdl:input>
+                <soap:body use="literal" parts="part1 part2"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal" parts="part1"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:message name="SubmitFileData11aRequest">
+        <wsdl:part name="part1" element="ns0:UserInfo"/>
+        <wsdl:part name="part2" element="ns1:JBSIS11aV2-INT"/>
+    </wsdl:message>
+    <wsdl:message name="SubmitFileDataResponse">
+        <wsdl:part name="part1" element="ns2:RequestStatus"/>
+    </wsdl:message>
+</wsdl:definitions>

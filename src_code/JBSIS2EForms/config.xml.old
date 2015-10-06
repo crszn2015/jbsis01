@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <record jsxid="version" type="string">1.2</record>
+  <record jsxid="jsxversion" type="string">3.2</record>
+  <record jsxid="caption" type="string">JBSISEForms</record>
+  <record jsxid="mode" type="boolean">true</record>
+  <record jsxid="namespace" type="string">JBSISEForms</record>
+  <record jsxid="cancelerror" type="boolean">true</record>
+  <record jsxid="cancelrightclick" type="boolean">true</record>
+  <record jsxid="left" type="number">0</record>
+  <record jsxid="top" type="number">0</record>
+  <record jsxid="width" type="string">100%</record>
+  <record jsxid="height" type="string">100%</record>
+  <record jsxid="position" type="number">0</record>
+  <record jsxid="overflow" type="string">3</record>
+  <record jsxid="eventsvers" type="string">3.1</record>
+  <record jsxid="onload" type="string">JBSIS.eForms.initApp();</record>
+  <record jsxid="objectseturl" type="string">components/appCanvas.xml</record>
+  <record jsxid="includes" type="array">
+    <record jsxid="0" type="map">
+      <record jsxid="id" type="string">appCanvas_component</record>
+      <record jsxid="type" type="string">component</record>
+      <record jsxid="src" type="string">components/appCanvas.xml</record>
+    </record>
+    <record jsxid="1" type="map">
+      <record jsxid="id" type="string">jbsis_js</record>
+      <record jsxid="type" type="string">script</record>
+      <record jsxid="load" type="number">1</record>
+      <record jsxid="src" type="string">js/jbsis.js</record>
+    </record>
+    <record jsxid="2" type="map">
+      <record jsxid="id" type="string">leftMenu_xml</record>
+      <record jsxid="type" type="string">component</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">components/leftMenu.xml</record>
+    </record>
+    <record jsxid="3" type="map">
+      <record jsxid="id" type="string">welcome_xml</record>
+      <record jsxid="type" type="string">component</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">components/welcome.xml</record>
+    </record>
+    <record jsxid="4" type="map">
+      <record jsxid="id" type="string">navigation_js</record>
+      <record jsxid="type" type="string">script</record>
+      <record jsxid="load" type="number">1</record>
+      <record jsxid="src" type="string">js/navigation.js</record>
+    </record>
+    <record jsxid="5" type="map">
+      <record jsxid="id" type="string">errorDialog_xml</record>
+      <record jsxid="type" type="string">component</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">components/dialogs/errorDialog.xml</record>
+    </record>
+    <record jsxid="6" type="map">
+      <record jsxid="id" type="string">dlgAttachDocument_xml</record>
+      <record jsxid="type" type="string">component</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">components/dialogs/dlgAttachDocument.xml</record>
+    </record>
+    <record jsxid="7" type="map">
+      <record jsxid="id" type="string">infoDialog_xml</record>
+      <record jsxid="type" type="string">component</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">components/dialogs/infoDialog.xml</record>
+    </record>
+    <record jsxid="8" type="map">
+      <record jsxid="id" type="string">getReportStatus_xml</record>
+      <record jsxid="type" type="string">services</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">rules/getReportStatus.xml</record>
+    </record>
+    <record jsxid="9" type="map">
+      <record jsxid="id" type="string">checkReportStatus_js</record>
+      <record jsxid="type" type="string">script</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">js/checkReportStatus.js</record>
+    </record>
+    <record jsxid="10" type="map">
+      <record jsxid="id" type="string">form11a_js</record>
+      <record jsxid="type" type="string">script</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">js/form11a.js</record>
+    </record>
+    <record jsxid="11" type="map">
+      <record jsxid="id" type="string">sendForm11aData_xml</record>
+      <record jsxid="type" type="string">services</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">rules/sendForm11aData.xml</record>
+    </record>
+    <record jsxid="12" type="map">
+      <record jsxid="id" type="string">getForm11aData_xml</record>
+      <record jsxid="type" type="string">services</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">rules/getForm11aData.xml</record>
+    </record>
+    <record jsxid="13" type="map">
+      <record jsxid="id" type="string">form07a_js</record>
+      <record jsxid="type" type="string">script</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">js/form07a.js</record>
+    </record>
+    <record jsxid="14" type="map">
+      <record jsxid="id" type="string">sendForm07aData_xml</record>
+      <record jsxid="type" type="string">services</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">rules/sendForm07aData.xml</record>
+    </record>
+    <record jsxid="15" type="map">
+      <record jsxid="id" type="string">getForm07aData_xml</record>
+      <record jsxid="type" type="string">services</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">rules/getForm07aData.xml</record>
+    </record>
+    <record jsxid="16" type="map">
+      <record jsxid="id" type="string">form07b_js</record>
+      <record jsxid="type" type="string">script</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">js/form07b.js</record>
+    </record>
+    <record jsxid="17" type="map">
+      <record jsxid="id" type="string">sendForm07bData_xml</record>
+      <record jsxid="type" type="string">services</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">rules/sendForm07bData.xml</record>
+    </record>
+    <record jsxid="18" type="map">
+      <record jsxid="id" type="string">getForm07bData_xml</record>
+      <record jsxid="type" type="string">services</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">rules/getForm07bData.xml</record>
+    </record>
+    <record jsxid="19" type="map">
+      <record jsxid="id" type="string">form07a_xml</record>
+      <record jsxid="type" type="string">component</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">components/form07a.xml</record>
+    </record>
+    <record jsxid="20" type="map">
+      <record jsxid="id" type="string">form11a_xml</record>
+      <record jsxid="type" type="string">component</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">components/form11a.xml</record>
+    </record>
+    <record jsxid="21" type="map">
+      <record jsxid="id" type="string">form07b_xml</record>
+      <record jsxid="type" type="string">component</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">components/form07b.xml</record>
+    </record>
+    <record jsxid="22" type="map">
+      <record jsxid="id" type="string">maintab_xml</record>
+      <record jsxid="type" type="string">component</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">components/maintab.xml</record>
+    </record>
+    <record jsxid="23" type="map">
+      <record jsxid="id" type="string">messageDialog_xml</record>
+      <record jsxid="type" type="string">component</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">components/dialogs/messageDialog.xml</record>
+    </record>
+    <record jsxid="24" type="map">
+      <record jsxid="id" type="string">jbsisStyleSheet_css</record>
+      <record jsxid="type" type="string">css</record>
+      <record jsxid="load" type="number">1</record>
+      <record jsxid="src" type="string">css/jbsisStyleSheet.css</record>
+    </record>
+    <record jsxid="25" type="map">
+      <record jsxid="id" type="string">actionPane_xml</record>
+      <record jsxid="type" type="string">component</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">components/actionPane.xml</record>
+    </record>
+    <record jsxid="26" type="map">
+      <record jsxid="id" type="string">form04b_xml</record>
+      <record jsxid="type" type="string">component</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">components/form04b.xml</record>
+    </record>
+    <record jsxid="27" type="map">
+      <record jsxid="id" type="string">form05a_xml</record>
+      <record jsxid="type" type="string">component</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">components/form05a.xml</record>
+    </record>
+    <record jsxid="28" type="map">
+      <record jsxid="id" type="string">form05b_xml</record>
+      <record jsxid="type" type="string">component</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">components/form05b.xml</record>
+    </record>
+    <record jsxid="29" type="map">
+      <record jsxid="id" type="string">form06a_xml</record>
+      <record jsxid="type" type="string">component</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">components/form06a.xml</record>
+    </record>
+    <record jsxid="30" type="map">
+      <record jsxid="id" type="string">form08a_xml</record>
+      <record jsxid="type" type="string">component</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">components/form08a.xml</record>
+    </record>
+    <record jsxid="31" type="map">
+      <record jsxid="id" type="string">form09a_xml</record>
+      <record jsxid="type" type="string">component</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">components/form09a.xml</record>
+    </record>
+    <record jsxid="32" type="map">
+      <record jsxid="id" type="string">form10a_xml</record>
+      <record jsxid="type" type="string">component</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">components/form10a.xml</record>
+    </record>
+    <record jsxid="33" type="map">
+      <record jsxid="id" type="string">form12a_xml</record>
+      <record jsxid="type" type="string">component</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">components/form12a.xml</record>
+    </record>
+    <record jsxid="34" type="map">
+      <record jsxid="id" type="string">form13a_xml</record>
+      <record jsxid="type" type="string">component</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">components/form13a.xml</record>
+    </record>
+    <record jsxid="35" type="map">
+      <record jsxid="id" type="string">sendForm04bData_xml</record>
+      <record jsxid="type" type="string">services</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">rules/sendForm04bData.xml</record>
+    </record>
+    <record jsxid="36" type="map">
+      <record jsxid="id" type="string">form04b_js</record>
+      <record jsxid="type" type="string">script</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">js/form04b.js</record>
+    </record>
+    <record jsxid="37" type="map">
+      <record jsxid="id" type="string">getForm04bData_xml</record>
+      <record jsxid="type" type="string">services</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">rules/getForm04bData.xml</record>
+    </record>
+    <record jsxid="38" type="map">
+      <record jsxid="id" type="string">form05a_js</record>
+      <record jsxid="type" type="string">script</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">js/form05a.js</record>
+    </record>
+    <record jsxid="39" type="map">
+      <record jsxid="id" type="string">sendForm05aData_xml</record>
+      <record jsxid="type" type="string">services</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">rules/sendForm05aData.xml</record>
+    </record>
+    <record jsxid="40" type="map">
+      <record jsxid="id" type="string">getForm05aData_xml</record>
+      <record jsxid="type" type="string">services</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">rules/getForm05aData.xml</record>
+    </record>
+    <record jsxid="41" type="map">
+      <record jsxid="id" type="string">form05b_js</record>
+      <record jsxid="type" type="string">script</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">js/form05b.js</record>
+    </record>
+    <record jsxid="42" type="map">
+      <record jsxid="id" type="string">sendForm05bData_xml</record>
+      <record jsxid="type" type="string">services</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">rules/sendForm05bData.xml</record>
+    </record>
+    <record jsxid="43" type="map">
+      <record jsxid="id" type="string">getForm05bData_xml</record>
+      <record jsxid="type" type="string">services</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">rules/getForm05bData.xml</record>
+    </record>
+    <record jsxid="44" type="map">
+      <record jsxid="id" type="string">form06a_js</record>
+      <record jsxid="type" type="string">script</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">js/form06a.js</record>
+    </record>
+    <record jsxid="45" type="map">
+      <record jsxid="id" type="string">sendForm06aData_xml</record>
+      <record jsxid="type" type="string">services</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">rules/sendForm06aData.xml</record>
+    </record>
+    <record jsxid="46" type="map">
+      <record jsxid="id" type="string">getForm06aData_xml</record>
+      <record jsxid="type" type="string">services</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">rules/getForm06aData.xml</record>
+    </record>
+    <record jsxid="47" type="map">
+      <record jsxid="id" type="string">form08a_js</record>
+      <record jsxid="type" type="string">script</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">js/form08a.js</record>
+    </record>
+    <record jsxid="48" type="map">
+      <record jsxid="id" type="string">sendForm08aData_xml</record>
+      <record jsxid="type" type="string">services</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">rules/sendForm08aData.xml</record>
+    </record>
+    <record jsxid="49" type="map">
+      <record jsxid="id" type="string">getForm08aData_xml</record>
+      <record jsxid="type" type="string">services</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">rules/getForm08aData.xml</record>
+    </record>
+    <record jsxid="50" type="map">
+      <record jsxid="id" type="string">form09a_js</record>
+      <record jsxid="type" type="string">script</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">js/form09a.js</record>
+    </record>
+    <record jsxid="51" type="map">
+      <record jsxid="id" type="string">sendForm09aData_xml</record>
+      <record jsxid="type" type="string">services</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">rules/sendForm09aData.xml</record>
+    </record>
+    <record jsxid="52" type="map">
+      <record jsxid="id" type="string">getForm09aData_xml</record>
+      <record jsxid="type" type="string">services</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">rules/getForm09aData.xml</record>
+    </record>
+    <record jsxid="53" type="map">
+      <record jsxid="id" type="string">form10a_js</record>
+      <record jsxid="type" type="string">script</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">js/form10a.js</record>
+    </record>
+    <record jsxid="54" type="map">
+      <record jsxid="id" type="string">sendForm10aData_xml</record>
+      <record jsxid="type" type="string">services</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">rules/sendForm10aData.xml</record>
+    </record>
+    <record jsxid="55" type="map">
+      <record jsxid="id" type="string">getForm10aData_xml</record>
+      <record jsxid="type" type="string">services</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">rules/getForm10aData.xml</record>
+    </record>
+    <record jsxid="56" type="map">
+      <record jsxid="id" type="string">form12a_js</record>
+      <record jsxid="type" type="string">script</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">js/form12a.js</record>
+    </record>
+    <record jsxid="57" type="map">
+      <record jsxid="id" type="string">sendForm12aData_xml</record>
+      <record jsxid="type" type="string">services</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">rules/sendForm12aData.xml</record>
+    </record>
+    <record jsxid="58" type="map">
+      <record jsxid="id" type="string">getForm12aData_xml</record>
+      <record jsxid="type" type="string">services</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">rules/getForm12aData.xml</record>
+    </record>
+    <record jsxid="59" type="map">
+      <record jsxid="id" type="string">form13a_js</record>
+      <record jsxid="type" type="string">script</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">js/form13a.js</record>
+    </record>
+    <record jsxid="60" type="map">
+      <record jsxid="id" type="string">sendForm13aData_xml</record>
+      <record jsxid="type" type="string">services</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">rules/sendForm13aData.xml</record>
+    </record>
+    <record jsxid="61" type="map">
+      <record jsxid="id" type="string">getForm13aData_xml</record>
+      <record jsxid="type" type="string">services</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">rules/getForm13aData.xml</record>
+    </record>
+    <record jsxid="62" type="map">
+      <record jsxid="id" type="string">JBSIS_PORTAL_UI_SERVER_LOOKUP_xml</record>
+      <record jsxid="type" type="string">xml</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">xml/JBSIS.PORTAL.UI.SERVER_LOOKUP.xml</record>
+    </record>
+    <record jsxid="63" type="map">
+      <record jsxid="id" type="string">JBSIS_PORTAL_UI_ERROR_LOOKUP_xml</record>
+      <record jsxid="type" type="string">xml</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">xml/JBSIS.PORTAL.UI.ERROR_LOOKUP.xml</record>
+    </record>
+    <record jsxid="64" type="map">
+      <record jsxid="id" type="string">load_xml</record>
+      <record jsxid="type" type="string">component</record>
+      <record jsxid="load" type="number">-1.#IND</record>
+      <record jsxid="src" type="string">components/dialogs/load.xml</record>
+    </record>
+    <record jsxid="65" type="map">
+      <record jsxid="id" type="string">reporthistory_xml</record>
+      <record jsxid="type" type="string">component</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">components/reporthistory.xml</record>
+    </record>
+    <record jsxid="66" type="map">
+      <record jsxid="id" type="string">reporthistorylog_js</record>
+      <record jsxid="type" type="string">script</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">js/reporthistorylog.js</record>
+    </record>
+    <record jsxid="67" type="map">
+      <record jsxid="id" type="string">retrievehistorylog_xml</record>
+      <record jsxid="type" type="string">services</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">rules/retrievehistorylog.xml</record>
+    </record>
+	<record jsxid="68" type="map">
+      <record jsxid="id" type="string">init_xml</record>
+      <record jsxid="type" type="string">services</record>
+      <record jsxid="load" type="number">0</record>
+      <record jsxid="src" type="string">rules/init.xml</record>
+    </record>
+    <record jsxid="69" type="map">
+      <record jsxid="id" type="string">init_js</record>
+      <record jsxid="type" type="string">script</record>
+      <record jsxid="load" type="number">1</record>
+      <record jsxid="src" type="string">js/init.js</record>
+    </record>
+  </record>
+  <record jsxid="bodyhotkeys" type="boolean">false</record>
+  <record jsxid="default_locale" type="string">en_US</record>
+  <record jsxid="addins" type="array"></record>
+  <record jsxid="onunload" type="string"></record>
+</data>

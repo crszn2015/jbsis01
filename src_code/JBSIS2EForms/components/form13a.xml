@@ -1,0 +1,348 @@
+<serialization jsxversion="3.5" xmlns="urn:tibco.com/v3.0">
+  <name></name>
+  <icon></icon>
+  <description></description>
+  <onBeforeDeserialize></onBeforeDeserialize>
+  <onAfterDeserialize></onAfterDeserialize>
+  <object type="jsx3.gui.Block">
+    <variants jsxoverflow="1" jsxrelativeposition="0" jsxleft="0" jsxloadtype="1"></variants>
+    <strings jsxname="blkForm13a" jsxheight="96%" jsxwidth="100%" jsxclassname="MAIN_PANE" jsxtop="4%"></strings>
+    <object type="jsx3.gui.Block">
+      <variants jsxwidth="350" jsxheight="16" jsxrelativeposition="0"></variants>
+      <strings jsxname="blkHeader" jsxtextalign="center" jsxdisplay=""></strings>
+      <dynamics jsxbgcolor="@Transparent BG"></dynamics>
+      <object type="jsx3.gui.Block">
+        <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="130" jsxwidth="351" jsxfontsize="12"></variants>
+        <strings jsxname="lblCivilProceedings13a" jsxtext="II.  CIVIL PROCEEDINGS" jsxdisplay="" jsxborder="solid 1px black;" jsxtextalign="center" jsxfontweight="bold" jsxfontname="Arial"></strings>
+      </object>
+    </object>
+    <object type="jsx3.gui.Block">
+      <variants jsxwidth="351" jsxleft="130" jsxtop="16" jsxheight="381" jsxrelativeposition="0"></variants>
+      <strings jsxname="blkGrid" jsxpadding="" jsxborder="solid 1px black;"></strings>
+      <dynamics jsxbgcolor="@Transparent BG"></dynamics>
+      <object type="jsx3.gui.Block">
+        <variants jsxwidth="250" jsxleft="0" jsxtop="0" jsxheight="380" jsxrelativeposition="0"></variants>
+        <strings jsxname="blkGridLeft"></strings>
+        <dynamics jsxbgcolor="@Transparent BG"></dynamics>
+        <object type="jsx3.gui.Block">
+          <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="10" jsxtop="20" jsxfontsize="12"></variants>
+          <strings jsxname="lblNumCasesFiled13a" jsxtext="A. Number of cases filed" jsxdisplay="" jsxfontname="Arial"></strings>
+        </object>
+        <object type="jsx3.gui.Block">
+          <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="10" jsxtop="38" jsxfontsize="12"></variants>
+          <strings jsxname="lblNumCasesDisposed13a" jsxtext="B. Number of cases disposed of" jsxdisplay="" jsxfontname="Arial"></strings>
+        </object>
+        <object type="jsx3.gui.Block">
+          <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="20" jsxtop="56" jsxfontsize="12"></variants>
+          <strings jsxname="lblB4Trial13a" jsxtext="1. Before trial" jsxdisplay="" jsxfontname="Arial"></strings>
+        </object>
+        <object type="jsx3.gui.Block">
+          <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="30" jsxtop="74" jsxfontsize="12"></variants>
+          <strings jsxname="lblDismLackPros13a" jsxtext="a. Dismissed for lack of prosecution" jsxdisplay="" jsxfontname="Arial"></strings>
+        </object>
+        <object type="jsx3.gui.Block">
+          <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="30" jsxtop="92" jsxfontsize="12"></variants>
+          <strings jsxname="lblOtherDismTrans13a" jsxtext="b. Other dismissals and transfers" jsxdisplay="" jsxfontname="Arial"></strings>
+        </object>
+        <object type="jsx3.gui.Block">
+          <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="30" jsxtop="110" jsxfontsize="12"></variants>
+          <strings jsxname="lblSummJudgmnt13a" jsxtext="c. Summary judgments" jsxdisplay="" jsxfontname="Arial"></strings>
+        </object>
+        <object type="jsx3.gui.Block">
+          <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="30" jsxtop="128" jsxfontsize="12"></variants>
+          <strings jsxname="lblAllOtherJudgmnt13a" jsxtext="d. All other judgments" jsxdisplay="" jsxfontname="Arial"></strings>
+        </object>
+        <object type="jsx3.gui.Block">
+          <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="20" jsxtop="146" jsxfontsize="12"></variants>
+          <strings jsxname="lblAfterTrial13a" jsxtext="2. After Trial" jsxdisplay="" jsxfontname="Arial"></strings>
+        </object>
+        <object type="jsx3.gui.Block">
+          <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="30" jsxtop="164" jsxfontsize="12"></variants>
+          <strings jsxname="lblBeforeEvidence13a" jsxtext="a. BEFORE evidence by both sides" jsxdisplay="" jsxfontname="Arial"></strings>
+        </object>
+        <object type="jsx3.gui.Block">
+          <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="40" jsxtop="182" jsxfontsize="12"></variants>
+          <strings jsxname="lblByCourtBefore13a" jsxtext="(1) By the court" jsxdisplay="" jsxfontname="Arial"></strings>
+        </object>
+        <object type="jsx3.gui.Block">
+          <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="40" jsxtop="200" jsxfontsize="12"></variants>
+          <strings jsxname="lblByJuryBefore13a" jsxtext="(2) By jury" jsxdisplay="" jsxfontname="Arial"></strings>
+        </object>
+        <object type="jsx3.gui.Block">
+          <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="30" jsxtop="218" jsxfontsize="12"></variants>
+          <strings jsxname="lblAfterEvidence13a" jsxtext="b. AFTER evidence by both sides" jsxdisplay="" jsxfontname="Arial"></strings>
+        </object>
+        <object type="jsx3.gui.Block">
+          <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="40" jsxtop="236" jsxfontsize="12"></variants>
+          <strings jsxname="lblByCourtAfter13a" jsxtext="(1) By the court" jsxdisplay="" jsxfontname="Arial"></strings>
+        </object>
+        <object type="jsx3.gui.Block">
+          <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="40" jsxtop="254" jsxfontsize="12"></variants>
+          <strings jsxname="lblByJuryAfter13a" jsxtext="(2) By jury" jsxdisplay="" jsxfontname="Arial"></strings>
+        </object>
+        <object type="jsx3.gui.Block">
+          <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="20" jsxtop="272" jsxfontsize="12"></variants>
+          <strings jsxname="lblDispositionTotals13a" jsxtext="3. Disposition Totals" jsxdisplay="" jsxfontname="Arial"></strings>
+        </object>
+        <object type="jsx3.gui.Block">
+          <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="10" jsxtop="290" jsxfontsize="12"></variants>
+          <strings jsxname="lblOtherData13a" jsxtext="C. Other data" jsxdisplay="" jsxfontname="Arial"></strings>
+        </object>
+        <object type="jsx3.gui.Block">
+          <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="20" jsxtop="308" jsxfontsize="12"></variants>
+          <strings jsxname="lblHearBeforeTrial13a" jsxtext="1. Hearings before trial" jsxdisplay="" jsxfontname="Arial"></strings>
+        </object>
+        <object type="jsx3.gui.Block">
+          <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="20" jsxtop="326" jsxfontsize="12"></variants>
+          <strings jsxname="lblHearAfterTrail13a" jsxtext="2. Hearings after trial" jsxdisplay="" jsxfontname="Arial"></strings>
+        </object>
+        <object type="jsx3.gui.Block">
+          <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="20" jsxtop="344" jsxfontsize="12"></variants>
+          <strings jsxname="lblPreSettlmntConf13a" jsxtext="3. Pretrial settlement conferences" jsxdisplay="" jsxfontname="Arial"></strings>
+        </object>
+        <object type="jsx3.gui.Block">
+          <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="20" jsxtop="362" jsxfontsize="12"></variants>
+          <strings jsxname="lblJuriesSworn13a" jsxtext="4. Juries sworn" jsxdisplay="" jsxfontname="Arial"></strings>
+        </object>
+      </object>
+      <object type="jsx3.gui.Block">
+        <variants jsxwidth="100" jsxheight="380" jsxleft="250" jsxtop="0" jsxrelativeposition="0"></variants>
+        <strings jsxname="blkGridRight13a" jsxborder="solid 1px black;" jsxdisplay=""></strings>
+        <dynamics jsxbgcolor="@Transparent BG"></dynamics>
+        <object type="jsx3.gui.Block">
+          <variants jsxrelativeposition="0" jsxoverflow="3" jsxfontsize="12" jsxheight="20" jsxwidth="98"></variants>
+          <strings jsxname="lblSmallClaims13a" jsxtext="SMALL CLAIMS" jsxdisplay="" jsxfontname="Arial" jsxfontweight="bold" jsxtextalign="center" jsxborder="solid 1px black;"></strings>
+        </object>
+        <object type="jsx3.gui.TextBox">
+          <variants jsxheight="18" jsxrelativeposition="0" jsxtop="20"></variants>
+          <strings jsxname="txtNumCasesFiled13a" jsxmargin="0 4 0 0" jsxdisplay="" jsxvalidationtype="number" jsxvalidationexpression="^[0-9]*$" jsxtextalign="right" jsxvalue="" jsxbgcolor="#FFFFFF" jsxwidth="100%"></strings>
+          <events jsxchange="JBSIS.eForms.doNumValidation(this);" undefined="JBSIS.eForms.Nav.showFocus(false,this);" jsxblur="JBSIS.eForms.Nav.showFocus(false,this);" jsxfocus="JBSIS.eForms.Nav.showFocus(true,this);"></events>
+        </object>
+        <object type="jsx3.gui.TextBox">
+          <variants jsxheight="18" jsxrelativeposition="0" jsxtop="74"></variants>
+          <strings jsxname="txtDismLackPros13a" jsxmargin="0 4 0 0" jsxdisplay="" jsxvalidationtype="number" jsxvalidationexpression="^[0-9]*$" jsxtextalign="right" jsxvalue="" jsxbgcolor="#FFFFFF" jsxwidth="100%"></strings>
+          <events jsxchange="JBSIS.eForms.doNumValidation(this);JBSIS.eForms.doTotalByPosition(&quot;txtDispositionTotals13a&quot;,&quot;blkGridRight13a&quot;,&quot;txtDismLackPros13a&quot;);" undefined="JBSIS.eForms.Nav.showFocus(false,this);" jsxblur="JBSIS.eForms.Nav.showFocus(false,this);" jsxfocus="JBSIS.eForms.Nav.showFocus(true,this);"></events>
+        </object>
+        <object type="jsx3.gui.TextBox">
+          <variants jsxheight="18" jsxrelativeposition="0" jsxtop="92"></variants>
+          <strings jsxname="txtOtherDismTrans13a" jsxmargin="0 4 0 0" jsxdisplay="" jsxvalidationtype="number" jsxvalidationexpression="^[0-9]*$" jsxtextalign="right" jsxvalue="" jsxbgcolor="#FFFFFF" jsxwidth="100%"></strings>
+          <events jsxchange="JBSIS.eForms.doNumValidation(this);JBSIS.eForms.doTotalByPosition(&quot;txtDispositionTotals13a&quot;,&quot;blkGridRight13a&quot;,&quot;txtDismLackPros13a&quot;);" undefined="JBSIS.eForms.Nav.showFocus(false,this);" jsxblur="JBSIS.eForms.Nav.showFocus(false,this);" jsxfocus="JBSIS.eForms.Nav.showFocus(true,this);"></events>
+        </object>
+        <object type="jsx3.gui.TextBox">
+          <variants jsxheight="18" jsxrelativeposition="0" jsxtop="182"></variants>
+          <strings jsxname="txtByCourtBefore13a" jsxmargin="0 4 0 0" jsxdisplay="" jsxvalidationtype="number" jsxvalidationexpression="^[0-9]*$" jsxtextalign="right" jsxvalue="" jsxbgcolor="#FFFFFF" jsxwidth="100%"></strings>
+          <events jsxchange="JBSIS.eForms.doNumValidation(this);JBSIS.eForms.doTotalByPosition(&quot;txtDispositionTotals13a&quot;,&quot;blkGridRight13a&quot;,&quot;txtDismLackPros13a&quot;);" undefined="JBSIS.eForms.Nav.showFocus(false,this);" jsxblur="JBSIS.eForms.Nav.showFocus(false,this);" jsxfocus="JBSIS.eForms.Nav.showFocus(true,this);"></events>
+        </object>
+        <object type="jsx3.gui.TextBox">
+          <variants jsxheight="18" jsxrelativeposition="0" jsxtop="236"></variants>
+          <strings jsxname="txtByCourtAfter13a" jsxmargin="0 4 0 0" jsxdisplay="" jsxvalidationtype="number" jsxvalidationexpression="^[0-9]*$" jsxtextalign="right" jsxvalue="" jsxwidth="100%" jsxbgcolor="#FFFFFF"></strings>
+          <events jsxchange="JBSIS.eForms.doNumValidation(this);JBSIS.eForms.doTotalByPosition(&quot;txtDispositionTotals13a&quot;,&quot;blkGridRight13a&quot;,&quot;txtDismLackPros13a&quot;);" undefined="JBSIS.eForms.Nav.showFocus(false,this);" jsxblur="JBSIS.eForms.Nav.showFocus(false,this);" jsxfocus="JBSIS.eForms.Nav.showFocus(true,this);"></events>
+        </object>
+        <object type="jsx3.gui.TextBox">
+          <variants jsxheight="18" jsxrelativeposition="0" jsxtop="272"></variants>
+          <strings jsxname="txtDispositionTotals13a" jsxmargin="0 4 0 0" jsxdisplay="" jsxvalidationtype="number" jsxvalidationexpression="^[0-9]*$" jsxtextalign="right" jsxvalue="" jsxbgcolor="#FFFFFF" jsxwidth="100%"></strings>
+          <properties readonly="true" calculated="true"></properties>
+          <events jsxchange="JBSIS.eForms.doNumValidation(this);" undefined="JBSIS.eForms.Nav.showFocus(false,this);" jsxblur="JBSIS.eForms.Nav.showFocus(false,this);" jsxfocus="JBSIS.eForms.Nav.showFocus(true,this);"></events>
+        </object>
+        <object type="jsx3.gui.TextBox">
+          <variants jsxheight="18" jsxrelativeposition="0" jsxtop="326"></variants>
+          <strings jsxname="txtHearAfterTrail13a" jsxmargin="0 4 0 0" jsxdisplay="" jsxvalidationtype="number" jsxvalidationexpression="^[0-9]*$" jsxtextalign="right" jsxvalue="" jsxbgcolor="#FFFFFF" jsxwidth="100%"></strings>
+          <events jsxchange="JBSIS.eForms.doNumValidation(this);" undefined="JBSIS.eForms.Nav.showFocus(false,this);" jsxblur="JBSIS.eForms.Nav.showFocus(false,this);" jsxfocus="JBSIS.eForms.Nav.showFocus(true,this);"></events>
+        </object>
+      </object>
+    </object>
+    <object type="jsx3.gui.Block">
+      <variants jsxwidth="692" jsxheight="97" jsxrelativeposition="0" jsxleft="130" jsxtop="410"></variants>
+      <strings jsxname="blkCaseTime" jsxborder="solid 1px black;" jsxtextalign="left" jsxpadding="" jsxdisplay=""></strings>
+      <object type="jsx3.gui.Block">
+        <variants jsxwidth="690" jsxheight="20" jsxoverflow="1"></variants>
+        <strings jsxname="blkCaseHeader" jsxrelativeposition="1" jsxbgcolor="-1" jsxpadding="" jsxborder="solid 1px black;" jsxtextalign="center"></strings>
+        <object type="jsx3.gui.Block">
+          <variants jsxrelativeposition="1" jsxoverflow="3" jsxfontsize="12"></variants>
+          <strings jsxname="lblCaseProcessingTime13a" jsxtext="CASE PROCESSING TIME" jsxfontname="ARIAL" jsxfontweight="bold"></strings>
+        </object>
+      </object>
+      <object type="jsx3.gui.Block">
+        <variants jsxwidth="690" jsxheight="48" jsxleft="0" jsxtop="20"></variants>
+        <strings jsxname="blkCaseProcUnlawDetainIN13a" jsxrelativeposition="1" jsxborder="solid 1px black;" jsxtextalign="left" jsxbgcolor="-1"></strings>
+        <object type="jsx3.gui.Block">
+          <variants jsxrelativeposition="0" jsxwidth="115" jsxheight="26" jsxfontsize="12" jsxtop="20"></variants>
+          <strings jsxname="lblInCountyCST13a" jsxtext="In County" jsxfontname="ARIAL" jsxtextalign="center" jsxborder="solid 1px black;" jsxdisplay="" jsxpadding="4 0 0 0"></strings>
+        </object>
+        <object type="jsx3.gui.Block">
+          <variants jsxrelativeposition="0" jsxoverflow="3" jsxwidth="143" jsxheight="20" jsxleft="115" jsxtop="0" jsxfontsize="12"></variants>
+          <strings jsxname="lbl0to70Days13a" jsxtext="0-70 DAYS" jsxdisplay="" jsxtextalign="center" jsxborder="solid 1px black;" jsxfontname="ARIAL"></strings>
+        </object>
+        <object type="jsx3.gui.Block">
+          <variants jsxrelativeposition="0" jsxoverflow="3" jsxwidth="115" jsxheight="20" jsxtop="0" jsxfontsize="12"></variants>
+          <strings jsxname="lbl0to30Days13a" jsxtext="SMALL CLAIMS" jsxdisplay="" jsxtextalign="center" jsxborder="solid 1px black;" jsxfontname="ARIAL"></strings>
+        </object>
+        <object type="jsx3.gui.Block">
+          <variants jsxrelativeposition="0" jsxoverflow="3" jsxwidth="143" jsxheight="20" jsxleft="258" jsxtop="0" jsxfontsize="12"></variants>
+          <strings jsxname="lbl71to90Days13a" jsxtext="71-90 DAYS" jsxdisplay="" jsxtextalign="center" jsxborder="solid 1px black;" jsxfontname="ARIAL"></strings>
+        </object>
+        <object type="jsx3.gui.Block">
+          <variants jsxrelativeposition="0" jsxoverflow="3" jsxwidth="143" jsxheight="20" jsxleft="401" jsxtop="0" jsxfontsize="12"></variants>
+          <strings jsxname="lbl91+Days13a" jsxtext="91+ DAYS" jsxdisplay="" jsxtextalign="center" jsxborder="solid 1px black;" jsxfontname="ARIAL"></strings>
+        </object>
+        <object type="jsx3.gui.Block">
+          <variants jsxrelativeposition="0" jsxoverflow="3" jsxwidth="144" jsxheight="20" jsxleft="544" jsxtop="0" jsxfontsize="12"></variants>
+          <strings jsxname="lblTotalCST13a" jsxtext="TOTAL" jsxdisplay="" jsxtextalign="center" jsxborder="solid 1px black;" jsxfontname="ARIAL"></strings>
+        </object>
+        <object type="jsx3.gui.TextBox">
+          <variants jsxheight="25" jsxrelativeposition="0" jsxleft="115" jsxtop="20" jsxwidth="143"></variants>
+          <strings jsxname="txtInCountyCST13a_0to70Days13a" jsxmargin="0 4 0 0" jsxdisplay="" jsxvalidationtype="number" jsxvalidationexpression="^[0-9]*$" jsxtextalign="right" jsxvalue="" jsxbgcolor="#FFFFFF"></strings>
+          <events jsxchange="JBSIS.eForms.doNumValidation(this);JBSIS.eForms.doTotal(&quot;blkCaseProcUnlawDetainIN13a&quot;);" undefined="JBSIS.eForms.Nav.showFocus(false,this);" jsxblur="JBSIS.eForms.Nav.showFocus(false,this);" jsxfocus="JBSIS.eForms.Nav.showFocus(true,this);"></events>
+        </object>
+        <object type="jsx3.gui.TextBox">
+          <variants jsxheight="25" jsxrelativeposition="0" jsxleft="258" jsxtop="20" jsxwidth="143"></variants>
+          <strings jsxname="txtInCountyCST13a_71to90Days13a" jsxmargin="0 4 0 0" jsxdisplay="" jsxvalidationtype="number" jsxvalidationexpression="^[0-9]*$" jsxtextalign="right" jsxvalue="" jsxbgcolor="#FFFFFF"></strings>
+          <events jsxchange="JBSIS.eForms.doNumValidation(this);JBSIS.eForms.doTotal(&quot;blkCaseProcUnlawDetainIN13a&quot;);" undefined="JBSIS.eForms.Nav.showFocus(false,this);" jsxblur="JBSIS.eForms.Nav.showFocus(false,this);" jsxfocus="JBSIS.eForms.Nav.showFocus(true,this);"></events>
+        </object>
+        <object type="jsx3.gui.TextBox">
+          <variants jsxheight="25" jsxrelativeposition="0" jsxleft="401" jsxtop="20" jsxwidth="143"></variants>
+          <strings jsxname="txtInCountyCST13a_91+Days13a" jsxmargin="0 4 0 0" jsxdisplay="" jsxvalidationtype="number" jsxvalidationexpression="^[0-9]*$" jsxtextalign="right" jsxvalue="" jsxbgcolor="#FFFFFF"></strings>
+          <events jsxchange="JBSIS.eForms.doNumValidation(this);JBSIS.eForms.doTotal(&quot;blkCaseProcUnlawDetainIN13a&quot;);" undefined="JBSIS.eForms.Nav.showFocus(false,this);" jsxblur="JBSIS.eForms.Nav.showFocus(false,this);" jsxfocus="JBSIS.eForms.Nav.showFocus(true,this);"></events>
+        </object>
+        <object type="jsx3.gui.TextBox">
+          <variants jsxheight="25" jsxrelativeposition="0" jsxleft="544" jsxtop="20" jsxwidth="144"></variants>
+          <strings jsxname="txtInCountyCST13a_TotalCST13a" jsxmargin="0 4 0 0" jsxdisplay="" jsxtextalign="right" jsxvalidationtype="number" jsxborder="" jsxvalidationexpression="^[0-9]*$" jsxvalue="" jsxbgcolor="#FFFFFF"></strings>
+          <properties readonly="true" calculated="true"></properties>
+          <events jsxchange="JBSIS.eForms.doNumValidation(this);" undefined="JBSIS.eForms.Nav.showFocus(false,this);" jsxblur="JBSIS.eForms.Nav.showFocus(false,this);" jsxfocus="JBSIS.eForms.Nav.showFocus(true,this);"></events>
+        </object>
+      </object>
+      <object type="jsx3.gui.Block">
+        <variants jsxwidth="690" jsxheight="27" jsxleft="0" jsxtop="20"></variants>
+        <strings jsxname="blkCaseProcUnlawDetainOUT13a" jsxrelativeposition="1" jsxborder="solid 1px black;" jsxtextalign="left" jsxbgcolor="-1"></strings>
+        <object type="jsx3.gui.Block">
+          <variants jsxrelativeposition="0" jsxwidth="115" jsxheight="25" jsxfontsize="12"></variants>
+          <strings jsxname="lblOutCountyCST13a" jsxtext="Out County" jsxfontname="ARIAL" jsxtextalign="center" jsxborder="solid 1px black;" jsxdisplay="" jsxpadding="4 0 0 0"></strings>
+        </object>
+        <object type="jsx3.gui.TextBox">
+          <variants jsxheight="25" jsxrelativeposition="0" jsxleft="115" jsxwidth="143"></variants>
+          <strings jsxname="txtOutCountyCST13a_0to70Days13a" jsxmargin="0 4 0 0" jsxdisplay="" jsxvalidationtype="number" jsxvalidationexpression="^[0-9]*$" jsxtextalign="right" jsxvalue="" jsxbgcolor="#FFFFFF"></strings>
+          <events jsxchange="JBSIS.eForms.doNumValidation(this);JBSIS.eForms.doTotal(&quot;blkCaseProcUnlawDetainOUT13a&quot;);" undefined="JBSIS.eForms.Nav.showFocus(false,this);" jsxblur="JBSIS.eForms.Nav.showFocus(false,this);" jsxfocus="JBSIS.eForms.Nav.showFocus(true,this);"></events>
+        </object>
+        <object type="jsx3.gui.TextBox">
+          <variants jsxheight="25" jsxrelativeposition="0" jsxleft="258" jsxwidth="143"></variants>
+          <strings jsxname="txtOutCountyCST13a_71to90Days13a" jsxmargin="0 4 0 0" jsxdisplay="" jsxvalidationtype="number" jsxvalidationexpression="^[0-9]*$" jsxtextalign="right" jsxvalue="" jsxbgcolor="#FFFFFF"></strings>
+          <events jsxchange="JBSIS.eForms.doNumValidation(this);JBSIS.eForms.doTotal(&quot;blkCaseProcUnlawDetainOUT13a&quot;);" undefined="JBSIS.eForms.Nav.showFocus(false,this);" jsxblur="JBSIS.eForms.Nav.showFocus(false,this);" jsxfocus="JBSIS.eForms.Nav.showFocus(true,this);"></events>
+        </object>
+        <object type="jsx3.gui.TextBox">
+          <variants jsxheight="25" jsxrelativeposition="0" jsxleft="401" jsxwidth="143"></variants>
+          <strings jsxname="txtOutCountyCST13a_91+Days13a" jsxmargin="0 4 0 0" jsxdisplay="" jsxvalidationtype="number" jsxvalidationexpression="^[0-9]*$" jsxtextalign="right" jsxvalue="" jsxbgcolor="#FFFFFF"></strings>
+          <events jsxchange="JBSIS.eForms.doNumValidation(this);JBSIS.eForms.doTotal(&quot;blkCaseProcUnlawDetainOUT13a&quot;);" undefined="JBSIS.eForms.Nav.showFocus(false,this);" jsxblur="JBSIS.eForms.Nav.showFocus(false,this);" jsxfocus="JBSIS.eForms.Nav.showFocus(true,this);"></events>
+        </object>
+        <object type="jsx3.gui.TextBox">
+          <variants jsxheight="25" jsxrelativeposition="0" jsxleft="544" jsxwidth="144"></variants>
+          <strings jsxname="txtOutCountyCST13a_TotalCST13a" jsxmargin="0 4 0 0" jsxdisplay="" jsxtextalign="right" jsxvalidationtype="number" jsxborder="" jsxvalidationexpression="^[0-9]*$" jsxvalue="" jsxbgcolor="#FFFFFF"></strings>
+          <properties readonly="true" calculated="true"></properties>
+          <events jsxchange="JBSIS.eForms.doNumValidation(this);" undefined="JBSIS.eForms.Nav.showFocus(false,this);" jsxblur="JBSIS.eForms.Nav.showFocus(false,this);" jsxfocus="JBSIS.eForms.Nav.showFocus(true,this);"></events>
+        </object>
+      </object>
+    </object>
+    <object type="jsx3.gui.Block">
+      <variants jsxwidth="692" jsxheight="78" jsxrelativeposition="0" jsxleft="130" jsxtop="520"></variants>
+      <strings jsxname="blkCaseInventory" jsxborder="solid 1px black;" jsxtextalign="left" jsxpadding="" jsxbgcolor="-1" jsxdisplay=""></strings>
+      <object type="jsx3.gui.Block">
+        <variants jsxwidth="690" jsxheight="20" jsxoverflow="1" jsxleft="0" jsxtop="0"></variants>
+        <strings jsxname="blkCaseInvHeader" jsxrelativeposition="1" jsxbgcolor="-1" jsxpadding="" jsxborder="solid 1px black;" jsxtextalign="center"></strings>
+        <object type="jsx3.gui.Block">
+          <variants jsxrelativeposition="1" jsxoverflow="3" jsxfontsize="12"></variants>
+          <strings jsxname="lblCaseInvHeader13a" jsxtext="CASE INVENTORY" jsxfontname="ARIAL" jsxfontweight="bold"></strings>
+        </object>
+      </object>
+      <object type="jsx3.gui.Block">
+        <variants jsxwidth="690" jsxheight="55" jsxleft="0" jsxtop="20"></variants>
+        <strings jsxname="blkCaseInvGenCiv" jsxrelativeposition="1" jsxborder="solid 1px black;" jsxtextalign="left" jsxbgcolor="-1"></strings>
+        <object type="jsx3.gui.Block">
+          <variants jsxrelativeposition="0" jsxleft="0" jsxtop="30" jsxwidth="115" jsxheight="25" jsxfontsize="12"></variants>
+          <strings jsxname="lblSmallClaimsCI13a" jsxtext="SMALL CLAIMS" jsxfontname="ARIAL" jsxtextalign="center" jsxborder="solid 1px black;" jsxdisplay=""></strings>
+        </object>
+        <object type="jsx3.gui.Block">
+          <variants jsxrelativeposition="0" jsxoverflow="3" jsxwidth="96" jsxheight="30" jsxleft="115" jsxtop="0" jsxfontsize="11"></variants>
+          <strings jsxname="lblBegningPendingCases13a" jsxtext="BEGINING PENDING CASES" jsxdisplay="" jsxtextalign="center" jsxborder="solid 1px black;" jsxfontname="ARIAL"></strings>
+        </object>
+        <object type="jsx3.gui.Block">
+          <variants jsxrelativeposition="0" jsxoverflow="3" jsxwidth="96" jsxheight="30" jsxleft="211" jsxtop="0" jsxfontsize="11"></variants>
+          <strings jsxname="lblNewFilings13a" jsxtext="NEW FILINGS" jsxdisplay="" jsxtextalign="center" jsxborder="solid 1px black;" jsxfontname="ARIAL"></strings>
+        </object>
+        <object type="jsx3.gui.Block">
+          <variants jsxrelativeposition="0" jsxoverflow="3" jsxwidth="96" jsxheight="30" jsxleft="307" jsxtop="0" jsxfontsize="11"></variants>
+          <strings jsxname="lblRestoredActive13a" jsxtext="RESTORED TO ACTIVE STATUS" jsxdisplay="" jsxtextalign="center" jsxborder="solid 1px black;" jsxfontname="ARIAL"></strings>
+        </object>
+        <object type="jsx3.gui.Block">
+          <variants jsxrelativeposition="0" jsxoverflow="3" jsxwidth="96" jsxheight="30" jsxleft="403" jsxtop="0" jsxfontsize="11"></variants>
+          <strings jsxname="lblRemovedActive13a" jsxtext="REMOVED FROM ACTIVE STATUS" jsxdisplay="" jsxtextalign="center" jsxborder="solid 1px black;" jsxfontname="ARIAL"></strings>
+        </object>
+        <object type="jsx3.gui.Block">
+          <variants jsxrelativeposition="0" jsxoverflow="3" jsxwidth="96" jsxheight="30" jsxleft="499" jsxtop="0" jsxfontsize="11"></variants>
+          <strings jsxname="lblDisposedThisMnth13a" jsxtext="DISPOSED THIS MONTH" jsxdisplay="" jsxtextalign="center" jsxborder="solid 1px black;" jsxfontname="ARIAL"></strings>
+        </object>
+        <object type="jsx3.gui.TextBox">
+          <variants jsxheight="25" jsxrelativeposition="0" jsxleft="115" jsxtop="30" jsxwidth="96"></variants>
+          <strings jsxname="txtBegningPendingCases13a" jsxmargin="0 4 0 0" jsxdisplay="" jsxvalidationtype="number" jsxvalidationexpression="^[0-9]*$" jsxtextalign="right" jsxvalue="" jsxbgcolor="#FFFFFF"></strings>
+          <events jsxchange="JBSIS.eForms.doNumValidation(this);" undefined="JBSIS.eForms.Nav.showFocus(false,this);" jsxblur="JBSIS.eForms.Nav.showFocus(false,this);" jsxfocus="JBSIS.eForms.Nav.showFocus(true,this);"></events>
+        </object>
+        <object type="jsx3.gui.TextBox">
+          <variants jsxheight="25" jsxrelativeposition="0" jsxleft="211" jsxtop="30" jsxwidth="96"></variants>
+          <strings jsxname="txtNewFilings13a" jsxmargin="0 4 0 0" jsxdisplay="" jsxvalidationtype="number" jsxvalidationexpression="^[0-9]*$" jsxtextalign="right" jsxvalue="" jsxbgcolor="#FFFFFF"></strings>
+          <events jsxchange="JBSIS.eForms.doNumValidation(this);" undefined="JBSIS.eForms.Nav.showFocus(false,this);" jsxblur="JBSIS.eForms.Nav.showFocus(false,this);" jsxfocus="JBSIS.eForms.Nav.showFocus(true,this);"></events>
+        </object>
+        <object type="jsx3.gui.TextBox">
+          <variants jsxheight="25" jsxrelativeposition="0" jsxleft="307" jsxtop="30" jsxwidth="96"></variants>
+          <strings jsxname="txtRestoredActive13a" jsxmargin="0 4 0 0" jsxdisplay="" jsxvalidationtype="number" jsxvalidationexpression="^[0-9]*$" jsxtextalign="right" jsxvalue="" jsxbgcolor="#FFFFFF"></strings>
+          <events jsxchange="JBSIS.eForms.doNumValidation(this);" undefined="JBSIS.eForms.Nav.showFocus(false,this);" jsxblur="JBSIS.eForms.Nav.showFocus(false,this);" jsxfocus="JBSIS.eForms.Nav.showFocus(true,this);"></events>
+        </object>
+        <object type="jsx3.gui.TextBox">
+          <variants jsxheight="25" jsxrelativeposition="0" jsxleft="403" jsxtop="30" jsxwidth="96"></variants>
+          <strings jsxname="txtRemovedActive13a" jsxmargin="0 4 0 0" jsxdisplay="" jsxvalidationtype="number" jsxvalidationexpression="^[0-9]*$" jsxtextalign="right" jsxvalue="" jsxbgcolor="#FFFFFF"></strings>
+          <events jsxchange="JBSIS.eForms.doNumValidation(this);" undefined="JBSIS.eForms.Nav.showFocus(false,this);" jsxblur="JBSIS.eForms.Nav.showFocus(false,this);" jsxfocus="JBSIS.eForms.Nav.showFocus(true,this);"></events>
+        </object>
+        <object type="jsx3.gui.TextBox">
+          <variants jsxheight="25" jsxrelativeposition="0" jsxleft="499" jsxtop="30" jsxwidth="96"></variants>
+          <strings jsxname="txtDisposedThisMnth13a" jsxmargin="0 4 0 0" jsxdisplay="" jsxtextalign="right" jsxvalidationtype="number" jsxborder="" jsxvalidationexpression="^[0-9]*$" jsxvalue="" jsxbgcolor="#FFFFFF"></strings>
+          <events jsxchange="JBSIS.eForms.doNumValidation(this);" undefined="JBSIS.eForms.Nav.showFocus(false,this);" jsxblur="JBSIS.eForms.Nav.showFocus(false,this);" jsxfocus="JBSIS.eForms.Nav.showFocus(true,this);"></events>
+        </object>
+        <object type="jsx3.gui.Block">
+          <variants jsxrelativeposition="0" jsxoverflow="3" jsxfontsize="11" jsxleft="595" jsxtop="0" jsxwidth="93" jsxheight="30"></variants>
+          <strings jsxname="lblEndPendingCases13a" jsxtext="ENDING PENDING CASES" jsxfontname="ARIAL" jsxdisplay="" jsxtextalign="center" jsxborder="Solid 1px black;"></strings>
+        </object>
+        <object type="jsx3.gui.TextBox">
+          <variants jsxheight="25" jsxrelativeposition="0" jsxleft="595" jsxtop="30" jsxwidth="93"></variants>
+          <strings jsxname="txtEndPendingCases13a" jsxmargin="0 4 0 0" jsxdisplay="" jsxtextalign="right" jsxvalidationtype="number" jsxborder="" jsxvalidationexpression="^[0-9]*$" jsxvalue="" jsxbgcolor="#FFFFFF"></strings>
+          <events jsxchange="JBSIS.eForms.doNumValidation(this);" undefined="JBSIS.eForms.Nav.showFocus(false,this);" jsxblur="JBSIS.eForms.Nav.showFocus(false,this);" jsxfocus="JBSIS.eForms.Nav.showFocus(true,this);"></events>
+        </object>
+      </object>
+    </object>
+    <object type="jsx3.gui.Block">
+      <variants jsxwidth="214" jsxheight="78" jsxrelativeposition="0" jsxleft="490" jsxtop="320"></variants>
+      <strings jsxname="blkCaseSetTrial" jsxborder="solid 1px black;" jsxtextalign="left" jsxpadding="" jsxbgcolor="-1" jsxdisplay=""></strings>
+      <object type="jsx3.gui.Block">
+        <variants jsxrelativeposition="0" jsxwidth="214" jsxheight="20" jsxleft="0" jsxtop="0"></variants>
+        <strings jsxname="blkCaseSetTrialHeader" jsxbgcolor="-1" jsxpadding="" jsxborder="solid 1px black;" jsxdisplay=""></strings>
+        <object type="jsx3.gui.Block">
+          <variants jsxrelativeposition="0" jsxfontsize="12" jsxleft="0" jsxtop="0" jsxwidth="213"></variants>
+          <strings jsxname="lblCaseSetTrialHeader13a" jsxtext="CASES SET FOR TRIAL" jsxfontname="ARIAL" jsxfontweight="bold" jsxdisplay="" jsxtextalign="center"></strings>
+        </object>
+      </object>
+      <object type="jsx3.gui.Block">
+        <variants jsxrelativeposition="0" jsxwidth="214" jsxheight="55" jsxtop="20" jsxleft="0"></variants>
+        <strings jsxname="blkCaseSetTrialGenCiv" jsxborder="solid 1px black;" jsxtextalign="left" jsxbgcolor="-1" jsxdisplay=""></strings>
+        <object type="jsx3.gui.Block">
+          <variants jsxrelativeposition="0" jsxleft="0" jsxtop="30" jsxwidth="115" jsxheight="25" jsxfontsize="12"></variants>
+          <strings jsxname="lblGenCivCSFT13a" jsxtext="SMALL CLAIMS" jsxfontname="ARIAL" jsxtextalign="center" jsxborder="solid 1px black;" jsxdisplay=""></strings>
+        </object>
+        <object type="jsx3.gui.Block">
+          <variants jsxrelativeposition="0" jsxoverflow="3" jsxwidth="96" jsxheight="30" jsxleft="115" jsxtop="0" jsxfontsize="12"></variants>
+          <strings jsxname="lblCourtTrialCSFT13a" jsxtext="COURT TRIAL" jsxdisplay="" jsxtextalign="center" jsxborder="solid 1px black;" jsxfontname="ARIAL" jsxpadding="8 0 0 0"></strings>
+        </object>
+        <object type="jsx3.gui.TextBox">
+          <variants jsxheight="25" jsxrelativeposition="0" jsxleft="115" jsxtop="30" jsxwidth="96"></variants>
+          <strings jsxname="txtGenCivCSFT13a_CourtTrialCSFT13a" jsxmargin="0 4 0 0" jsxdisplay="" jsxvalidationtype="number" jsxvalidationexpression="^[0-9]*$" jsxtextalign="right" jsxvalue="" jsxbgcolor="#FFFFFF"></strings>
+          <events jsxchange="JBSIS.eForms.doNumValidation(this);" undefined="JBSIS.eForms.Nav.showFocus(false,this);" jsxblur="JBSIS.eForms.Nav.showFocus(false,this);" jsxfocus="JBSIS.eForms.Nav.showFocus(true,this);"></events>
+        </object>
+      </object>
+    </object>
+  </object>
+</serialization>

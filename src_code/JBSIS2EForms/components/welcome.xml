@@ -1,0 +1,69 @@
+<serialization jsxversion="3.9" xmlns="urn:tibco.com/v3.0">
+  <name></name>
+  <icon></icon>
+  <description></description>
+  <onBeforeDeserialize></onBeforeDeserialize>
+  <onAfterDeserialize></onAfterDeserialize>
+  <object type="jsx3.gui.Block">
+    <variants jsxrelativeposition="1" jsxoverflow="3" jsxloadtype="4"></variants>
+    <strings jsxinstanceof="jsx3.app.Model" jsxname="blkMain" jsxwidth="100%" jsxheight="100%"></strings>
+    <object type="jsx3.gui.LayoutGrid">
+      <variants jsxrelativeposition="1" jsxleft="0" jsxtop="0" jsxoverflow="2"></variants>
+      <strings jsxname="layout ( | )" jsxcols="214,*" jsxwidth="100%" jsxheight="100%" jsxdisplay="" jsxbgcolor=""></strings>
+      <object type="jsx3.gui.Block">
+        <variants jsxoverflow="2"></variants>
+        <strings jsxname="paneLeft" jsxwidth="100%" jsxheight="100%"></strings>
+        <dynamics jsxborder="@Outset"></dynamics>
+        <object type="jsx3.gui.Image">
+          <variants jsxoverflow="2" jsxrelativeposition="1"></variants>
+          <strings jsxname="imgJCC" jsxsrc="images/JCC.JPG" jsxdisplay=""></strings>
+        </object>
+      </object>
+      <object type="jsx3.gui.Block">
+        <variants jsxoverflow="2"></variants>
+        <strings jsxname="paneRight" jsxwidth="100%" jsxheight="100%"></strings>
+        <dynamics jsxborder="@Outset"></dynamics>
+        <object type="jsx3.gui.LayoutGrid">
+          <variants jsxrelativeposition="1" jsxleft="0" jsxtop="0" jsxoverflow="2"></variants>
+          <strings jsxname="layout (--)" jsxrows="197,*" jsxwidth="100%" jsxheight="100%" jsxdisplay=""></strings>
+          <object type="jsx3.gui.Block">
+            <variants jsxoverflow="2"></variants>
+            <strings jsxname="paneRightUp" jsxwidth="100%" jsxheight="100%"></strings>
+            <dynamics jsxborder="@Outset"></dynamics>
+            <object type="jsx3.gui.Image">
+              <variants jsxoverflow="2" jsxrelativeposition="1"></variants>
+              <strings jsxname="image" jsxsrc="images/AOC.JPG" jsxdisplay="" jsxwidth="100%" jsxheight="100%"></strings>
+            </object>
+          </object>
+          <object type="jsx3.gui.Block">
+            <variants jsxoverflow="2"></variants>
+            <strings jsxname="paneRightDown" jsxwidth="100%" jsxheight="100%"></strings>
+            <dynamics jsxborder="@Outset"></dynamics>
+            <object type="jsx3.gui.Block">
+              <variants jsxrelativeposition="1" jsxoverflow="2" jsxfontsize="12"></variants>
+              <strings jsxname="blkWelMain" jsxdisplay="" jsxwidth="100%" jsxheight="100%"></strings>
+              <object type="jsx3.gui.Block">
+                <variants jsxoverflow="2" jsxrelativeposition="1" jsxfontsize="12"></variants>
+                <strings jsxname="blkWelTop" jsxborder="solid black 1px;" jsxwidth="100%" jsxheight="15%" jsxdisplay=""></strings>
+                <dynamics jsxbgcolor="@Transparent BG" jsxpadding="@8Pixel"></dynamics>
+                <object type="jsx3.gui.Block">
+                  <variants jsxrelativeposition="0" jsxoverflow="2" jsxfontsize="13"></variants>
+                  <strings jsxname="label" jsxtext="&lt;H3&gt;Welcome to the JBSIS E-Forms Application Web Site&lt;/H3&gt;" jsxdisplay="" jsxtop="35%" jsxwidth="100%" jsxheight="50%" jsxtextalign="center"></strings>
+                </object>
+              </object>
+              <object type="jsx3.gui.Block">
+                <variants jsxoverflow="2" jsxrelativeposition="1" jsxfontsize="12"></variants>
+                <strings jsxname="blkWelBottom" jsxborder="solid 1px black;" jsxwidth="100%" jsxheight="100%" jsxdisplay=""></strings>
+                <dynamics jsxbgcolor="@Transparent BG" jsxpadding="@8Pixel"></dynamics>
+                <object type="jsx3.gui.Block">
+                  <variants jsxrelativeposition="0" jsxoverflow="2" jsxfontsize="14"></variants>
+                  <strings jsxname="label" jsxtext="&lt;p text-align:justify&gt;The JBSIS Web Portal is an enhanced version of E-Forms that improves data accuracy, reliability and security for courts not submitting data on the basis of JBSIS standards. The web portal enables court users to: &lt;/p&gt;&#xA;&lt;p text-align:justify&gt;-  Add and edit data; &lt;/p&gt;&#xA;&lt;p text-align:justify&gt;-  Save entries in a database for intermittent or shared data entry, until the data are ready to be submitted to JBSIS &lt;/p&gt;&#xA;&lt;p text-align:justify&gt;-  Submit data directly to JBSIS without having to email the data files and E-forms to the Judicial Council of California; and &lt;/p&gt;&#xA;&lt;p text-align:justify&gt;-  Track and audit the updates made to a report. &lt;/p&gt;&#xA;&#xA;&lt;p text-align:justify&gt;The JBSIS Web Portal has the same look-and-feel as E-Forms but organizes data entry so that all data relating to a specific JBSIS report are grouped together on one screen, providing a cohesive look for easier reporting. The data entered via the portal are identical to those entered on the E-Forms. There are no changes to the type or amount of data a court is required to collect and report. &lt;/p&gt;&#xA;&#xA;&lt;p text-align:justify&gt;Select &quot;Review Forms&quot; in the left-hand menu to access the forms. &lt;/p&gt;" jsxdisplay="" jsxleft="15%" jsxtop="15%" jsxtextalign="left" jsxwidth="80%"></strings>
+                </object>
+              </object>
+            </object>
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+</serialization>
